@@ -31,10 +31,13 @@ def process_json_folder(input_folder, output_file):
             except Exception as e:
                 print(f"Errore nella lettura del file {filename}: {e}")
 
+    # Ordina id_mapping per chiave in ordine alfabetico
+    id_mapping_sorted = dict(sorted(id_mapping.items()))
+
     # Scrivi il mapping in un file JSON di output
     try:
         with open(output_file, 'w', encoding='utf-8') as output_json:
-            json.dump(id_mapping, output_json, ensure_ascii=False, indent=4)
+            json.dump(id_mapping_sorted, output_json, ensure_ascii=False, indent=4)
         print(f"File di output creato con successo: {output_file}")
     except Exception as e:
         print(f"Errore nella scrittura del file di output: {e}")

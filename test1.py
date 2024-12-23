@@ -17,7 +17,7 @@ if os.path.exists(output_folder):
 os.makedirs(output_folder, exist_ok=True)  # Ricrea la cartella vuota
 
 # Funzione per estrarre claims da una tabella HTML
-def extract_claims_from_table(html_content, table_id, paper_id):
+def func1(html_content, table_id, paper_id):
     soup = BeautifulSoup(html_content, "html.parser")
     table = soup.find("table")
 
@@ -69,11 +69,11 @@ for input_file in os.listdir(input_folder):
             print(f"Chiave: {file_name + '_' + key}, Valore di mapping: {mapping_value}")
             
                         # Esegui il codice solo se il valore di mapping è "1"
-            if mapping_value == 0 and "table" in value:
+            if mapping_value == 1 and "table" in value:
                 # Chiamata alla funzione func1 che gestisce l'elaborazione
                 try:
                     html_content = value["table"]
-                    claims = extract_claims_from_table(html_content, table_index, paper_id)
+                    claims = func1(html_content, table_index, paper_id)
 
                     if claims:
                         output_filename = f"{paper_id}_{table_index}_claims.json"
@@ -87,7 +87,7 @@ for input_file in os.listdir(input_folder):
                 except Exception as e:
                     print(f"[ERRORE] Errore nel processamento della tabella in {input_file}, chiave {key}: {e}")
                     continue
-            elif mapping_value == 1 and "table" in value:
+            elif mapping_value == 2 and "table" in value:
                 # Esegui un'altra operazione
                 None
             else:

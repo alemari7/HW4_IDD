@@ -7,6 +7,9 @@ input_folder = "sources/json"  # Cartella contenente i file JSON con le tabelle
 output_folder = "output"  # Cartella per salvare i file di output
 os.makedirs(output_folder, exist_ok=True)
 
+SPEC_NAME = "SPEC_NAME"
+METRIC_NAME = "METRIC_NAME"
+
 # Processa tutti i file JSON nella cartella di input
 for input_file in os.listdir(input_folder):
     if input_file.endswith(".json"):
@@ -48,7 +51,7 @@ for input_file in os.listdir(input_folder):
                             value = cell.text.strip()
                             if value:  # Solo celle non vuote
                                 claim = {
-                                    str(row_index * len(cells) + col_index - 1): f"{{|{{|{header_keys[0]}, {model_name}|, |wait-K, {header_keys[col_index]}|}}, Delay , {value}|}}"
+                                    str(row_index * len(cells) + col_index - 1): f"|{{|{header_keys[0]}, {model_name}|, |{SPEC_NAME}, {header_keys[col_index]}|}}, {METRIC_NAME} , {value}|"
                                 }
                                 data.append(claim)
 

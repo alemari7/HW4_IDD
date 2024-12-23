@@ -20,6 +20,7 @@ os.makedirs(output_folder, exist_ok=True)  # Ricrea la cartella vuota
 def func1(html_content, table_id, paper_id):
     soup = BeautifulSoup(html_content, "html.parser")
     table = soup.find("table")
+    count = 0
 
     if not table:
         return []
@@ -34,7 +35,15 @@ def func1(html_content, table_id, paper_id):
         if not cells:
             continue
 
-        specifications = {str(i): {"name": headers[i], "value": cells[i].text.strip()} for i in range(len(headers)) if i < len(cells)}
+        specifications = "{"
+
+        # Ciclo attraverso gli indici delle intestazioni (headers)
+        for i in range(len(headers)):
+            # Controlla che l'indice sia valido anche per le celle (cells)
+            if i < len(cells):
+                specifications += f"|{headers[i]}, {cells[i].text.strip()}|,"
+        specifications = specifications[:-1] + "}"
+
 
         # Identifica la misura ("Measure") e l'outcome per ogni riga
         for col_index, cell in enumerate(cells):
@@ -43,11 +52,8 @@ def func1(html_content, table_id, paper_id):
                 outcome = cell.text.strip()
 
                 if outcome:
-                    claim = {
-                        "specifications": specifications,
-                        "Measure": measure,
-                        "Outcome": outcome
-                    }
+                    claim = {f'Claim {count}': f'|{specifications}, {measure}, {outcome}|'}
+                    count += 1
                     claims.append(claim)
 
     return claims

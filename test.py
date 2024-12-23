@@ -65,8 +65,10 @@ def func1(input_file, key, value, table_index):
     return table_index
 
 # Processa tutti i file JSON nella cartella di input
+# Effettua una distinzione di processamento in base alla classificazione sulle tabelle
 for input_file in os.listdir(input_folder):
     if input_file.endswith(".json"):
+        file_name = input_file[:-5]
         input_path = os.path.join(input_folder, input_file)
 
         # Leggi il contenuto del file JSON
@@ -77,12 +79,16 @@ for input_file in os.listdir(input_folder):
         table_index = 1
         for key, value in content.items():
             # MAPPING CHECK - Estrai il valore associato alla chiave
-            mapping_value = output_mapping.get(key, None)  # Cerca il valore nel file output_mapping.json
-            print(f"Chiave: {key}, Valore di mapping: {mapping_value}")
+            mapping_value = output_mapping.get(file_name + '_' + key, None)  # Cerca il valore nel file output_mapping.json
+            print(f"Chiave: {file_name + '_' + key}, Valore di mapping: {mapping_value}")
             
             # Esegui il codice solo se il valore di mapping è "1"
-            if mapping_value == 0 and "table" in value:
+            if mapping_value == 1 and "table" in value:
                 # Chiamata alla funzione func1 che gestisce l'elaborazione
                 table_index = func1(input_file, key, value, table_index)
+            elif mapping_value == 2 and "table" in value:
+                # Esegui un'altra operazione
+                None
             else:
-                print(f"[INFO] Saltata la chiave {key} poiché il valore di mapping non è 0.")
+                # Saltare la chiave se il valore di mapping è 0 o non gestita
+                print(f"[INFO] Saltata la chiave {key} poiché il valore di mapping è 0.")

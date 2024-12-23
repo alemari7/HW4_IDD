@@ -10,6 +10,9 @@ def process_json_folder(input_folder, output_file):
     for filename in os.listdir(input_folder):
         if filename.endswith('.json'):
             file_path = os.path.join(input_folder, filename)
+
+            # Ottieni il nome del file senza l'estensione
+            file_name_without_extension = os.path.splitext(filename)[0]
             
             # Leggi il contenuto del file JSON
             try:
@@ -18,8 +21,12 @@ def process_json_folder(input_folder, output_file):
 
                     # Estrai gli ID dalla struttura JSON
                     for item_id in data.keys():
-                        if item_id not in id_mapping:
-                            id_mapping[item_id] = 0  # Valore di default
+                        # Concatena il nome del file con l'ID
+                        new_key = f"{file_name_without_extension}_{item_id}"
+
+                        # Aggiungi la chiave concatenata al dizionario con valore di default
+                        if new_key not in id_mapping:
+                            id_mapping[new_key] = 0  # Valore di default
 
             except Exception as e:
                 print(f"Errore nella lettura del file {filename}: {e}")

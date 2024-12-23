@@ -7,6 +7,10 @@ import shutil
 input_folder = "sources/json"  # Cartella contenente i file JSON con le tabelle
 output_folder = "JSON_CLAIMS"  # Cartella per salvare i file di output
 
+# Carica il file di mapping
+with open("output_mapping.json", "r") as f:
+    output_mapping = json.load(f)
+
 # Svuota e ricrea la cartella di output
 if os.path.exists(output_folder):
     shutil.rmtree(output_folder)  # Elimina la cartella e il suo contenuto
@@ -51,6 +55,7 @@ def extract_claims_from_table(html_content, table_id, paper_id):
 # Processa tutti i file JSON nella cartella di input
 for input_file in os.listdir(input_folder):
     if input_file.endswith(".json"):
+        file_name = input_file[:-5]
         input_path = os.path.join(input_folder, input_file)
         paper_id = os.path.splitext(input_file)[0]
 
@@ -59,7 +64,13 @@ for input_file in os.listdir(input_folder):
 
         table_index = 1
         for key, value in content.items():
-            if "table" in value:
+            # MAPPING CHECK - Estrai il valore associato alla chiave
+            mapping_value = output_mapping.get(file_name + '_' + key, None)  # Cerca il valore nel file output_mapping.json
+            print(f"Chiave: {file_name + '_' + key}, Valore di mapping: {mapping_value}")
+            
+                        # Esegui il codice solo se il valore di mapping è "1"
+            if mapping_value == 0 and "table" in value:
+                # Chiamata alla funzione func1 che gestisce l'elaborazione
                 try:
                     html_content = value["table"]
                     claims = extract_claims_from_table(html_content, table_index, paper_id)
@@ -73,8 +84,14 @@ for input_file in os.listdir(input_folder):
 
                         print(f"[INFO] Salvato: {output_filename}")
 
-                    table_index += 1
-
                 except Exception as e:
                     print(f"[ERRORE] Errore nel processamento della tabella in {input_file}, chiave {key}: {e}")
                     continue
+            elif mapping_value == 1 and "table" in value:
+                # Esegui un'altra operazione
+                None
+            else:
+                # Saltare la chiave se il valore di mapping non è gestit0
+                print(f"[INFO] Saltata la chiave {key} poiché il valore di mapping è non gestito.")
+
+            table_index += 1  

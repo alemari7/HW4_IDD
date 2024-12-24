@@ -5,7 +5,7 @@ import shutil
 
 # Percorsi delle cartelle
 input_folder = "sources/json"  # Cartella contenente i file JSON con le tabelle
-output_folder = "JSON_CLAIMS"  # Cartella per salvare i file di output
+output_folder = "output_test"  # Cartella per salvare i file di output
 
 # Carica il file di mapping
 with open("output_mapping.json", "r") as f:
@@ -93,9 +93,6 @@ for input_file in os.listdir(input_folder):
                 except Exception as e:
                     print(f"[ERRORE] Errore nel processamento della tabella in {input_file}, chiave {key}: {e}")
                     continue
-            elif mapping_value == 2 and "table" in value:
-                # Esegui un'altra operazione
-                None
             else:
                 # Saltare la chiave se il valore di mapping non è gestit0
                 print(f"[INFO] Saltata la chiave {key} poiché il valore di mapping è non gestito.")

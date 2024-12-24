@@ -1,15 +1,21 @@
 import os
 import json
 from bs4 import BeautifulSoup
+import shutil
 
 # Percorsi delle cartelle
 input_folder = "sources/json"  # Cartella contenente i file JSON con le tabelle
-output_folder = "output"  # Cartella per salvare i file di output
+output_folder = "output_test"  # Cartella per salvare i file di output
 os.makedirs(output_folder, exist_ok=True)
 
 # Carica il file di mapping
 with open("output_mapping.json", "r") as f:
     output_mapping = json.load(f)
+
+# Svuota e ricrea la cartella di output
+if os.path.exists(output_folder):
+    shutil.rmtree(output_folder)  # Elimina la cartella e il suo contenuto
+os.makedirs(output_folder, exist_ok=True)  # Ricrea la cartella vuota
 
 # Funzione separata che gestisce la logica di elaborazione della tabella
 def func1(input_file, key, value, table_index):

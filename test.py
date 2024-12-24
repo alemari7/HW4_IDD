@@ -7,15 +7,17 @@ input_folder = "sources/json"  # Cartella contenente i file JSON con le tabelle
 output_folder = "output"  # Cartella per salvare i file di output
 os.makedirs(output_folder, exist_ok=True)
 
-SPEC_NAME = "SPEC_NAME"
-METRIC_NAME = "METRIC_NAME"
-
 # Carica il file di mapping
 with open("output_mapping.json", "r") as f:
     output_mapping = json.load(f)
 
 # Funzione separata che gestisce la logica di elaborazione della tabella
 def func1(input_file, key, value, table_index):
+
+    SPEC_NAME = "SPEC_NAME"
+    METRIC_NAME = "METRIC_NAME"
+    count = 0
+
     try:
         html_content = value["table"]
 
@@ -29,31 +31,35 @@ def func1(input_file, key, value, table_index):
             print(f"[AVVISO] Nessuna tabella trovata in {input_file}, chiave {key}.")
             return table_index
 
-        # Estrarre intestazioni e righe
-        headers = table.find("tr").find_all("th")
+        # Estrai intestazioni
+        header_row = table.find("tr")  # Prima riga della tabella
+        headers = header_row.find_all(["th", "td"])  # Cerca sia <th> che <td> nella riga delle intestazioni
         header_keys = [header.text.strip() for header in headers]
 
+
+        # Estrai le righe della tabella
         rows = table.find_all("tr")[1:]  # Ignora la riga delle intestazioni
 
         # Processa le righe della tabella
         for row_index, row in enumerate(rows):
-            cells = row.find_all("th") + row.find_all("td")
+            cells = row.find_all("th") + row.find_all("td")  # Combina <th> e <td>
             model_name = cells[0].text.strip()
 
-            for col_index, cell in enumerate(cells[1:], start=1):
+            for col_index, cell in enumerate(cells[1:], start=1):  # Salta la prima colonna (nome del modello)
                 value = cell.text.strip()
                 if value:  # Solo celle non vuote
                     claim = {
-                        str(row_index * len(cells) + col_index - 1): f"|{{|{header_keys[0]}, {model_name}|, |{SPEC_NAME}, {header_keys[col_index]}|}}, {METRIC_NAME} , {value}|"
+                        f'Claim {count}': f"|{{|{header_keys[0]}, {model_name}|, |{SPEC_NAME}, {header_keys[col_index]}|}}, {METRIC_NAME} , {value}|"
                     }
+                    count += 1
                     data.append(claim)
 
         # Salva il risultato in un file JSON
         output_filename = f"{os.path.splitext(input_file)[0]}_{table_index}_claims.json"
         output_path = os.path.join(output_folder, output_filename)
 
-        with open(output_path, "w") as f:
-            json.dump(data, f, indent=4)
+        with open(output_path, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=4, ensure_ascii=False)
 
         print(f"[INFO] Salvato: {output_filename}")
         table_index += 1
@@ -80,15 +86,13 @@ for input_file in os.listdir(input_folder):
         for key, value in content.items():
             # MAPPING CHECK - Estrai il valore associato alla chiave
             mapping_value = output_mapping.get(file_name + '_' + key, None)  # Cerca il valore nel file output_mapping.json
-            print(f"Chiave: {file_name + '_' + key}, Valore di mapping: {mapping_value}")
+            # print(f"Chiave: {file_name + '_' + key}, Valore di mapping: {mapping_value}")
             
-            # Esegui il codice solo se il valore di mapping è "1"
-            if mapping_value == 1 and "table" in value:
+            # Esegui il codice solo se il valore di mapping è "2"
+            if mapping_value == 2 and "table" in value:
                 # Chiamata alla funzione func1 che gestisce l'elaborazione
                 table_index = func1(input_file, key, value, table_index)
-            elif mapping_value == 2 and "table" in value:
-                # Esegui un'altra operazione
-                None
             else:
+                None
                 # Saltare la chiave se il valore di mapping è 0 o non gestita
-                print(f"[INFO] Saltata la chiave {key} poiché il valore di mapping è 0.")
+                #print(f"[INFO] Saltata la chiave {key} poiché il valore di mapping non è gestito.")

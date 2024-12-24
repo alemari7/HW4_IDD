@@ -4,61 +4,61 @@ from bs4 import BeautifulSoup
 import shutil
 
 # Percorsi delle cartelle
-input_folder = "sources/json"  # Cartella contenente i file JSON con le tabelle
-output_folder = "JSON_CLAIMS"  # Cartella per salvare i file di output
+INPUT_FOLDER = "sources/json"  # Cartella contenente i file JSON con le tabelle
+OUTPUT_FOLDER = "JSON_CLAIMS"  # Cartella per salvare i file di output
 
-# Carica il file di mapping
-with open("output_mapping.json", "r") as f:
-    output_mapping = json.load(f)
+# Funzione per caricare il mapping da file JSON
+def load_mapping(file_path):
+    with open(file_path, "r") as f:
+        return json.load(f)
 
-# Svuota e ricrea la cartella di output
-if os.path.exists(output_folder):
-    shutil.rmtree(output_folder)  # Elimina la cartella e il suo contenuto
-os.makedirs(output_folder, exist_ok=True)  # Ricrea la cartella vuota
-
+# Funzione per svuotare e ricreare una cartella
+def reset_folder(folder_path):
+    if os.path.exists(folder_path):
+        shutil.rmtree(folder_path)
+    os.makedirs(folder_path, exist_ok=True)
 
 # Funzione per gestire le tabelle di tipo 1
-def func1(html_content, paper_id, table_index, output_folder):
+def process_table_type1(html_content, paper_id, table_index, output_folder):
     try:
         soup = BeautifulSoup(html_content, "html.parser")
         table = soup.find("table")
-        count = 0
 
         if not table:
             print("[AVVISO] Nessuna tabella trovata.")
             return
 
+        # Estrai intestazioni
         headers = [header.text.strip() for header in table.find("tr").find_all("th")]
         rows = table.find_all("tr")[1:]  # Ignora la riga delle intestazioni
 
         claims = []
+        count = 0
 
-        for row_index, row in enumerate(rows):
+        for row in rows:
+            # Estrai celle
             cells = row.find_all("th") + row.find_all("td")
             if not cells:
                 continue
 
-            specifications = "{"
+            # Specifiche della claim
+            specifications = "{" + ",".join(
+                f"|{headers[i]}, {cells[i].text.strip()}|"
+                for i in range(len(headers)) if i < len(cells)
+            ) + "}"
 
-            # Ciclo attraverso gli indici delle intestazioni (headers)
-            for i in range(len(headers)):
-                # Controlla che l'indice sia valido anche per le celle (cells)
-                if i < len(cells):
-                    specifications += f"|{headers[i]}, {cells[i].text.strip()}|,"
-            specifications = specifications[:-1] + "}"
-
-            # Identifica la misura ("Measure") e l'outcome per ogni riga
+            # Estrai misura e risultato
             for col_index, cell in enumerate(cells):
                 if col_index == len(headers) - 1:  # Assume che l'ultima colonna sia la misura
                     measure = headers[col_index]
                     outcome = cell.text.strip()
 
                     if outcome:
-                        claim = {f'Claim {count}': f'|{specifications}, {measure}, {outcome}|'}
+                        claims.append({f'Claim {count}': f'|{specifications}, {measure}, {outcome}|'})
                         count += 1
-                        claims.append(claim)
 
         if claims:
+            # Salva le claims in un file JSON
             output_filename = f"{paper_id}_{table_index}_claims.json"
             output_path = os.path.join(output_folder, output_filename)
 
@@ -71,88 +71,88 @@ def func1(html_content, paper_id, table_index, output_folder):
         print(f"[ERRORE] Errore nel processamento della tabella: {e}")
 
 # Funzione per gestire le tabelle di tipo 2
-def func2(input_file, key, value, table_index):
-
+def process_table_type2(input_file, key, value, table_index, output_folder):
     SPEC_NAME = "SPEC_NAME"
     METRIC_NAME = "METRIC_NAME"
     count = 0
 
     try:
-        html_content = value["table"]
-
-        # Analizza l'HTML
-        data = []
+        html_content = value.get("table", "")
         soup = BeautifulSoup(html_content, "html.parser")
         table = soup.find("table")
 
-        # Controlla se la tabella è valida
         if not table:
             print(f"[AVVISO] Nessuna tabella trovata in {input_file}, chiave {key}.")
             return
 
         # Estrai intestazioni
-        header_row = table.find("tr")  # Prima riga della tabella
-        headers = header_row.find_all(["th", "td"])  # Cerca sia <th> che <td> nella riga delle intestazioni
-        header_keys = [header.text.strip() for header in headers]
+        header_row = table.find("tr")
+        headers = [header.text.strip() for header in header_row.find_all(["th", "td"])]
 
-
-        # Estrai le righe della tabella
-        rows = table.find_all("tr")[1:]  # Ignora la riga delle intestazioni
+        rows = table.find_all("tr")[1:]
+        data = []
 
         # Processa le righe della tabella
-        for row_index, row in enumerate(rows):
-            cells = row.find_all("th") + row.find_all("td")  # Combina <th> e <td>
+        for row in rows:
+            cells = row.find_all("th") + row.find_all("td")
             model_name = cells[0].text.strip()
 
-            for col_index, cell in enumerate(cells[1:], start=1):  # Salta la prima colonna (nome del modello)
+            # Estrai i valori delle celle
+            for col_index, cell in enumerate(cells[1:], start=1):
                 value = cell.text.strip()
-                if value:  # Solo celle non vuote
-                    claim = {
-                        f'Claim {count}': f"|{{|{header_keys[0]}, {model_name}|, |{SPEC_NAME}, {header_keys[col_index]}|}}, {METRIC_NAME} , {value}|"
-                    }
+                if value:
+                    # Crea la claim
+                    data.append({
+                        f'Claim {count}': f"|{{|{headers[0]}, {model_name}|, |{SPEC_NAME}, {headers[col_index]}|}}, {METRIC_NAME} , {value}|"
+                    })
                     count += 1
-                    data.append(claim)
 
-        # Salva il risultato in un file JSON
-        output_filename = f"{os.path.splitext(input_file)[0]}_{table_index}_claims.json"
-        output_path = os.path.join(output_folder, output_filename)
+        if data:
+            # Salva le claims in un file JSON
+            output_filename = f"{os.path.splitext(input_file)[0]}_{table_index}_claims.json"
+            output_path = os.path.join(output_folder, output_filename)
 
-        with open(output_path, "w", encoding="utf-8") as f:
-            json.dump(data, f, indent=4, ensure_ascii=False)
+            with open(output_path, "w", encoding="utf-8") as f:
+                json.dump(data, f, indent=4, ensure_ascii=False)
 
-        print(f"[INFO] Salvato: {output_filename}")
+            print(f"[INFO] Salvato: {output_filename}")
 
     except Exception as e:
         print(f"[ERRORE] Errore nel processamento della tabella in {input_file}, chiave {key}: {e}")
 
+# Funzione principale per processare i file JSON
+def process_json_files(input_folder, output_folder, output_mapping):
+    # Itera su tutti i file nella cartella
+    for input_file in os.listdir(input_folder):
+        if input_file.endswith(".json"):
+            # Ottieni il nome del file senza estensione
+            file_name = input_file[:-5]
+            input_path = os.path.join(input_folder, input_file)
+            paper_id = os.path.splitext(input_file)[0]
 
+            with open(input_path, "r") as f:
+                content = json.load(f)
 
-# Processa tutti i file JSON nella cartella di input
-for input_file in os.listdir(input_folder):
-    if input_file.endswith(".json"):
-        file_name = input_file[:-5]
-        input_path = os.path.join(input_folder, input_file)
-        paper_id = os.path.splitext(input_file)[0]
+            # Processa ogni "table" presente
+            table_index = 1
+            for key, value in content.items():
+                # Ottieni il valore di mapping per la chiave corrente (file_name + key)
+                mapping_value = output_mapping.get(f"{file_name}_{key}")
+                print(f"Chiave: {file_name}_{key}, Valore di mapping: {mapping_value}")
 
-        with open(input_path, "r") as f:
-            content = json.load(f)
+                # Processa la tabella in base al valore di mapping
+                if mapping_value == 1 and "table" in value:
+                    process_table_type1(value["table"], paper_id, table_index, output_folder)
+                    table_index += 1
 
-        table_index = 1
-        for key, value in content.items():
-            # MAPPING CHECK - Estrai il valore associato alla chiave
-            mapping_value = output_mapping.get(file_name + '_' + key, None)  # Cerca il valore nel file output_mapping.json
-            print(f"Chiave: {file_name + '_' + key}, Valore di mapping: {mapping_value}")
+                elif mapping_value == 2 and "table" in value:
+                    process_table_type2(input_file, key, value, table_index, output_folder)
+                    table_index += 1
 
-            # Analizza la tabella in base al valore di mapping
-            if mapping_value == 1 and "table" in value:
-                # Processa la tabella di tipo 1
-                func1(value["table"], paper_id, table_index, output_folder)
-                table_index += 1
+                else:
+                    print(f"[INFO] Saltata la chiave {key} poiché il valore di mapping è non gestito.")
 
-            elif mapping_value == 2 and "table" in value:
-                # Processa la tabella di tipo 2
-                func2(input_file, key, value, table_index)
-                table_index += 1
-            else:
-                # Saltare la chiave se il valore di mapping non è gestito
-                print(f"[INFO] Saltata la chiave {key} poiché il valore di mapping è non gestito.")
+if __name__ == "__main__":
+    output_mapping = load_mapping("output_mapping.json")
+    reset_folder(OUTPUT_FOLDER)
+    process_json_files(INPUT_FOLDER, OUTPUT_FOLDER, output_mapping)

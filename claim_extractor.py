@@ -20,6 +20,7 @@ def reset_folder(folder_path):
         shutil.rmtree(folder_path)
     os.makedirs(folder_path, exist_ok=True)
 
+# Funzione per stampare un messaggio colorato
 def printC(message, number):
     """
     Stampa un messaggio colorato nel terminale in base a un numero.
@@ -118,7 +119,7 @@ def process_table_type2(input_file, key, value, table_index, output_folder):
         header_row = table.find("tr")
         headers = [header.text.strip() for header in header_row.find_all(["th", "td"])]
 
-        METRIC_NAME = extract_metric_from_text(caption)
+        METRIC_NAME = extract_metric_from_text(caption) or "METRIC_NAME"
 
         rows = table.find_all("tr")[1:]
         data = []
@@ -132,7 +133,7 @@ def process_table_type2(input_file, key, value, table_index, output_folder):
             for col_index, cell in enumerate(cells[1:], start=1):
                 value = cell.text.strip()
                 if value:
-                    SPEC_NAME = extract_specification_from_text(caption, headers[col_index])
+                    SPEC_NAME = extract_specification_from_text(caption, headers[col_index]) or "SPEC_NAME"
 
                     # Crea la claim
                     data.append({

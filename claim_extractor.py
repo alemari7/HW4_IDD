@@ -2,6 +2,8 @@ import os
 import json
 from bs4 import BeautifulSoup
 import shutil
+from testing.LLM_testing import extract_metric_from_text, extract_specification_from_text
+
 
 # Percorsi delle cartelle
 INPUT_FOLDER = "sources/json"  # Cartella contenente i file JSON con le tabelle
@@ -17,6 +19,32 @@ def reset_folder(folder_path):
     if os.path.exists(folder_path):
         shutil.rmtree(folder_path)
     os.makedirs(folder_path, exist_ok=True)
+
+def printC(message, number):
+    """
+    Stampa un messaggio colorato nel terminale in base a un numero.
+    
+    Args:
+        number (int): Numero da 0 a 3 per selezionare il colore.
+        message (str): Il messaggio da stampare.
+    """
+    # Definizione dei colori (ANSI escape codes)
+    colors = {
+        0: "\033[91m",  # Rosso
+        1: "\033[92m",  # Verde
+        2: "\033[93m",  # Giallo
+        3: "\033[94m",  # Blu
+    }
+
+    reset = "\033[0m"  # Reset al colore normale
+
+    # Ottieni il colore in base al numero
+    color = colors.get(number, reset)  # Default: colore normale
+
+    # Stampa il messaggio con il colore selezionato
+    print(f"{color}{message}{reset}")
+
+
 
 # Funzione per gestire le tabelle di tipo 1
 def process_table_type1(html_content, paper_id, table_index, output_folder):
@@ -68,7 +96,7 @@ def process_table_type1(html_content, paper_id, table_index, output_folder):
             print(f"[INFO] Salvato: {output_filename}")
 
     except Exception as e:
-        print(f"[ERRORE] Errore nel processamento della tabella: {e}")
+        print(f"[ERROR] Errore nel processamento della tabella: {e}")
 
 # Funzione per gestire le tabelle di tipo 2
 def process_table_type2(input_file, key, value, table_index, output_folder):
@@ -78,6 +106,7 @@ def process_table_type2(input_file, key, value, table_index, output_folder):
 
     try:
         html_content = value.get("table", "")
+        caption = value["caption"]
         soup = BeautifulSoup(html_content, "html.parser")
         table = soup.find("table")
 
@@ -88,6 +117,8 @@ def process_table_type2(input_file, key, value, table_index, output_folder):
         # Estrai intestazioni
         header_row = table.find("tr")
         headers = [header.text.strip() for header in header_row.find_all(["th", "td"])]
+
+        METRIC_NAME = extract_metric_from_text(caption)
 
         rows = table.find_all("tr")[1:]
         data = []
@@ -101,6 +132,8 @@ def process_table_type2(input_file, key, value, table_index, output_folder):
             for col_index, cell in enumerate(cells[1:], start=1):
                 value = cell.text.strip()
                 if value:
+                    SPEC_NAME = extract_specification_from_text(caption, headers[col_index])
+
                     # Crea la claim
                     data.append({
                         f'Claim {count}': f"|{{|{headers[0]}, {model_name}|, |{SPEC_NAME}, {headers[col_index]}|}}, {METRIC_NAME} , {value}|"
@@ -118,7 +151,7 @@ def process_table_type2(input_file, key, value, table_index, output_folder):
             print(f"[INFO] Salvato: {output_filename}")
 
     except Exception as e:
-        print(f"[ERRORE] Errore nel processamento della tabella in {input_file}, chiave {key}: {e}")
+        print(f"[ERROR] Errore nel processamento della tabella in {input_file}, chiave {key}: {e}")
 
 # Funzione principale per processare i file JSON
 def process_json_files(input_folder, output_folder, output_mapping):
@@ -138,7 +171,7 @@ def process_json_files(input_folder, output_folder, output_mapping):
             for key, value in content.items():
                 # Ottieni il valore di mapping per la chiave corrente (file_name + key)
                 mapping_value = output_mapping.get(f"{file_name}_{key}")
-                print(f"Chiave: {file_name}_{key}, Valore di mapping: {mapping_value}")
+                printC(f"[PROCESSING] Chiave: {file_name}_{key}, Valore di mapping: {mapping_value}", mapping_value)
 
                 # Processa la tabella in base al valore di mapping
                 if mapping_value == 1 and "table" in value:

@@ -3,6 +3,8 @@ import json
 from bs4 import BeautifulSoup
 import shutil
 
+from LLM_testing import extract_information_from_text   
+
 # Percorsi delle cartelle
 input_folder = "sources/json"  # Cartella contenente i file JSON con le tabelle
 output_folder = "output_test"  # Cartella per salvare i file di output
@@ -26,6 +28,7 @@ def func1(input_file, key, value, table_index):
 
     try:
         html_content = value["table"]
+        caption = value["caption"]
 
         # Analizza l'HTML
         data = []
@@ -42,6 +45,10 @@ def func1(input_file, key, value, table_index):
         headers = header_row.find_all(["th", "td"])  # Cerca sia <th> che <td> nella riga delle intestazioni
         header_keys = [header.text.strip() for header in headers]
 
+        METRIC_NAME = extract_information_from_text(caption)
+        print("Caption: ", caption)
+        print("Metric Name: ", METRIC_NAME)
+        print("\n\n")
 
         # Estrai le righe della tabella
         rows = table.find_all("tr")[1:]  # Ignora la riga delle intestazioni

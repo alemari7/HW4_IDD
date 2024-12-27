@@ -1,2 +1,6 @@
 output_test
 JSON_CLAIMS
+
+__pycache__/
+*.pyc
+*.pyo

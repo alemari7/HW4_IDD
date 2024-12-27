@@ -17,7 +17,7 @@ if os.path.exists(output_folder):
     shutil.rmtree(output_folder)  # Elimina la cartella e il suo contenuto
 os.makedirs(output_folder, exist_ok=True)  # Ricrea la cartella vuota
 
-# Funzione per estrarre il claim dalla tabella
+# Funzione per estrarre i claim dalla tabella
 def extract_claims_from_table(input_file, key, value, table_index):
     count = 0
     try:
@@ -33,39 +33,54 @@ def extract_claims_from_table(input_file, key, value, table_index):
             print(f"[AVVISO] Nessuna tabella trovata in {input_file}, chiave {key}.")
             return table_index
 
-        # Estrai intestazioni
-        header_row = table.find("tr")  # Prima riga della tabella
-        headers = header_row.find_all(["th", "td"])  # Cerca sia <th> che <td> nella riga delle intestazioni
-        header_keys = [header.text.strip() for header in headers]
+        # Estrai intestazioni e righe della tabella
+        rows = table.find_all("tr")  # Estrai tutte le righe della tabella
 
-        # Estrai le righe della tabella
-        rows = table.find_all("tr")[1:]  # Ignora la riga delle intestazioni
+        if len(rows) < 3:  # Assicurati che ci siano almeno 3 righe (intestazione + valori)
+            print(f"[AVVISO] La tabella in {input_file}, chiave {key}, non ha abbastanza righe.")
+            return table_index
 
+        # La prima riga è l'intestazione (nomi delle specifiche)
+        header_row = rows[1]
+        header_cells = header_row.find_all("th") + header_row.find_all("td")  # Intestazione può contenere sia <th> che <td>
+        header_keys = [cell.text.strip() for cell in header_cells]
+
+        # La seconda riga è la riga dei valori
+        value_row = rows[2]
+        value_cells = value_row.find_all("th") + value_row.find_all("td")
+
+        # Verifica che la seconda riga abbia lo stesso numero di celle della prima riga
+        if len(value_cells) != len(header_keys):
+            print(f"[AVVISO] Il numero di celle nella seconda riga non corrisponde alle intestazioni in {input_file}, chiave {key}.")
+            # Gestisci la discrepanza tra celle della seconda riga e intestazioni
+            if len(value_cells) < len(header_keys):
+                # Aggiungi celle vuote se ci sono meno celle
+                value_cells.extend([''] * (len(header_keys) - len(value_cells)))
+            else:
+                # Se ci sono più celle, prendi solo quelle necessarie
+                value_cells = value_cells[:len(header_keys)]
+
+        # Estrai le metriche e i dati dalla tabella
         data = []
-        
-        # Processa le righe della tabella
-        for row_index, row in enumerate(rows):
-            cells = row.find_all("th") + row.find_all("td")  # Combina <th> e <td>
-            
-            # Controlla che la riga abbia abbastanza celle per la corrispondenza
-            if len(cells) < len(header_keys):
-                print(f"[AVVISO] La riga {row_index + 1} in {input_file}, chiave {key}, ha meno celle rispetto alle intestazioni.")
-                continue  # Salta la riga se non ha abbastanza celle
-            
-            metric_name = cells[0].text.strip()  # Prima colonna: nome della metrica
+        for row_index in range(3, len(rows)):  # Inizia dalla quarta riga in poi (dopo l'intestazione e i valori)
+            row = rows[row_index]
+            cells = row.find_all("th") + row.find_all("td")
+            if len(cells) < 1:
+                continue
 
-            # Estrai i valori per ogni specifica dalla riga
-            for col_index, cell in enumerate(cells[1:], start=1):  # Salta la prima colonna (nome della metrica)
-                if col_index >= len(header_keys):
-                    break  # Salta se l'indice supera il numero di intestazioni
+            metric_name = cells[0].text.strip()  # La prima colonna è il nome della metrica
+
+            # Estrai i valori per ogni specifica (prima riga come intestazione, seconda riga come valore)
+            for col_index, spec_value_cell in enumerate(value_cells[1:], start=1):  # Salta la prima cella (nome della metrica)
                 spec_name = header_keys[col_index]  # Nome della specifica (es. Score, Error, ecc.)
-                spec_value = cell.text.strip()  # Valore della specifica
+                spec_value = cells[col_index].text.strip()  # Valore della specifica
 
                 if spec_value:  # Solo celle non vuote
                     claim = {
                         f"Claim {count}": f"|{{|{spec_name}, {spec_value}|}}, {metric_name}, {spec_value}|"
                     }
                     count += 1
+                    # Salva i claim nella lista dei dati
                     data.append(claim)
 
         # Salva il risultato in un file JSON
@@ -104,5 +119,5 @@ for input_file in os.listdir(input_folder):
                 # Esegui la funzione di estrazione claims
                 table_index = extract_claims_from_table(input_file, key, value, table_index)
             else:
-                # Saltare la chiave se il valore di mapping non è 0
-                print(f"[INFO] Saltata la chiave {key} poiché il valore di mapping non è 0.")
+                # Saltare la chiave se il valore di mapping non è 3
+                print(f"[INFO] Saltata la chiave {key} poiché il valore di mapping non è 3.")

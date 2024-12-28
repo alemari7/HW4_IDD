@@ -5,7 +5,7 @@ import shutil
 
 # Percorsi delle cartelle
 input_folder = "sources/json"  # Cartella contenente i file JSON con le tabelle
-output_folder = "output_test"  # Cartella per salvare i file di output
+output_folder = "testing/output_test"  # Cartella per salvare i file di output
 
 # Carica il file di mapping
 with open("output_mapping.json", "r") as f:

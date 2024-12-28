@@ -2,6 +2,7 @@ import os
 import json
 from bs4 import BeautifulSoup
 import shutil
+#from test import extract_colspan_info
 
 # Percorsi delle cartelle
 input_folder = "sources/json"  # Cartella contenente i file JSON con le tabelle
@@ -17,12 +18,46 @@ if os.path.exists(output_folder):
     shutil.rmtree(output_folder)  # Elimina la cartella e il suo contenuto
 os.makedirs(output_folder, exist_ok=True)  # Ricrea la cartella vuota
 
+from bs4 import BeautifulSoup
+
+# Funzione per estrarre le informazioni sul colspan
+def extract_colspan_info(html_row):
+    if not html_row:
+        raise ValueError("Il contenuto HTML della riga è vuoto o non valido.")
+
+    soup = BeautifulSoup(html_row, "html.parser")
+
+    row = soup.find("tr")
+    if not row:
+        raise ValueError("La riga HTML fornita non contiene tag <tr> validi.")
+
+    cells = row.find_all("th")
+    result = {}
+
+    for cell in cells:
+        cell_text = cell.get_text(strip=True) or "N/A"
+        colspan = int(cell.get("colspan", 1))  # Ottieni il colspan (default 1, convertito a int)
+        result[cell_text] = colspan
+
+    # Rimuovi "N/A" solo se esiste
+    if "N/A" in result:
+        del result["N/A"]
+
+    # Ricalcola il colspan progressivo solo dopo aver rimosso "N/A"
+    colspan_sum = 0  # Variabile per sommare i colspan
+    for cell_text in result:
+        colspan_sum += result[cell_text]
+        result[cell_text] = colspan_sum  # Aggiorna il risultato con il colspan progressivo
+
+    return result
+
+
+
 # Funzione per estrarre i claim dalla tabella
 def extract_claims_from_table(input_file, key, value, table_index):
     count = 0
     try:
         html_content = value.get("table")
-        caption = value.get("caption", "")
 
         # Analizza l'HTML
         soup = BeautifulSoup(html_content, "html.parser")
@@ -42,6 +77,12 @@ def extract_claims_from_table(input_file, key, value, table_index):
 
         # Estrai intestazioni dalla seconda riga
         header_row = rows[1]
+
+        # Estrai informazioni sul colspan dalla prima riga (specifiche)
+        spec_row = str(rows[0])
+        colspan_info = extract_colspan_info(spec_row)
+
+        # Estrai chiavi dalle intestazioni
         header_cells = header_row.find_all(["th", "td"])
         header_keys = [cell.text.strip() for cell in header_cells]
 
@@ -55,12 +96,18 @@ def extract_claims_from_table(input_file, key, value, table_index):
 
             metric_name = cells[0].text.strip()  # La prima cella è il nome della metrica
             for col_index, cell in enumerate(cells[1:], start=1):  # Salta la prima cella
-                spec_name = header_keys[col_index]  # Nome della specifica
-                spec_value = cell.text.strip()  # Valore della specifica
+                for key, value in colspan_info.items():
+                    if col_index <= value:
+                        spec_name = key
+                        break
+                    spec_name = "Spec_name"
 
-                if spec_value:  # Solo celle non vuote
+                spec_value = header_keys[col_index]  # Nome della specifica
+                metric_value = cell.text.strip()  # Valore della specifica
+
+                if metric_value:  # Solo celle non vuote
                     claim = {
-                        f"Claim {count}": f"|{{|{spec_name}, {spec_value}|}}, {metric_name}, {spec_value}|"
+                        f"Claim {count}": f"|{{|{spec_name}, {spec_value}|}}, {metric_name}, {metric_value}|"
                     }
                     data.append(claim)
                     count += 1
@@ -100,4 +147,5 @@ for input_file in os.listdir(input_folder):
                 # Esegui la funzione di estrazione claims
                 table_index = extract_claims_from_table(input_file, key, value, table_index)
             else:
-                print(f"[INFO] Saltata la chiave {key} poiché il valore di mapping non è 3.")
+                #print(f"[INFO] Saltata la chiave {key} poiché il valore di mapping non è 3.")
+                None

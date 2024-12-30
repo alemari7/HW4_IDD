@@ -1,0 +1,3696 @@
+{
+    "aligned_names": {
+        "data set": [
+            "2409.17939_2_claims_0_Data_set",
+            "2409.17939_2_claims_1_Data_set",
+            "2409.17939_2_claims_2_Data_set",
+            "2409.17939_2_claims_3_Data_set"
+        ],
+        "segment size": [
+            "2409.17939_2_claims_0_Segment_Size",
+            "2409.17939_2_claims_1_Segment_Size",
+            "2409.17939_2_claims_2_Segment_Size",
+            "2409.17939_2_claims_3_Segment_Size"
+        ],
+        "mos": [
+            "2403.04178_1_claims_0_MOS",
+            "2403.04178_1_claims_1_MOS",
+            "2403.04178_1_claims_2_MOS"
+        ],
+        "method": [
+            "2409.17939_1_claims_0_Method",
+            "2409.17939_1_claims_4_Method",
+            "2409.17939_1_claims_8_Method",
+            "2409.17939_1_claims_9_Method",
+            "2409.17939_1_claims_10_Method",
+            "2409.17939_1_claims_11_Method",
+            "2409.17939_1_claims_12_Method"
+        ],
+        "output": [
+            "2409.17939_1_claims_0_Output",
+            "2409.17939_1_claims_1_Output",
+            "2409.17939_1_claims_4_Output",
+            "2409.17939_1_claims_5_Output",
+            "2409.17939_1_claims_6_Output",
+            "2409.17939_1_claims_7_Output",
+            "2409.17939_1_claims_8_Output",
+            "2409.17939_1_claims_9_Output",
+            "2409.17939_1_claims_10_Output",
+            "2409.17939_1_claims_11_Output",
+            "2409.17939_1_claims_12_Output"
+        ],
+        "output, des d\u00e9fauts": [
+            "2409.17939_1_claims_2_Output,_des_d\u00e9fauts"
+        ],
+        "output, paragraphes 1 \u00e0 5": [
+            "2409.17939_1_claims_3_Output,_paragraphes_1_\u00e0_5"
+        ],
+        "model": [
+            "2312.14488_3_claims_0_Model",
+            "2312.14488_3_claims_1_Model",
+            "2312.14488_3_claims_2_Model",
+            "2312.14488_3_claims_3_Model",
+            "2312.14488_3_claims_4_Model",
+            "2312.14488_3_claims_5_Model",
+            "2312.14488_3_claims_6_Model",
+            "2312.14488_3_claims_7_Model",
+            "2312.14488_3_claims_8_Model",
+            "2312.14488_3_claims_9_Model",
+            "2312.14488_3_claims_10_Model",
+            "2312.14488_3_claims_11_Model",
+            "2312.14488_3_claims_12_Model",
+            "2312.14488_3_claims_13_Model",
+            "2312.14488_3_claims_14_Model",
+            "2312.14488_3_claims_15_Model",
+            "2312.14488_3_claims_16_Model",
+            "2312.14488_3_claims_17_Model",
+            "2312.14488_3_claims_18_Model",
+            "2312.14488_3_claims_19_Model",
+            "2312.14488_3_claims_20_Model",
+            "2312.14488_3_claims_21_Model",
+            "2312.14488_3_claims_22_Model",
+            "2312.14488_3_claims_23_Model",
+            "2312.14488_3_claims_24_Model",
+            "2409.15051_3_claims_0_Model",
+            "2409.15051_3_claims_1_Model",
+            "2409.15051_3_claims_2_Model",
+            "2409.15051_3_claims_3_Model",
+            "2409.15051_3_claims_4_Model",
+            "2409.15051_3_claims_5_Model",
+            "2312.14488_2_claims_0_Model",
+            "2312.14488_2_claims_1_Model",
+            "2312.14488_2_claims_2_Model",
+            "2312.14488_2_claims_3_Model",
+            "2312.14488_2_claims_4_Model",
+            "2312.14488_2_claims_5_Model",
+            "2312.14488_2_claims_6_Model",
+            "2312.14488_2_claims_7_Model",
+            "2312.14488_2_claims_8_Model",
+            "2312.14488_2_claims_9_Model",
+            "2409.15051_4_claims_0_Model",
+            "2409.15051_4_claims_2_Model",
+            "2409.15051_4_claims_4_Model",
+            "2409.15051_4_claims_6_Model",
+            "2409.15051_4_claims_8_Model",
+            "2409.15051_4_claims_10_Model",
+            "2409.15051_4_claims_12_Model",
+            "2409.15051_4_claims_14_Model",
+            "2409.15051_4_claims_16_Model",
+            "2409.15051_4_claims_18_Model",
+            "2409.15051_2_claims_0_Model",
+            "2409.15051_2_claims_1_Model",
+            "2409.15051_2_claims_2_Model",
+            "2312.14488_4_claims_0_Model",
+            "2312.14488_4_claims_1_Model",
+            "2312.14488_4_claims_2_Model",
+            "2312.14488_4_claims_3_Model",
+            "2312.14488_4_claims_4_Model",
+            "2312.14488_4_claims_5_Model",
+            "2312.14488_4_claims_6_Model",
+            "2312.14488_4_claims_7_Model",
+            "2409.15051_5_claims_0_Model",
+            "2409.15051_5_claims_1_Model",
+            "2409.15051_5_claims_2_Model",
+            "2409.15051_5_claims_3_Model",
+            "2409.15051_5_claims_4_Model",
+            "2312.14488_1_claims_0_Model",
+            "2312.14488_1_claims_1_Model",
+            "2312.14488_1_claims_2_Model",
+            "2312.14488_1_claims_3_Model",
+            "2312.14488_1_claims_4_Model",
+            "2312.14488_1_claims_5_Model",
+            "2312.14488_1_claims_6_Model",
+            "2312.14488_1_claims_7_Model",
+            "2312.14488_1_claims_8_Model",
+            "2312.14488_1_claims_9_Model"
+        ],
+        "latency improvement": [
+            "2312.14488_3_claims_0_latency_improvement",
+            "2312.14488_3_claims_1_latency_improvement",
+            "2312.14488_3_claims_2_latency_improvement",
+            "2312.14488_3_claims_3_latency_improvement",
+            "2312.14488_3_claims_4_latency_improvement",
+            "2312.14488_3_claims_5_latency_improvement",
+            "2312.14488_3_claims_6_latency_improvement",
+            "2312.14488_3_claims_7_latency_improvement",
+            "2312.14488_3_claims_8_latency_improvement",
+            "2312.14488_3_claims_9_latency_improvement",
+            "2312.14488_3_claims_10_latency_improvement",
+            "2312.14488_3_claims_11_latency_improvement",
+            "2312.14488_3_claims_12_latency_improvement",
+            "2312.14488_3_claims_13_latency_improvement",
+            "2312.14488_3_claims_14_latency_improvement",
+            "2312.14488_3_claims_15_latency_improvement",
+            "2312.14488_3_claims_16_latency_improvement",
+            "2312.14488_3_claims_17_latency_improvement",
+            "2312.14488_3_claims_18_latency_improvement",
+            "2312.14488_3_claims_19_latency_improvement",
+            "2312.14488_3_claims_20_latency_improvement",
+            "2312.14488_3_claims_21_latency_improvement",
+            "2312.14488_3_claims_22_latency_improvement",
+            "2312.14488_3_claims_23_latency_improvement",
+            "2312.14488_3_claims_24_latency_improvement"
+        ],
+        "non-embedding": [
+            "2409.15051_3_claims_0_Non-embedding",
+            "2409.15051_3_claims_1_Non-embedding",
+            "2409.15051_3_claims_2_Non-embedding",
+            "2409.15051_3_claims_3_Non-embedding",
+            "2409.15051_3_claims_4_Non-embedding",
+            "2409.15051_3_claims_5_Non-embedding",
+            "2409.15051_5_claims_0_Non-embedding",
+            "2409.15051_5_claims_1_Non-embedding",
+            "2409.15051_5_claims_2_Non-embedding",
+            "2409.15051_5_claims_3_Non-embedding",
+            "2409.15051_5_claims_4_Non-embedding"
+        ],
+        "embedding": [
+            "2409.15051_3_claims_0_Embedding",
+            "2409.15051_3_claims_1_Embedding",
+            "2409.15051_3_claims_2_Embedding",
+            "2409.15051_3_claims_3_Embedding",
+            "2409.15051_3_claims_4_Embedding",
+            "2409.15051_3_claims_5_Embedding",
+            "2409.15051_5_claims_0_Embedding",
+            "2409.15051_5_claims_1_Embedding",
+            "2409.15051_5_claims_2_Embedding",
+            "2409.15051_5_claims_3_Embedding",
+            "2409.15051_5_claims_4_Embedding"
+        ],
+        "layers": [
+            "2409.15051_3_claims_0_Layers",
+            "2409.15051_3_claims_1_Layers",
+            "2409.15051_3_claims_2_Layers",
+            "2409.15051_3_claims_3_Layers",
+            "2409.15051_3_claims_4_Layers",
+            "2409.15051_3_claims_5_Layers",
+            "2409.15051_5_claims_0_Layers",
+            "2409.15051_5_claims_1_Layers",
+            "2409.15051_5_claims_2_Layers",
+            "2409.15051_5_claims_3_Layers",
+            "2409.15051_5_claims_4_Layers"
+        ],
+        "dim": [
+            "2409.15051_3_claims_0_Dim",
+            "2409.15051_3_claims_1_Dim",
+            "2409.15051_3_claims_2_Dim",
+            "2409.15051_3_claims_3_Dim",
+            "2409.15051_3_claims_4_Dim",
+            "2409.15051_3_claims_5_Dim",
+            "2409.15051_5_claims_0_Dim",
+            "2409.15051_5_claims_1_Dim",
+            "2409.15051_5_claims_2_Dim",
+            "2409.15051_5_claims_3_Dim",
+            "2409.15051_5_claims_4_Dim"
+        ],
+        "heads": [
+            "2409.15051_3_claims_0_Heads",
+            "2409.15051_3_claims_1_Heads",
+            "2409.15051_3_claims_2_Heads",
+            "2409.15051_3_claims_3_Heads",
+            "2409.15051_3_claims_4_Heads",
+            "2409.15051_3_claims_5_Heads"
+        ],
+        "max l\u2062r\ud835\udc59\ud835\udc5flritalic l italic r": [
+            "2409.15051_3_claims_0_Max_l\u2062r\ud835\udc59\ud835\udc5flritalic_l_italic_r",
+            "2409.15051_3_claims_1_Max_l\u2062r\ud835\udc59\ud835\udc5flritalic_l_italic_r",
+            "2409.15051_3_claims_2_Max_l\u2062r\ud835\udc59\ud835\udc5flritalic_l_italic_r",
+            "2409.15051_3_claims_3_Max_l\u2062r\ud835\udc59\ud835\udc5flritalic_l_italic_r",
+            "2409.15051_3_claims_4_Max_l\u2062r\ud835\udc59\ud835\udc5flritalic_l_italic_r",
+            "2409.15051_3_claims_5_Max_l\u2062r\ud835\udc59\ud835\udc5flritalic_l_italic_r"
+        ],
+        "characteristic": [
+            "2409.00071_3_claims_0_Characteristic",
+            "2409.00071_3_claims_1_Characteristic",
+            "2409.00071_3_claims_2_Characteristic",
+            "2409.00071_3_claims_3_Characteristic",
+            "2409.00071_2_claims_0_Characteristic",
+            "2409.00071_2_claims_1_Characteristic",
+            "2409.00071_2_claims_2_Characteristic",
+            "2409.00071_2_claims_3_Characteristic"
+        ],
+        "ssmt": [
+            "2403.04178_2_claims_0_SSMT",
+            "2403.04178_2_claims_1_SSMT"
+        ],
+        "st-mos": [
+            "2403.04178_2_claims_0_st-MOS",
+            "2403.04178_2_claims_1_st-MOS"
+        ],
+        "#": [
+            "2402.10940_3_claims_0_#",
+            "2402.10940_3_claims_1_#",
+            "2402.10940_3_claims_2_#",
+            "2402.10940_3_claims_3_#",
+            "2402.10940_3_claims_4_#",
+            "2402.10940_3_claims_5_#",
+            "2402.10940_3_claims_6_#",
+            "2402.10940_3_claims_7_#",
+            "2402.10940_3_claims_8_#",
+            "2402.10940_3_claims_9_#",
+            "2402.10940_2_claims_0_#",
+            "2402.10940_2_claims_1_#",
+            "2402.10940_2_claims_2_#",
+            "2402.10940_2_claims_3_#",
+            "2402.10940_2_claims_4_#",
+            "2402.10940_2_claims_5_#",
+            "2402.10940_2_claims_6_#",
+            "2402.10940_2_claims_7_#",
+            "2402.10940_2_claims_8_#",
+            "2402.10940_2_claims_9_#",
+            "2402.10940_4_claims_0_#",
+            "2402.10940_4_claims_1_#",
+            "2402.10940_4_claims_2_#",
+            "2402.10940_4_claims_3_#",
+            "2402.10940_4_claims_4_#",
+            "2402.10940_4_claims_5_#",
+            "2402.10940_4_claims_6_#",
+            "2402.10940_4_claims_7_#",
+            "2402.10940_4_claims_8_#",
+            "2402.10940_4_claims_9_#"
+        ],
+        "icd-9 code": [
+            "2402.10940_3_claims_0_ICD-9_code",
+            "2402.10940_3_claims_1_ICD-9_code",
+            "2402.10940_3_claims_2_ICD-9_code",
+            "2402.10940_3_claims_3_ICD-9_code",
+            "2402.10940_3_claims_4_ICD-9_code",
+            "2402.10940_3_claims_5_ICD-9_code",
+            "2402.10940_3_claims_6_ICD-9_code",
+            "2402.10940_3_claims_7_ICD-9_code",
+            "2402.10940_3_claims_8_ICD-9_code",
+            "2402.10940_3_claims_9_ICD-9_code",
+            "2402.10940_2_claims_0_ICD-9_code",
+            "2402.10940_2_claims_1_ICD-9_code",
+            "2402.10940_2_claims_2_ICD-9_code",
+            "2402.10940_2_claims_3_ICD-9_code",
+            "2402.10940_2_claims_4_ICD-9_code",
+            "2402.10940_2_claims_5_ICD-9_code",
+            "2402.10940_2_claims_6_ICD-9_code",
+            "2402.10940_2_claims_7_ICD-9_code",
+            "2402.10940_2_claims_8_ICD-9_code",
+            "2402.10940_2_claims_9_ICD-9_code",
+            "2402.10940_4_claims_0_ICD-9_code",
+            "2402.10940_4_claims_1_ICD-9_code",
+            "2402.10940_4_claims_2_ICD-9_code",
+            "2402.10940_4_claims_3_ICD-9_code",
+            "2402.10940_4_claims_4_ICD-9_code",
+            "2402.10940_4_claims_5_ICD-9_code",
+            "2402.10940_4_claims_6_ICD-9_code",
+            "2402.10940_4_claims_7_ICD-9_code",
+            "2402.10940_4_claims_8_ICD-9_code",
+            "2402.10940_4_claims_9_ICD-9_code"
+        ],
+        "cases": [
+            "2402.10940_3_claims_0_Cases",
+            "2402.10940_3_claims_1_Cases",
+            "2402.10940_3_claims_2_Cases",
+            "2402.10940_3_claims_3_Cases",
+            "2402.10940_3_claims_4_Cases",
+            "2402.10940_3_claims_5_Cases",
+            "2402.10940_3_claims_6_Cases",
+            "2402.10940_3_claims_7_Cases",
+            "2402.10940_3_claims_8_Cases",
+            "2402.10940_3_claims_9_Cases",
+            "2402.10940_2_claims_0_Cases",
+            "2402.10940_2_claims_1_Cases",
+            "2402.10940_2_claims_2_Cases",
+            "2402.10940_2_claims_3_Cases",
+            "2402.10940_2_claims_4_Cases",
+            "2402.10940_2_claims_5_Cases",
+            "2402.10940_2_claims_6_Cases",
+            "2402.10940_2_claims_7_Cases",
+            "2402.10940_2_claims_8_Cases",
+            "2402.10940_2_claims_9_Cases",
+            "2402.10940_4_claims_0_Cases",
+            "2402.10940_4_claims_1_Cases",
+            "2402.10940_4_claims_2_Cases",
+            "2402.10940_4_claims_3_Cases",
+            "2402.10940_4_claims_4_Cases",
+            "2402.10940_4_claims_5_Cases",
+            "2402.10940_4_claims_6_Cases",
+            "2402.10940_4_claims_7_Cases",
+            "2402.10940_4_claims_8_Cases",
+            "2402.10940_4_claims_9_Cases"
+        ],
+        "frequency": [
+            "2402.10940_3_claims_0_Frequency",
+            "2402.10940_3_claims_1_Frequency",
+            "2402.10940_3_claims_2_Frequency",
+            "2402.10940_3_claims_3_Frequency",
+            "2402.10940_3_claims_4_Frequency",
+            "2402.10940_3_claims_5_Frequency",
+            "2402.10940_3_claims_6_Frequency",
+            "2402.10940_3_claims_7_Frequency",
+            "2402.10940_3_claims_8_Frequency",
+            "2402.10940_3_claims_9_Frequency",
+            "2402.10940_2_claims_0_Frequency",
+            "2402.10940_2_claims_1_Frequency",
+            "2402.10940_2_claims_2_Frequency",
+            "2402.10940_2_claims_3_Frequency",
+            "2402.10940_2_claims_4_Frequency",
+            "2402.10940_2_claims_5_Frequency",
+            "2402.10940_2_claims_6_Frequency",
+            "2402.10940_2_claims_7_Frequency",
+            "2402.10940_2_claims_8_Frequency",
+            "2402.10940_2_claims_9_Frequency",
+            "2402.10940_4_claims_0_Frequency",
+            "2402.10940_4_claims_1_Frequency",
+            "2402.10940_4_claims_2_Frequency",
+            "2402.10940_4_claims_3_Frequency",
+            "2402.10940_4_claims_4_Frequency",
+            "2402.10940_4_claims_5_Frequency",
+            "2402.10940_4_claims_6_Frequency",
+            "2402.10940_4_claims_7_Frequency",
+            "2402.10940_4_claims_8_Frequency",
+            "2402.10940_4_claims_9_Frequency"
+        ],
+        "entropy after receiving": [
+            "2402.10940_3_claims_0_Entropy_After_Receiving",
+            "2402.10940_3_claims_1_Entropy_After_Receiving",
+            "2402.10940_3_claims_2_Entropy_After_Receiving",
+            "2402.10940_3_claims_3_Entropy_After_Receiving",
+            "2402.10940_3_claims_4_Entropy_After_Receiving",
+            "2402.10940_3_claims_5_Entropy_After_Receiving",
+            "2402.10940_3_claims_6_Entropy_After_Receiving",
+            "2402.10940_3_claims_7_Entropy_After_Receiving",
+            "2402.10940_3_claims_8_Entropy_After_Receiving",
+            "2402.10940_3_claims_9_Entropy_After_Receiving",
+            "2402.10940_2_claims_0_Entropy_After_Receiving",
+            "2402.10940_2_claims_1_Entropy_After_Receiving",
+            "2402.10940_2_claims_2_Entropy_After_Receiving",
+            "2402.10940_2_claims_3_Entropy_After_Receiving",
+            "2402.10940_2_claims_4_Entropy_After_Receiving",
+            "2402.10940_2_claims_5_Entropy_After_Receiving",
+            "2402.10940_2_claims_6_Entropy_After_Receiving",
+            "2402.10940_2_claims_7_Entropy_After_Receiving",
+            "2402.10940_2_claims_8_Entropy_After_Receiving",
+            "2402.10940_2_claims_9_Entropy_After_Receiving",
+            "2402.10940_4_claims_0_Entropy_After_Receiving",
+            "2402.10940_4_claims_1_Entropy_After_Receiving",
+            "2402.10940_4_claims_2_Entropy_After_Receiving",
+            "2402.10940_4_claims_3_Entropy_After_Receiving",
+            "2402.10940_4_claims_4_Entropy_After_Receiving",
+            "2402.10940_4_claims_5_Entropy_After_Receiving",
+            "2402.10940_4_claims_6_Entropy_After_Receiving",
+            "2402.10940_4_claims_7_Entropy_After_Receiving",
+            "2402.10940_4_claims_8_Entropy_After_Receiving",
+            "2402.10940_4_claims_9_Entropy_After_Receiving"
+        ],
+        "the weight of the delay loss": [
+            "2312.14488_2_claims_0_the_weight_of_the_delay_loss",
+            "2312.14488_2_claims_1_the_weight_of_the_delay_loss",
+            "2312.14488_2_claims_2_the_weight_of_the_delay_loss",
+            "2312.14488_2_claims_3_the_weight_of_the_delay_loss",
+            "2312.14488_2_claims_4_the_weight_of_the_delay_loss",
+            "2312.14488_2_claims_5_the_weight_of_the_delay_loss",
+            "2312.14488_2_claims_6_the_weight_of_the_delay_loss",
+            "2312.14488_2_claims_7_the_weight_of_the_delay_loss",
+            "2312.14488_2_claims_8_the_weight_of_the_delay_loss",
+            "2312.14488_2_claims_9_the_weight_of_the_delay_loss"
+        ],
+        "translation quality": [
+            "2407.06990_2_claims_0_Translation_Quality",
+            "2407.06990_2_claims_1_Translation_Quality",
+            "2407.06990_2_claims_6_Translation_Quality",
+            "2407.06990_2_claims_7_Translation_Quality",
+            "2407.06990_3_claims_0_Translation_Quality",
+            "2407.06990_3_claims_1_Translation_Quality",
+            "2407.06990_3_claims_5_Translation_Quality",
+            "2407.06990_3_claims_6_Translation_Quality"
+        ],
+        "user effort": [
+            "2407.06990_2_claims_2_User_Effort",
+            "2407.06990_2_claims_3_User_Effort",
+            "2407.06990_2_claims_4_User_Effort",
+            "2407.06990_2_claims_8_User_Effort",
+            "2407.06990_2_claims_9_User_Effort",
+            "2407.06990_2_claims_10_User_Effort",
+            "2407.06990_3_claims_2_User_Effort",
+            "2407.06990_3_claims_3_User_Effort",
+            "2407.06990_3_claims_7_User_Effort",
+            "2407.06990_3_claims_8_User_Effort"
+        ],
+        "spec name": [
+            "2407.06990_2_claims_5_Spec_name",
+            "2407.06990_2_claims_11_Spec_name",
+            "2410.06338_2_claims_2_Spec_name",
+            "2410.06338_2_claims_3_Spec_name",
+            "2410.06338_2_claims_4_Spec_name",
+            "2410.06338_2_claims_7_Spec_name",
+            "2410.06338_2_claims_8_Spec_name",
+            "2410.06338_2_claims_9_Spec_name",
+            "2410.06338_2_claims_12_Spec_name",
+            "2410.06338_2_claims_13_Spec_name",
+            "2410.06338_2_claims_14_Spec_name",
+            "2410.06338_2_claims_17_Spec_name",
+            "2410.06338_2_claims_18_Spec_name",
+            "2410.06338_2_claims_19_Spec_name",
+            "2410.06338_2_claims_22_Spec_name",
+            "2410.06338_2_claims_23_Spec_name",
+            "2410.06338_2_claims_24_Spec_name",
+            "2410.06338_4_claims_1_SPEC_NAME",
+            "2410.06338_4_claims_3_SPEC_NAME",
+            "2410.06338_4_claims_5_SPEC_NAME",
+            "2410.06338_4_claims_7_SPEC_NAME",
+            "2410.06338_4_claims_9_SPEC_NAME",
+            "2410.07830_1_claims_1_Spec_name",
+            "2410.07830_1_claims_2_Spec_name",
+            "2410.07830_1_claims_3_Spec_name",
+            "2410.07830_1_claims_4_Spec_name",
+            "2410.07830_1_claims_5_Spec_name",
+            "2410.07830_1_claims_6_Spec_name",
+            "2410.07830_1_claims_7_Spec_name",
+            "2410.07830_1_claims_9_Spec_name",
+            "2410.07830_1_claims_10_Spec_name",
+            "2410.07830_1_claims_11_Spec_name",
+            "2410.07830_1_claims_12_Spec_name",
+            "2410.07830_1_claims_13_Spec_name",
+            "2410.07830_1_claims_14_Spec_name",
+            "2410.07830_1_claims_15_Spec_name",
+            "2410.07830_1_claims_17_Spec_name",
+            "2410.07830_1_claims_18_Spec_name",
+            "2410.07830_1_claims_19_Spec_name",
+            "2410.07830_1_claims_20_Spec_name",
+            "2410.07830_1_claims_21_Spec_name",
+            "2410.07830_1_claims_22_Spec_name",
+            "2410.07830_1_claims_23_Spec_name",
+            "2410.07830_1_claims_25_Spec_name",
+            "2410.07830_1_claims_26_Spec_name",
+            "2410.07830_1_claims_27_Spec_name",
+            "2410.07830_1_claims_28_Spec_name",
+            "2410.07830_1_claims_29_Spec_name",
+            "2410.07830_1_claims_30_Spec_name",
+            "2410.07830_1_claims_31_Spec_name",
+            "2410.07830_1_claims_33_Spec_name",
+            "2410.07830_1_claims_34_Spec_name",
+            "2410.07830_1_claims_35_Spec_name",
+            "2410.07830_1_claims_36_Spec_name",
+            "2410.07830_1_claims_37_Spec_name",
+            "2410.07830_1_claims_38_Spec_name",
+            "2410.07830_1_claims_39_Spec_name",
+            "2410.07830_1_claims_41_Spec_name",
+            "2410.07830_1_claims_42_Spec_name",
+            "2410.07830_1_claims_43_Spec_name",
+            "2410.07830_1_claims_44_Spec_name",
+            "2410.07830_1_claims_45_Spec_name",
+            "2410.07830_1_claims_46_Spec_name",
+            "2410.07830_1_claims_47_Spec_name",
+            "2407.06990_3_claims_4_Spec_name",
+            "2407.06990_3_claims_9_Spec_name",
+            "2410.07830_2_claims_0_SPEC_NAME",
+            "2410.07830_2_claims_1_SPEC_NAME",
+            "2410.07830_2_claims_2_SPEC_NAME",
+            "2410.07830_2_claims_3_SPEC_NAME",
+            "2410.07830_2_claims_4_SPEC_NAME",
+            "2410.07830_2_claims_5_SPEC_NAME",
+            "2410.07830_2_claims_6_SPEC_NAME",
+            "2410.07830_2_claims_7_SPEC_NAME",
+            "2410.07830_2_claims_8_SPEC_NAME",
+            "2410.07830_2_claims_9_SPEC_NAME",
+            "2410.07830_2_claims_10_SPEC_NAME",
+            "2410.07830_2_claims_11_SPEC_NAME",
+            "2410.07830_2_claims_12_SPEC_NAME",
+            "2410.07830_2_claims_13_SPEC_NAME",
+            "2410.07830_2_claims_14_SPEC_NAME",
+            "2410.07830_2_claims_15_SPEC_NAME",
+            "2410.07830_2_claims_16_SPEC_NAME",
+            "2410.07830_2_claims_17_SPEC_NAME",
+            "2410.07830_2_claims_18_SPEC_NAME",
+            "2410.07830_2_claims_19_SPEC_NAME"
+        ],
+        "task-1: translating clinical cases": [
+            "2312.07250_2_claims_0_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_1_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_2_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_3_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_4_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_5_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_6_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_7_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_8_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_9_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_10_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_11_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_12_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_13_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_14_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_15_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_16_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_17_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_18_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_19_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_20_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_21_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_22_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_23_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_24_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_25_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_26_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_27_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_28_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_29_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_30_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_31_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_32_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_33_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_34_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_35_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_36_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_37_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_38_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_39_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_40_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_41_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_42_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_43_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_44_Task-1:_Translating_Clinical_Cases"
+        ],
+        "models, gpt-3.5-turbo": [
+            "2410.07830_3_claims_0_Models,_GPT-3.5-turbo",
+            "2410.07830_3_claims_1_Models,_GPT-3.5-turbo",
+            "2410.07830_3_claims_2_Models,_GPT-3.5-turbo",
+            "2410.07830_3_claims_3_Models,_GPT-3.5-turbo",
+            "2410.07830_3_claims_4_Models,_GPT-3.5-turbo",
+            "2410.07830_3_claims_5_Models,_GPT-3.5-turbo",
+            "2410.07830_3_claims_6_Models,_GPT-3.5-turbo",
+            "2410.07830_3_claims_7_Models,_GPT-3.5-turbo"
+        ],
+        "spbleu scores of nusamt - 7b": [
+            "2410.07830_3_claims_0_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_1_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_2_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_3_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_4_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_5_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_6_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_7_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_8_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_9_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_10_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_11_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_12_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_13_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_14_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_15_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_16_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_17_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_18_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_19_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_20_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_21_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_22_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_23_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_24_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_25_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_26_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_27_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_28_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_29_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_30_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_31_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_32_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_33_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_34_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_35_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_36_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_37_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_38_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_39_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_40_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_41_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_42_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_43_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_44_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_45_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_46_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_47_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_48_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_49_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_50_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_51_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_52_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_53_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_54_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_55_spbleu_scores_of_nusamt_-_7b"
+        ],
+        "models, gpt-4o": [
+            "2410.07830_3_claims_8_Models,_GPT-4o",
+            "2410.07830_3_claims_9_Models,_GPT-4o",
+            "2410.07830_3_claims_10_Models,_GPT-4o",
+            "2410.07830_3_claims_11_Models,_GPT-4o",
+            "2410.07830_3_claims_12_Models,_GPT-4o",
+            "2410.07830_3_claims_13_Models,_GPT-4o",
+            "2410.07830_3_claims_14_Models,_GPT-4o",
+            "2410.07830_3_claims_15_Models,_GPT-4o"
+        ],
+        "models, gpt-4": [
+            "2410.07830_3_claims_16_Models,_GPT-4",
+            "2410.07830_3_claims_17_Models,_GPT-4",
+            "2410.07830_3_claims_18_Models,_GPT-4",
+            "2410.07830_3_claims_19_Models,_GPT-4",
+            "2410.07830_3_claims_20_Models,_GPT-4",
+            "2410.07830_3_claims_21_Models,_GPT-4",
+            "2410.07830_3_claims_22_Models,_GPT-4",
+            "2410.07830_3_claims_23_Models,_GPT-4"
+        ],
+        "models": [
+            "2410.07830_3_claims_24_Models",
+            "2410.07830_3_claims_25_Models",
+            "2410.07830_3_claims_26_Models",
+            "2410.07830_3_claims_27_Models",
+            "2410.07830_3_claims_28_Models",
+            "2410.07830_3_claims_29_Models",
+            "2410.07830_3_claims_30_Models",
+            "2410.07830_3_claims_31_Models",
+            "2410.07830_3_claims_32_Models",
+            "2410.07830_3_claims_33_Models",
+            "2410.07830_3_claims_34_Models",
+            "2410.07830_3_claims_35_Models",
+            "2410.07830_3_claims_36_Models",
+            "2410.07830_3_claims_37_Models",
+            "2410.07830_3_claims_38_Models",
+            "2410.07830_3_claims_39_Models",
+            "2410.07830_3_claims_40_Models",
+            "2410.07830_3_claims_41_Models",
+            "2410.07830_3_claims_42_Models",
+            "2410.07830_3_claims_43_Models",
+            "2410.07830_3_claims_44_Models",
+            "2410.07830_3_claims_45_Models",
+            "2410.07830_3_claims_46_Models",
+            "2410.07830_3_claims_47_Models",
+            "2410.07830_3_claims_48_Models",
+            "2410.07830_3_claims_49_Models",
+            "2410.07830_3_claims_50_Models",
+            "2410.07830_3_claims_51_Models",
+            "2410.07830_3_claims_52_Models",
+            "2410.07830_3_claims_53_Models",
+            "2410.07830_3_claims_54_Models",
+            "2410.07830_3_claims_55_Models",
+            "2410.07830_2_claims_0_Models",
+            "2410.07830_2_claims_1_Models",
+            "2410.07830_2_claims_2_Models",
+            "2410.07830_2_claims_3_Models",
+            "2410.07830_2_claims_4_Models",
+            "2410.07830_2_claims_5_Models",
+            "2410.07830_2_claims_6_Models",
+            "2410.07830_2_claims_7_Models",
+            "2410.07830_2_claims_8_Models",
+            "2410.07830_2_claims_9_Models",
+            "2410.07830_2_claims_10_Models",
+            "2410.07830_2_claims_11_Models",
+            "2410.07830_2_claims_12_Models",
+            "2410.07830_2_claims_13_Models",
+            "2410.07830_2_claims_14_Models",
+            "2410.07830_2_claims_15_Models",
+            "2410.07830_2_claims_16_Models",
+            "2410.07830_2_claims_17_Models",
+            "2410.07830_2_claims_18_Models",
+            "2410.07830_2_claims_19_Models"
+        ],
+        "methods": [
+            "2410.06338_2_claims_0_Methods",
+            "2410.06338_2_claims_1_Methods",
+            "2410.06338_2_claims_5_Methods",
+            "2410.06338_2_claims_6_Methods",
+            "2410.06338_2_claims_10_Methods",
+            "2410.06338_2_claims_11_Methods",
+            "2410.06338_2_claims_15_Methods",
+            "2410.06338_2_claims_16_Methods",
+            "2410.06338_2_claims_20_Methods",
+            "2410.06338_2_claims_21_Methods",
+            "2410.06338_4_claims_0_Methods",
+            "2410.06338_4_claims_1_Methods",
+            "2410.06338_4_claims_2_Methods",
+            "2410.06338_4_claims_3_Methods",
+            "2410.06338_4_claims_4_Methods",
+            "2410.06338_4_claims_5_Methods",
+            "2410.06338_4_claims_6_Methods",
+            "2410.06338_4_claims_7_Methods",
+            "2410.06338_4_claims_8_Methods",
+            "2410.06338_4_claims_9_Methods",
+            "2410.06338_3_claims_0_Methods",
+            "2410.06338_3_claims_1_Methods",
+            "2410.06338_3_claims_5_Methods",
+            "2410.06338_3_claims_6_Methods",
+            "2410.06338_3_claims_10_Methods",
+            "2410.06338_3_claims_11_Methods",
+            "2410.06338_3_claims_15_Methods",
+            "2410.06338_3_claims_16_Methods",
+            "2410.06338_3_claims_20_Methods",
+            "2410.06338_3_claims_21_Methods",
+            "2410.06338_3_claims_25_Methods",
+            "2410.06338_3_claims_26_Methods",
+            "2410.06338_3_claims_30_Methods",
+            "2410.06338_3_claims_31_Methods",
+            "2410.06338_3_claims_35_Methods",
+            "2410.06338_3_claims_36_Methods"
+        ],
+        "continued fine - tuned": [
+            "2410.06338_4_claims_0_continued_fine_-_tuned",
+            "2410.06338_4_claims_2_continued_fine_-_tuned",
+            "2410.06338_4_claims_4_continued_fine_-_tuned",
+            "2410.06338_4_claims_6_continued_fine_-_tuned",
+            "2410.06338_4_claims_8_continued_fine_-_tuned"
+        ],
+        "dataset": [
+            "2410.07830_1_claims_0_Dataset",
+            "2410.07830_1_claims_8_Dataset",
+            "2410.07830_1_claims_16_Dataset",
+            "2410.07830_1_claims_24_Dataset",
+            "2410.07830_1_claims_32_Dataset",
+            "2410.07830_1_claims_40_Dataset",
+            "2311.14465_1_claims_0_Dataset",
+            "2311.14465_1_claims_1_Dataset",
+            "2311.14465_1_claims_2_Dataset",
+            "2311.14465_3_claims_0_Dataset",
+            "2311.14465_3_claims_1_Dataset",
+            "2311.14465_3_claims_2_Dataset",
+            "2311.14465_3_claims_3_Dataset",
+            "2311.14465_3_claims_4_Dataset",
+            "2311.14465_3_claims_5_Dataset",
+            "2311.14465_3_claims_6_Dataset",
+            "2311.14465_3_claims_7_Dataset",
+            "2311.14465_3_claims_8_Dataset",
+            "2311.14465_3_claims_9_Dataset",
+            "2311.14465_3_claims_10_Dataset",
+            "2311.14465_3_claims_11_Dataset",
+            "2311.14465_3_claims_12_Dataset",
+            "2311.14465_3_claims_13_Dataset",
+            "2311.14465_3_claims_14_Dataset",
+            "2311.14465_3_claims_15_Dataset",
+            "2311.14465_3_claims_16_Dataset",
+            "2311.14465_3_claims_17_Dataset",
+            "2311.14465_3_claims_18_Dataset",
+            "2311.14465_3_claims_19_Dataset",
+            "2311.14465_3_claims_20_Dataset",
+            "2311.14465_2_claims_0_Dataset",
+            "2311.14465_2_claims_1_Dataset",
+            "2311.14465_2_claims_2_Dataset",
+            "2311.14465_2_claims_3_Dataset",
+            "2311.14465_2_claims_4_Dataset",
+            "2311.14465_2_claims_5_Dataset",
+            "2311.14465_2_claims_6_Dataset",
+            "2311.14465_2_claims_7_Dataset",
+            "2311.14465_2_claims_8_Dataset",
+            "2311.14465_2_claims_9_Dataset",
+            "2311.14465_2_claims_10_Dataset",
+            "2311.14465_2_claims_11_Dataset",
+            "2311.14465_2_claims_12_Dataset",
+            "2311.14465_2_claims_13_Dataset",
+            "2311.14465_2_claims_14_Dataset",
+            "2311.14465_2_claims_15_Dataset",
+            "2311.14465_2_claims_16_Dataset",
+            "2311.14465_2_claims_17_Dataset",
+            "2311.14465_2_claims_18_Dataset",
+            "2311.14465_2_claims_19_Dataset",
+            "2311.14465_2_claims_20_Dataset"
+        ],
+        "zero-shot learning": [
+            "2410.06338_3_claims_2_Zero-shot_Learning",
+            "2410.06338_3_claims_3_Zero-shot_Learning",
+            "2410.06338_3_claims_7_Zero-shot_Learning",
+            "2410.06338_3_claims_8_Zero-shot_Learning",
+            "2410.06338_3_claims_12_Zero-shot_Learning",
+            "2410.06338_3_claims_13_Zero-shot_Learning",
+            "2410.06338_3_claims_17_Zero-shot_Learning",
+            "2410.06338_3_claims_18_Zero-shot_Learning",
+            "2410.06338_3_claims_22_Zero-shot_Learning",
+            "2410.06338_3_claims_23_Zero-shot_Learning",
+            "2410.06338_3_claims_27_Zero-shot_Learning",
+            "2410.06338_3_claims_28_Zero-shot_Learning",
+            "2410.06338_3_claims_32_Zero-shot_Learning",
+            "2410.06338_3_claims_33_Zero-shot_Learning",
+            "2410.06338_3_claims_37_Zero-shot_Learning",
+            "2410.06338_3_claims_38_Zero-shot_Learning"
+        ],
+        "few-shot learning": [
+            "2410.06338_3_claims_4_Few-shot_Learning",
+            "2410.06338_3_claims_9_Few-shot_Learning",
+            "2410.06338_3_claims_14_Few-shot_Learning",
+            "2410.06338_3_claims_19_Few-shot_Learning",
+            "2410.06338_3_claims_24_Few-shot_Learning",
+            "2410.06338_3_claims_29_Few-shot_Learning",
+            "2410.06338_3_claims_34_Few-shot_Learning",
+            "2410.06338_3_claims_39_Few-shot_Learning"
+        ],
+        "lang. pair": [
+            "2311.14465_1_claims_0_Lang._Pair",
+            "2311.14465_1_claims_1_Lang._Pair",
+            "2311.14465_1_claims_2_Lang._Pair"
+        ],
+        "# trn.+vld.": [
+            "2311.14465_1_claims_0_#_Trn.+Vld.",
+            "2311.14465_1_claims_1_#_Trn.+Vld.",
+            "2311.14465_1_claims_2_#_Trn.+Vld."
+        ],
+        "# test": [
+            "2311.14465_1_claims_0_#_Test",
+            "2311.14465_1_claims_1_#_Test",
+            "2311.14465_1_claims_2_#_Test"
+        ],
+        "score": [
+            "2408.11853_1_claims_0_Score",
+            "2408.11853_1_claims_1_Score",
+            "2408.11853_1_claims_2_Score",
+            "2408.11853_1_claims_5_Score",
+            "2408.11853_1_claims_6_Score",
+            "2408.11853_1_claims_7_Score",
+            "2408.11853_1_claims_10_Score",
+            "2408.11853_1_claims_11_Score",
+            "2408.11853_1_claims_12_Score",
+            "2408.11853_1_claims_15_Score",
+            "2408.11853_1_claims_16_Score",
+            "2408.11853_1_claims_17_Score",
+            "2408.11853_1_claims_20_Score",
+            "2408.11853_1_claims_21_Score",
+            "2408.11853_1_claims_22_Score",
+            "2408.11853_1_claims_25_Score",
+            "2408.11853_1_claims_26_Score",
+            "2408.11853_1_claims_27_Score"
+        ],
+        "error": [
+            "2408.11853_1_claims_3_Error",
+            "2408.11853_1_claims_4_Error",
+            "2408.11853_1_claims_8_Error",
+            "2408.11853_1_claims_9_Error",
+            "2408.11853_1_claims_13_Error",
+            "2408.11853_1_claims_14_Error",
+            "2408.11853_1_claims_18_Error",
+            "2408.11853_1_claims_19_Error",
+            "2408.11853_1_claims_23_Error",
+            "2408.11853_1_claims_24_Error",
+            "2408.11853_1_claims_28_Error",
+            "2408.11853_1_claims_29_Error"
+        ],
+        "hyperparameter": [
+            "2409.00071_4_claims_0_Hyperparameter",
+            "2409.00071_4_claims_1_Hyperparameter",
+            "2409.00071_4_claims_2_Hyperparameter",
+            "2409.00071_4_claims_3_Hyperparameter",
+            "2409.00071_4_claims_4_Hyperparameter",
+            "2409.00071_4_claims_5_Hyperparameter",
+            "2409.00071_4_claims_6_Hyperparameter",
+            "2409.00071_4_claims_7_Hyperparameter",
+            "2409.00071_4_claims_8_Hyperparameter",
+            "2409.00071_4_claims_9_Hyperparameter",
+            "2409.00071_4_claims_10_Hyperparameter",
+            "2409.00071_4_claims_11_Hyperparameter",
+            "2409.00071_4_claims_12_Hyperparameter",
+            "2409.00071_4_claims_13_Hyperparameter",
+            "2409.00071_4_claims_14_Hyperparameter",
+            "2409.00071_4_claims_15_Hyperparameter",
+            "2409.00071_4_claims_16_Hyperparameter",
+            "2409.00071_4_claims_17_Hyperparameter"
+        ],
+        "value": [
+            "2409.00071_4_claims_0_Value",
+            "2409.00071_4_claims_1_Value",
+            "2409.00071_4_claims_2_Value",
+            "2409.00071_4_claims_3_Value",
+            "2409.00071_4_claims_4_Value",
+            "2409.00071_4_claims_5_Value",
+            "2409.00071_4_claims_6_Value",
+            "2409.00071_4_claims_7_Value",
+            "2409.00071_4_claims_8_Value",
+            "2409.00071_4_claims_9_Value",
+            "2409.00071_4_claims_10_Value",
+            "2409.00071_4_claims_11_Value",
+            "2409.00071_4_claims_12_Value",
+            "2409.00071_4_claims_13_Value",
+            "2409.00071_4_claims_14_Value",
+            "2409.00071_4_claims_15_Value",
+            "2409.00071_4_claims_16_Value",
+            "2409.00071_4_claims_17_Value"
+        ],
+        "d": [
+            "2409.15051_4_claims_0_D",
+            "2409.15051_4_claims_1_D",
+            "2409.15051_4_claims_2_D",
+            "2409.15051_4_claims_3_D",
+            "2409.15051_4_claims_4_D",
+            "2409.15051_4_claims_5_D",
+            "2409.15051_4_claims_6_D",
+            "2409.15051_4_claims_7_D",
+            "2409.15051_4_claims_8_D",
+            "2409.15051_4_claims_9_D",
+            "2409.15051_4_claims_10_D",
+            "2409.15051_4_claims_11_D",
+            "2409.15051_4_claims_12_D",
+            "2409.15051_4_claims_13_D",
+            "2409.15051_4_claims_14_D",
+            "2409.15051_4_claims_15_D",
+            "2409.15051_4_claims_16_D",
+            "2409.15051_4_claims_17_D",
+            "2409.15051_4_claims_18_D",
+            "2409.15051_4_claims_19_D"
+        ],
+        "bleu": [
+            "2409.15051_4_claims_0_BLEU",
+            "2409.15051_4_claims_1_BLEU",
+            "2409.15051_4_claims_2_BLEU",
+            "2409.15051_4_claims_3_BLEU",
+            "2409.15051_4_claims_4_BLEU",
+            "2409.15051_4_claims_5_BLEU",
+            "2409.15051_4_claims_6_BLEU",
+            "2409.15051_4_claims_7_BLEU",
+            "2409.15051_4_claims_8_BLEU",
+            "2409.15051_4_claims_9_BLEU",
+            "2409.15051_4_claims_10_BLEU",
+            "2409.15051_4_claims_11_BLEU",
+            "2409.15051_4_claims_12_BLEU",
+            "2409.15051_4_claims_13_BLEU",
+            "2409.15051_4_claims_14_BLEU",
+            "2409.15051_4_claims_15_BLEU",
+            "2409.15051_4_claims_16_BLEU",
+            "2409.15051_4_claims_17_BLEU",
+            "2409.15051_4_claims_18_BLEU",
+            "2409.15051_4_claims_19_BLEU"
+        ],
+        "comet": [
+            "2409.15051_4_claims_0_COMET",
+            "2409.15051_4_claims_1_COMET",
+            "2409.15051_4_claims_2_COMET",
+            "2409.15051_4_claims_3_COMET",
+            "2409.15051_4_claims_4_COMET",
+            "2409.15051_4_claims_5_COMET",
+            "2409.15051_4_claims_6_COMET",
+            "2409.15051_4_claims_7_COMET",
+            "2409.15051_4_claims_8_COMET",
+            "2409.15051_4_claims_9_COMET",
+            "2409.15051_4_claims_10_COMET",
+            "2409.15051_4_claims_11_COMET",
+            "2409.15051_4_claims_12_COMET",
+            "2409.15051_4_claims_13_COMET",
+            "2409.15051_4_claims_14_COMET",
+            "2409.15051_4_claims_15_COMET",
+            "2409.15051_4_claims_16_COMET",
+            "2409.15051_4_claims_17_COMET",
+            "2409.15051_4_claims_18_COMET",
+            "2409.15051_4_claims_19_COMET"
+        ],
+        "cometkiwi": [
+            "2409.15051_4_claims_0_CometKiwi",
+            "2409.15051_4_claims_1_CometKiwi",
+            "2409.15051_4_claims_2_CometKiwi",
+            "2409.15051_4_claims_3_CometKiwi",
+            "2409.15051_4_claims_4_CometKiwi",
+            "2409.15051_4_claims_5_CometKiwi",
+            "2409.15051_4_claims_6_CometKiwi",
+            "2409.15051_4_claims_7_CometKiwi",
+            "2409.15051_4_claims_8_CometKiwi",
+            "2409.15051_4_claims_9_CometKiwi",
+            "2409.15051_4_claims_10_CometKiwi",
+            "2409.15051_4_claims_11_CometKiwi",
+            "2409.15051_4_claims_12_CometKiwi",
+            "2409.15051_4_claims_13_CometKiwi",
+            "2409.15051_4_claims_14_CometKiwi",
+            "2409.15051_4_claims_15_CometKiwi",
+            "2409.15051_4_claims_16_CometKiwi",
+            "2409.15051_4_claims_17_CometKiwi",
+            "2409.15051_4_claims_18_CometKiwi",
+            "2409.15051_4_claims_19_CometKiwi"
+        ],
+        "without <eos>": [
+            "2409.15051_2_claims_0_without_<eos>",
+            "2409.15051_2_claims_1_without_<eos>",
+            "2409.15051_2_claims_2_without_<eos>"
+        ],
+        "with <eos>": [
+            "2409.15051_2_claims_0_with_<eos>",
+            "2409.15051_2_claims_1_with_<eos>",
+            "2409.15051_2_claims_2_with_<eos>"
+        ],
+        "mplms": [
+            "2312.07250_3_claims_0_MPLMs",
+            "2312.07250_3_claims_6_MPLMs",
+            "2312.07250_3_claims_12_MPLMs"
+        ],
+        "auto. metrics": [
+            "2312.07250_3_claims_1_Auto._Metrics",
+            "2312.07250_3_claims_2_Auto._Metrics",
+            "2312.07250_3_claims_7_Auto._Metrics",
+            "2312.07250_3_claims_8_Auto._Metrics",
+            "2312.07250_3_claims_13_Auto._Metrics",
+            "2312.07250_3_claims_14_Auto._Metrics"
+        ],
+        "average": [
+            "2312.07250_3_claims_3_Average",
+            "2312.07250_3_claims_4_Average",
+            "2312.07250_3_claims_9_Average",
+            "2312.07250_3_claims_10_Average",
+            "2312.07250_3_claims_15_Average",
+            "2312.07250_3_claims_16_Average"
+        ],
+        "diff. in scores": [
+            "2312.07250_3_claims_5_Diff._in_Scores",
+            "2312.07250_3_claims_11_Diff._in_Scores",
+            "2312.07250_3_claims_17_Diff._in_Scores"
+        ],
+        "ablation experiments on the model with a delay loss weight of 0. 1": [
+            "2312.14488_4_claims_0_ablation_experiments_on_the_model_with_a_delay_loss_weight_of_0._1",
+            "2312.14488_4_claims_1_ablation_experiments_on_the_model_with_a_delay_loss_weight_of_0._1",
+            "2312.14488_4_claims_2_ablation_experiments_on_the_model_with_a_delay_loss_weight_of_0._1",
+            "2312.14488_4_claims_3_ablation_experiments_on_the_model_with_a_delay_loss_weight_of_0._1",
+            "2312.14488_4_claims_4_ablation_experiments_on_the_model_with_a_delay_loss_weight_of_0._1",
+            "2312.14488_4_claims_5_ablation_experiments_on_the_model_with_a_delay_loss_weight_of_0._1",
+            "2312.14488_4_claims_6_ablation_experiments_on_the_model_with_a_delay_loss_weight_of_0._1",
+            "2312.14488_4_claims_7_ablation_experiments_on_the_model_with_a_delay_loss_weight_of_0._1"
+        ],
+        "attention-based seq2seq diagnosis predictor": [
+            "2402.10940_1_claims_0_Attention-based\n\nseq2seq\n\nDiagnosis_Predictor",
+            "2402.10940_1_claims_1_Attention-based\n\nseq2seq\n\nDiagnosis_Predictor",
+            "2402.10940_1_claims_2_Attention-based\n\nseq2seq\n\nDiagnosis_Predictor",
+            "2402.10940_1_claims_3_Attention-based\n\nseq2seq\n\nDiagnosis_Predictor",
+            "2402.10940_1_claims_4_Attention-based\n\nseq2seq\n\nDiagnosis_Predictor",
+            "2402.10940_1_claims_5_Attention-based\n\nseq2seq\n\nDiagnosis_Predictor"
+        ],
+        "f1-score": [
+            "2402.10940_1_claims_0_F1-score",
+            "2402.10940_1_claims_1_F1-score",
+            "2402.10940_1_claims_2_F1-score",
+            "2402.10940_1_claims_3_F1-score",
+            "2402.10940_1_claims_4_F1-score",
+            "2402.10940_1_claims_5_F1-score"
+        ],
+        "jaccard index": [
+            "2402.10940_1_claims_0_Jaccard\n\nIndex",
+            "2402.10940_1_claims_1_Jaccard\n\nIndex",
+            "2402.10940_1_claims_2_Jaccard\n\nIndex",
+            "2402.10940_1_claims_3_Jaccard\n\nIndex",
+            "2402.10940_1_claims_4_Jaccard\n\nIndex",
+            "2402.10940_1_claims_5_Jaccard\n\nIndex"
+        ],
+        "first-n-accuracy": [
+            "2402.10940_1_claims_0_First-N-Accuracy",
+            "2402.10940_1_claims_1_First-N-Accuracy",
+            "2402.10940_1_claims_2_First-N-Accuracy",
+            "2402.10940_1_claims_3_First-N-Accuracy",
+            "2402.10940_1_claims_4_First-N-Accuracy",
+            "2402.10940_1_claims_5_First-N-Accuracy"
+        ],
+        "flop per s.": [
+            "2409.15051_5_claims_0_FLOP_per_s.",
+            "2409.15051_5_claims_1_FLOP_per_s.",
+            "2409.15051_5_claims_2_FLOP_per_s.",
+            "2409.15051_5_claims_3_FLOP_per_s.",
+            "2409.15051_5_claims_4_FLOP_per_s."
+        ],
+        "samples per s.": [
+            "2409.15051_5_claims_0_Samples_per_s.",
+            "2409.15051_5_claims_1_Samples_per_s.",
+            "2409.15051_5_claims_2_Samples_per_s.",
+            "2409.15051_5_claims_3_Samples_per_s.",
+            "2409.15051_5_claims_4_Samples_per_s."
+        ],
+        "translation": [
+            "2409.19523_1_claims_0_translation",
+            "2409.19523_1_claims_1_translation",
+            "2409.19523_1_claims_2_translation",
+            "2409.19523_1_claims_3_translation",
+            "2409.19523_1_claims_4_translation",
+            "2409.19523_1_claims_5_translation",
+            "2409.19523_1_claims_6_translation",
+            "2409.19523_1_claims_7_translation",
+            "2409.19523_1_claims_8_translation",
+            "2409.19523_1_claims_9_translation",
+            "2409.19523_1_claims_10_translation",
+            "2409.19523_1_claims_11_translation",
+            "2409.19523_1_claims_12_translation",
+            "2409.19523_1_claims_13_translation",
+            "2409.19523_1_claims_14_translation",
+            "2409.19523_1_claims_15_translation"
+        ],
+        "\u03b5\ud835\udf00\\varepsilonitalic \u03b5": [
+            "2311.14465_3_claims_0_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_1_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_2_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_3_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_4_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_5_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_6_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_7_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_8_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_9_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_10_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_11_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_12_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_13_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_14_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_15_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_16_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_17_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_18_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_19_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_20_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_0_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_1_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_2_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_3_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_4_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_5_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_6_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_7_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_8_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_9_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_10_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_11_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_12_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_13_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_14_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_15_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_16_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_17_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_18_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_19_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_20_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5"
+        ],
+        "iteration method": [
+            "2311.14465_3_claims_0_Iteration_Method",
+            "2311.14465_3_claims_1_Iteration_Method",
+            "2311.14465_3_claims_2_Iteration_Method",
+            "2311.14465_3_claims_3_Iteration_Method",
+            "2311.14465_3_claims_4_Iteration_Method",
+            "2311.14465_3_claims_5_Iteration_Method",
+            "2311.14465_3_claims_6_Iteration_Method",
+            "2311.14465_3_claims_7_Iteration_Method",
+            "2311.14465_3_claims_8_Iteration_Method",
+            "2311.14465_3_claims_9_Iteration_Method",
+            "2311.14465_3_claims_10_Iteration_Method",
+            "2311.14465_3_claims_11_Iteration_Method",
+            "2311.14465_3_claims_12_Iteration_Method",
+            "2311.14465_3_claims_13_Iteration_Method",
+            "2311.14465_3_claims_14_Iteration_Method",
+            "2311.14465_3_claims_15_Iteration_Method",
+            "2311.14465_3_claims_16_Iteration_Method",
+            "2311.14465_3_claims_17_Iteration_Method",
+            "2311.14465_3_claims_18_Iteration_Method",
+            "2311.14465_3_claims_19_Iteration_Method",
+            "2311.14465_3_claims_20_Iteration_Method",
+            "2311.14465_2_claims_0_Iteration_Method",
+            "2311.14465_2_claims_1_Iteration_Method",
+            "2311.14465_2_claims_2_Iteration_Method",
+            "2311.14465_2_claims_3_Iteration_Method",
+            "2311.14465_2_claims_4_Iteration_Method",
+            "2311.14465_2_claims_5_Iteration_Method",
+            "2311.14465_2_claims_6_Iteration_Method",
+            "2311.14465_2_claims_7_Iteration_Method",
+            "2311.14465_2_claims_8_Iteration_Method",
+            "2311.14465_2_claims_9_Iteration_Method",
+            "2311.14465_2_claims_10_Iteration_Method",
+            "2311.14465_2_claims_11_Iteration_Method",
+            "2311.14465_2_claims_12_Iteration_Method",
+            "2311.14465_2_claims_13_Iteration_Method",
+            "2311.14465_2_claims_14_Iteration_Method",
+            "2311.14465_2_claims_15_Iteration_Method",
+            "2311.14465_2_claims_16_Iteration_Method",
+            "2311.14465_2_claims_17_Iteration_Method",
+            "2311.14465_2_claims_18_Iteration_Method",
+            "2311.14465_2_claims_19_Iteration_Method",
+            "2311.14465_2_claims_20_Iteration_Method"
+        ],
+        "test bleu": [
+            "2311.14465_3_claims_0_Test_BLEU",
+            "2311.14465_3_claims_1_Test_BLEU",
+            "2311.14465_3_claims_2_Test_BLEU",
+            "2311.14465_3_claims_3_Test_BLEU",
+            "2311.14465_3_claims_4_Test_BLEU",
+            "2311.14465_3_claims_5_Test_BLEU",
+            "2311.14465_3_claims_6_Test_BLEU",
+            "2311.14465_3_claims_7_Test_BLEU",
+            "2311.14465_3_claims_8_Test_BLEU",
+            "2311.14465_3_claims_9_Test_BLEU",
+            "2311.14465_3_claims_10_Test_BLEU",
+            "2311.14465_3_claims_11_Test_BLEU",
+            "2311.14465_3_claims_12_Test_BLEU",
+            "2311.14465_3_claims_13_Test_BLEU",
+            "2311.14465_3_claims_14_Test_BLEU",
+            "2311.14465_3_claims_15_Test_BLEU",
+            "2311.14465_3_claims_16_Test_BLEU",
+            "2311.14465_3_claims_17_Test_BLEU",
+            "2311.14465_3_claims_18_Test_BLEU",
+            "2311.14465_3_claims_19_Test_BLEU",
+            "2311.14465_3_claims_20_Test_BLEU"
+        ],
+        "test bertscore": [
+            "2311.14465_3_claims_0_Test_BERTScore",
+            "2311.14465_3_claims_1_Test_BERTScore",
+            "2311.14465_3_claims_2_Test_BERTScore",
+            "2311.14465_3_claims_3_Test_BERTScore",
+            "2311.14465_3_claims_4_Test_BERTScore",
+            "2311.14465_3_claims_5_Test_BERTScore",
+            "2311.14465_3_claims_6_Test_BERTScore",
+            "2311.14465_3_claims_7_Test_BERTScore",
+            "2311.14465_3_claims_8_Test_BERTScore",
+            "2311.14465_3_claims_9_Test_BERTScore",
+            "2311.14465_3_claims_10_Test_BERTScore",
+            "2311.14465_3_claims_11_Test_BERTScore",
+            "2311.14465_3_claims_12_Test_BERTScore",
+            "2311.14465_3_claims_13_Test_BERTScore",
+            "2311.14465_3_claims_14_Test_BERTScore",
+            "2311.14465_3_claims_15_Test_BERTScore",
+            "2311.14465_3_claims_16_Test_BERTScore",
+            "2311.14465_3_claims_17_Test_BERTScore",
+            "2311.14465_3_claims_18_Test_BERTScore",
+            "2311.14465_3_claims_19_Test_BERTScore",
+            "2311.14465_3_claims_20_Test_BERTScore"
+        ],
+        "the delay improvement performance": [
+            "2312.14488_1_claims_0_the_delay_improvement_performance",
+            "2312.14488_1_claims_1_the_delay_improvement_performance",
+            "2312.14488_1_claims_2_the_delay_improvement_performance",
+            "2312.14488_1_claims_3_the_delay_improvement_performance",
+            "2312.14488_1_claims_4_the_delay_improvement_performance",
+            "2312.14488_1_claims_5_the_delay_improvement_performance",
+            "2312.14488_1_claims_6_the_delay_improvement_performance",
+            "2312.14488_1_claims_7_the_delay_improvement_performance",
+            "2312.14488_1_claims_8_the_delay_improvement_performance",
+            "2312.14488_1_claims_9_the_delay_improvement_performance"
+        ],
+        "sample generated sentences": [
+            "2409.00071_1_claims_0_Sample_Generated_Sentences",
+            "2409.00071_1_claims_1_Sample_Generated_Sentences",
+            "2409.00071_1_claims_2_Sample_Generated_Sentences",
+            "2409.00071_1_claims_3_Sample_Generated_Sentences",
+            "2409.00071_1_claims_4_Sample_Generated_Sentences",
+            "2409.00071_1_claims_5_Sample_Generated_Sentences",
+            "2409.00071_1_claims_6_Sample_Generated_Sentences",
+            "2409.00071_1_claims_7_Sample_Generated_Sentences"
+        ],
+        "qualitative evaluation": [
+            "2409.00071_1_claims_0_Qualitative_Evaluation",
+            "2409.00071_1_claims_1_Qualitative_Evaluation",
+            "2409.00071_1_claims_2_Qualitative_Evaluation",
+            "2409.00071_1_claims_3_Qualitative_Evaluation",
+            "2409.00071_1_claims_4_Qualitative_Evaluation",
+            "2409.00071_1_claims_5_Qualitative_Evaluation",
+            "2409.00071_1_claims_6_Qualitative_Evaluation",
+            "2409.00071_1_claims_7_Qualitative_Evaluation"
+        ],
+        "60\u201369%": [
+            "2409.17939_3_claims_0_60\u201369%",
+            "2409.17939_3_claims_1_60\u201369%",
+            "2409.17939_3_claims_2_60\u201369%",
+            "2409.17939_3_claims_3_60\u201369%",
+            "2409.17939_3_claims_4_60\u201369%"
+        ],
+        "70\u201379%": [
+            "2409.17939_3_claims_0_70\u201379%",
+            "2409.17939_3_claims_1_70\u201379%",
+            "2409.17939_3_claims_2_70\u201379%",
+            "2409.17939_3_claims_3_70\u201379%",
+            "2409.17939_3_claims_4_70\u201379%"
+        ],
+        "80\u201389%": [
+            "2409.17939_3_claims_0_80\u201389%",
+            "2409.17939_3_claims_1_80\u201389%",
+            "2409.17939_3_claims_2_80\u201389%",
+            "2409.17939_3_claims_3_80\u201389%",
+            "2409.17939_3_claims_4_80\u201389%"
+        ],
+        "90\u2013100%": [
+            "2409.17939_3_claims_0_90\u2013100%",
+            "2409.17939_3_claims_1_90\u2013100%",
+            "2409.17939_3_claims_2_90\u2013100%",
+            "2409.17939_3_claims_3_90\u2013100%",
+            "2409.17939_3_claims_4_90\u2013100%"
+        ],
+        "pair": [
+            "2409.15051_1_claims_0_Pair",
+            "2409.15051_1_claims_2_Pair",
+            "2409.15051_1_claims_4_Pair",
+            "2409.15051_1_claims_6_Pair",
+            "2409.15051_1_claims_8_Pair",
+            "2409.15051_1_claims_10_Pair",
+            "2409.15051_1_claims_12_Pair",
+            "2409.15051_1_claims_14_Pair",
+            "2409.15051_1_claims_16_Pair",
+            "2409.15051_1_claims_18_Pair",
+            "2409.15051_1_claims_20_Pair",
+            "2409.15051_1_claims_22_Pair"
+        ],
+        "domain": [
+            "2409.15051_1_claims_0_Domain",
+            "2409.15051_1_claims_1_Domain",
+            "2409.15051_1_claims_2_Domain",
+            "2409.15051_1_claims_3_Domain",
+            "2409.15051_1_claims_4_Domain",
+            "2409.15051_1_claims_5_Domain",
+            "2409.15051_1_claims_6_Domain",
+            "2409.15051_1_claims_7_Domain",
+            "2409.15051_1_claims_8_Domain",
+            "2409.15051_1_claims_9_Domain",
+            "2409.15051_1_claims_10_Domain",
+            "2409.15051_1_claims_11_Domain",
+            "2409.15051_1_claims_12_Domain",
+            "2409.15051_1_claims_13_Domain",
+            "2409.15051_1_claims_14_Domain",
+            "2409.15051_1_claims_15_Domain",
+            "2409.15051_1_claims_16_Domain",
+            "2409.15051_1_claims_17_Domain",
+            "2409.15051_1_claims_18_Domain",
+            "2409.15051_1_claims_19_Domain",
+            "2409.15051_1_claims_20_Domain",
+            "2409.15051_1_claims_21_Domain",
+            "2409.15051_1_claims_22_Domain",
+            "2409.15051_1_claims_23_Domain",
+            "2409.15051_1_claims_24_Domain"
+        ],
+        "epoch time": [
+            "2311.14465_2_claims_0_Epoch_Time",
+            "2311.14465_2_claims_1_Epoch_Time",
+            "2311.14465_2_claims_2_Epoch_Time",
+            "2311.14465_2_claims_3_Epoch_Time",
+            "2311.14465_2_claims_4_Epoch_Time",
+            "2311.14465_2_claims_5_Epoch_Time",
+            "2311.14465_2_claims_6_Epoch_Time",
+            "2311.14465_2_claims_7_Epoch_Time",
+            "2311.14465_2_claims_8_Epoch_Time",
+            "2311.14465_2_claims_9_Epoch_Time",
+            "2311.14465_2_claims_10_Epoch_Time",
+            "2311.14465_2_claims_11_Epoch_Time",
+            "2311.14465_2_claims_12_Epoch_Time",
+            "2311.14465_2_claims_13_Epoch_Time",
+            "2311.14465_2_claims_14_Epoch_Time",
+            "2311.14465_2_claims_15_Epoch_Time",
+            "2311.14465_2_claims_16_Epoch_Time",
+            "2311.14465_2_claims_17_Epoch_Time",
+            "2311.14465_2_claims_18_Epoch_Time",
+            "2311.14465_2_claims_19_Epoch_Time",
+            "2311.14465_2_claims_20_Epoch_Time"
+        ],
+        "sets of weights, minor: 1111, major: 5555": [
+            "2410.06338_1_claims_0_Sets_of_Weights,_Minor:_1111,_Major:_5555",
+            "2410.06338_1_claims_2_Sets_of_Weights,_Minor:_1111,_Major:_5555",
+            "2410.06338_1_claims_3_Sets_of_Weights,_Minor:_1111,_Major:_5555"
+        ],
+        "ranking stability of severity weights": [
+            "2410.06338_1_claims_0_ranking_stability_of_severity_weights",
+            "2410.06338_1_claims_1_ranking_stability_of_severity_weights",
+            "2410.06338_1_claims_2_ranking_stability_of_severity_weights",
+            "2410.06338_1_claims_3_ranking_stability_of_severity_weights"
+        ],
+        "sets of weights, minor: 1111, major: 3333": [
+            "2410.06338_1_claims_1_Sets_of_Weights,_Minor:_1111,_Major:_3333"
+        ]
+    },
+    "aligned_values": {
+        "Train": [
+            "2409.17939_2_claims_0_Data_set"
+        ],
+        "275,317": [
+            "2409.17939_2_claims_0_Segment_Size"
+        ],
+        "Development": [
+            "2409.17939_2_claims_1_Data_set"
+        ],
+        "77,877": [
+            "2409.17939_2_claims_1_Segment_Size"
+        ],
+        "Test": [
+            "2409.17939_2_claims_2_Data_set"
+        ],
+        "40,117": [
+            "2409.17939_2_claims_2_Segment_Size"
+        ],
+        "Total": [
+            "2409.17939_2_claims_3_Data_set"
+        ],
+        "393,371": [
+            "2409.17939_2_claims_3_Segment_Size"
+        ],
+        "Without Stress": [
+            "2403.04178_1_claims_0_MOS"
+        ],
+        "4.25": [
+            "2403.04178_1_claims_1_MOS"
+        ],
+        "4.36": [
+            "2403.04178_1_claims_2_MOS",
+            "2409.17939_3_claims_4_70\u201379%"
+        ],
+        "Original French": [
+            "2409.17939_1_claims_0_Method"
+        ],
+        "\u201cAfin d\u2019\u00e9valuer si l\u2019\u00e9tablissement identifie toutes": [
+            "2409.17939_1_claims_0_Output"
+        ],
+        "les situations qui doivent \u00eatre consid\u00e9r\u00e9es comme": [
+            "2409.17939_1_claims_1_Output"
+        ],
+        "conform\u00e9ment \u00e0 l\u2019article 178,": [
+            "2409.17939_1_claims_2_Output,_des_d\u00e9fauts"
+        ],
+        "du r\u00e8glement (UE) no 575/2013\u2026\u201d": [
+            "2409.17939_1_claims_3_Output,_paragraphes_1_\u00e0_5"
+        ],
+        "Reference Translation": [
+            "2409.17939_1_claims_4_Method"
+        ],
+        "\u201cIn order to assess whether the institution": [
+            "2409.17939_1_claims_4_Output"
+        ],
+        "identifies all situations which are to be considered": [
+            "2409.17939_1_claims_5_Output"
+        ],
+        "defaults in accordance with Article 178 (1)": [
+            "2409.17939_1_claims_6_Output"
+        ],
+        "to (5) of Regulation (EU) No 575/2013\u2026\u201d": [
+            "2409.17939_1_claims_7_Output"
+        ],
+        "Reference tri-gram": [
+            "2409.17939_1_claims_8_Method"
+        ],
+        "assess whether the": [
+            "2409.17939_1_claims_8_Output",
+            "2409.17939_1_claims_9_Output"
+        ],
+        "BERT": [
+            "2409.17939_1_claims_9_Method"
+        ],
+        "Word2Vec": [
+            "2409.17939_1_claims_10_Method"
+        ],
+        "assess commission the": [
+            "2409.17939_1_claims_10_Output"
+        ],
+        "MT": [
+            "2409.17939_1_claims_11_Method"
+        ],
+        "assess obligatory the": [
+            "2409.17939_1_claims_11_Output"
+        ],
+        "GPT-4": [
+            "2409.17939_1_claims_12_Method"
+        ],
+        "assess and the": [
+            "2409.17939_1_claims_12_Output"
+        ],
+        "GPT2-small": [
+            "2312.14488_3_claims_0_Model",
+            "2312.14488_3_claims_1_Model",
+            "2312.14488_3_claims_2_Model",
+            "2312.14488_3_claims_3_Model",
+            "2312.14488_3_claims_4_Model",
+            "2312.14488_2_claims_0_Model",
+            "2312.14488_2_claims_1_Model",
+            "2312.14488_2_claims_2_Model",
+            "2312.14488_2_claims_3_Model",
+            "2312.14488_2_claims_4_Model",
+            "2312.14488_1_claims_0_Model",
+            "2312.14488_1_claims_1_Model",
+            "2312.14488_1_claims_2_Model",
+            "2312.14488_1_claims_3_Model",
+            "2312.14488_1_claims_4_Model"
+        ],
+        "K=1": [
+            "2312.14488_3_claims_0_latency_improvement",
+            "2312.14488_3_claims_5_latency_improvement",
+            "2312.14488_3_claims_10_latency_improvement",
+            "2312.14488_3_claims_15_latency_improvement",
+            "2312.14488_3_claims_20_latency_improvement",
+            "2312.14488_1_claims_0_the_delay_improvement_performance",
+            "2312.14488_1_claims_5_the_delay_improvement_performance"
+        ],
+        "K=3": [
+            "2312.14488_3_claims_1_latency_improvement",
+            "2312.14488_3_claims_6_latency_improvement",
+            "2312.14488_3_claims_11_latency_improvement",
+            "2312.14488_3_claims_16_latency_improvement",
+            "2312.14488_3_claims_21_latency_improvement",
+            "2312.14488_1_claims_1_the_delay_improvement_performance",
+            "2312.14488_1_claims_6_the_delay_improvement_performance"
+        ],
+        "K=5": [
+            "2312.14488_3_claims_2_latency_improvement",
+            "2312.14488_3_claims_7_latency_improvement",
+            "2312.14488_3_claims_12_latency_improvement",
+            "2312.14488_3_claims_17_latency_improvement",
+            "2312.14488_3_claims_22_latency_improvement",
+            "2312.14488_1_claims_2_the_delay_improvement_performance",
+            "2312.14488_1_claims_7_the_delay_improvement_performance"
+        ],
+        "K=7": [
+            "2312.14488_3_claims_3_latency_improvement",
+            "2312.14488_3_claims_8_latency_improvement",
+            "2312.14488_3_claims_13_latency_improvement",
+            "2312.14488_3_claims_18_latency_improvement",
+            "2312.14488_3_claims_23_latency_improvement",
+            "2312.14488_1_claims_3_the_delay_improvement_performance",
+            "2312.14488_1_claims_8_the_delay_improvement_performance"
+        ],
+        "K=9": [
+            "2312.14488_3_claims_4_latency_improvement",
+            "2312.14488_3_claims_9_latency_improvement",
+            "2312.14488_3_claims_14_latency_improvement",
+            "2312.14488_3_claims_19_latency_improvement",
+            "2312.14488_3_claims_24_latency_improvement",
+            "2312.14488_1_claims_4_the_delay_improvement_performance",
+            "2312.14488_1_claims_9_the_delay_improvement_performance"
+        ],
+        "GPT2-medium": [
+            "2312.14488_3_claims_5_Model",
+            "2312.14488_3_claims_6_Model",
+            "2312.14488_3_claims_7_Model",
+            "2312.14488_3_claims_8_Model",
+            "2312.14488_3_claims_9_Model"
+        ],
+        "GPT2-large": [
+            "2312.14488_3_claims_10_Model",
+            "2312.14488_3_claims_11_Model",
+            "2312.14488_3_claims_12_Model",
+            "2312.14488_3_claims_13_Model",
+            "2312.14488_3_claims_14_Model"
+        ],
+        "GPT2-xl": [
+            "2312.14488_3_claims_15_Model",
+            "2312.14488_3_claims_16_Model",
+            "2312.14488_3_claims_17_Model",
+            "2312.14488_3_claims_18_Model",
+            "2312.14488_3_claims_19_Model"
+        ],
+        "fine-tuning": [
+            "2312.14488_3_claims_20_Model",
+            "2312.14488_3_claims_21_Model",
+            "2312.14488_3_claims_22_Model",
+            "2312.14488_3_claims_23_Model",
+            "2312.14488_3_claims_24_Model"
+        ],
+        "70M": [
+            "2409.15051_3_claims_0_Model",
+            "2409.15051_4_claims_0_Model",
+            "2409.15051_2_claims_0_Model",
+            "2409.15051_5_claims_0_Model"
+        ],
+        "70\u2009295\u20095527029555270\\,295\\,55270 295 552": [
+            "2409.15051_3_claims_0_Non-embedding",
+            "2409.15051_5_claims_0_Non-embedding"
+        ],
+        "51\u2009380\u20092245138022451\\,380\\,22451 380 224": [
+            "2409.15051_3_claims_0_Embedding",
+            "2409.15051_5_claims_0_Embedding",
+            "2409.15051_5_claims_2_Embedding",
+            "2409.15051_5_claims_4_Embedding"
+        ],
+        "6": [
+            "2409.15051_3_claims_0_Layers",
+            "2402.10940_3_claims_5_#",
+            "2409.15051_5_claims_0_Layers",
+            "2409.15051_5_claims_1_Layers",
+            "2409.15051_5_claims_3_Layers",
+            "2402.10940_2_claims_5_#",
+            "2402.10940_4_claims_5_#"
+        ],
+        "512": [
+            "2409.15051_3_claims_0_Dim",
+            "2409.15051_5_claims_0_Dim",
+            "2409.15051_5_claims_2_Dim",
+            "2409.15051_5_claims_4_Dim"
+        ],
+        "8": [
+            "2409.15051_3_claims_0_Heads",
+            "2409.15051_3_claims_4_Heads",
+            "2402.10940_3_claims_7_#",
+            "2402.10940_2_claims_7_#",
+            "2402.10940_4_claims_7_#"
+        ],
+        "1\u2062e\u221231superscript\ud835\udc5231e^{-3}1 italic_e start_POSTSUPERSCRIPT - 3 end_POSTSUPERSCRIPT": [
+            "2409.15051_3_claims_0_Max_l\u2062r\ud835\udc59\ud835\udc5flritalic_l_italic_r",
+            "2409.15051_3_claims_1_Max_l\u2062r\ud835\udc59\ud835\udc5flritalic_l_italic_r",
+            "2409.15051_3_claims_2_Max_l\u2062r\ud835\udc59\ud835\udc5flritalic_l_italic_r",
+            "2409.15051_3_claims_3_Max_l\u2062r\ud835\udc59\ud835\udc5flritalic_l_italic_r"
+        ],
+        "160M": [
+            "2409.15051_3_claims_1_Model",
+            "2409.15051_4_claims_2_Model",
+            "2409.15051_2_claims_1_Model"
+        ],
+        "162\u2009126\u2009336162126336162\\,126\\,336162 126 336": [
+            "2409.15051_3_claims_1_Non-embedding"
+        ],
+        "77\u2009070\u20093367707033677\\,070\\,33677 070 336": [
+            "2409.15051_3_claims_1_Embedding",
+            "2409.15051_5_claims_1_Embedding"
+        ],
+        "12": [
+            "2409.15051_3_claims_1_Layers",
+            "2409.15051_5_claims_2_Layers"
+        ],
+        "768": [
+            "2409.15051_3_claims_1_Dim",
+            "2409.15051_5_claims_1_Dim"
+        ],
+        "16": [
+            "2409.15051_3_claims_1_Heads",
+            "2409.15051_3_claims_2_Heads",
+            "2409.15051_3_claims_3_Layers",
+            "2409.15051_3_claims_3_Heads",
+            "2409.15051_3_claims_4_Layers"
+        ],
+        "410M": [
+            "2409.15051_3_claims_2_Model",
+            "2409.15051_4_claims_4_Model",
+            "2409.15051_2_claims_2_Model"
+        ],
+        "405\u2009071\u2009872405071872405\\,071\\,872405 071 872": [
+            "2409.15051_3_claims_2_Non-embedding"
+        ],
+        "102\u2009760\u2009448102760448102\\,760\\,448102 760 448": [
+            "2409.15051_3_claims_2_Embedding",
+            "2409.15051_5_claims_3_Embedding"
+        ],
+        "24": [
+            "2409.15051_3_claims_2_Layers",
+            "2409.15051_5_claims_4_Layers"
+        ],
+        "1024": [
+            "2409.15051_3_claims_2_Dim",
+            "2409.00071_4_claims_16_Value",
+            "2409.15051_5_claims_3_Dim"
+        ],
+        "610M": [
+            "2409.15051_3_claims_3_Model",
+            "2409.15051_4_claims_6_Model"
+        ],
+        "607\u2009448\u2009064607448064607\\,448\\,064607 448 064": [
+            "2409.15051_3_claims_3_Non-embedding"
+        ],
+        "154\u2009140\u2009672154140672154\\,140\\,672154 140 672": [
+            "2409.15051_3_claims_3_Embedding"
+        ],
+        "1536": [
+            "2409.15051_3_claims_3_Dim"
+        ],
+        "1B": [
+            "2409.15051_3_claims_4_Model",
+            "2409.15051_4_claims_8_Model"
+        ],
+        "1\u2009011\u2009257\u200934410112573441\\,011\\,257\\,3441 011 257 344": [
+            "2409.15051_3_claims_4_Non-embedding"
+        ],
+        "205\u2009520\u2009896205520896205\\,520\\,896205 520 896": [
+            "2409.15051_3_claims_4_Embedding"
+        ],
+        "2048": [
+            "2409.15051_3_claims_4_Dim"
+        ],
+        "1\u2062e\u221241superscript\ud835\udc5241e^{-4}1 italic_e start_POSTSUPERSCRIPT - 4 end_POSTSUPERSCRIPT": [
+            "2409.15051_3_claims_4_Max_l\u2062r\ud835\udc59\ud835\udc5flritalic_l_italic_r",
+            "2409.15051_3_claims_5_Max_l\u2062r\ud835\udc59\ud835\udc5flritalic_l_italic_r"
+        ],
+        "6.9B": [
+            "2409.15051_3_claims_5_Model",
+            "2409.15051_4_claims_10_Model"
+        ],
+        "6\u2009855\u2009204\u200986468552048646\\,855\\,204\\,8646 855 204 864": [
+            "2409.15051_3_claims_5_Non-embedding"
+        ],
+        "411\u2009041\u2009792411041792411\\,041\\,792411 041 792": [
+            "2409.15051_3_claims_5_Embedding"
+        ],
+        "32": [
+            "2409.15051_3_claims_5_Layers",
+            "2409.15051_3_claims_5_Heads"
+        ],
+        "4096": [
+            "2409.15051_3_claims_5_Dim"
+        ],
+        "Average Sentence Length": [
+            "2409.00071_3_claims_0_Characteristic",
+            "2409.00071_2_claims_0_Characteristic"
+        ],
+        "Max Sentence length": [
+            "2409.00071_3_claims_1_Characteristic",
+            "2409.00071_2_claims_1_Characteristic"
+        ],
+        "Mean": [
+            "2409.00071_3_claims_2_Characteristic",
+            "2409.00071_2_claims_2_Characteristic"
+        ],
+        "Standard Deviation": [
+            "2409.00071_3_claims_3_Characteristic",
+            "2409.00071_2_claims_3_Characteristic"
+        ],
+        "Pitch": [
+            "2403.04178_2_claims_0_SSMT"
+        ],
+        "3.73": [
+            "2403.04178_2_claims_0_st-MOS"
+        ],
+        "Pitch and Energy": [
+            "2403.04178_2_claims_1_SSMT"
+        ],
+        "4.09": [
+            "2403.04178_2_claims_1_st-MOS"
+        ],
+        "1": [
+            "2402.10940_3_claims_0_#",
+            "2402.10940_2_claims_0_#",
+            "2402.10940_4_claims_0_#"
+        ],
+        "0066 3607": [
+            "2402.10940_3_claims_0_ICD-9_code"
+        ],
+        "2920": [
+            "2402.10940_3_claims_0_Cases"
+        ],
+        "18.72\u2030": [
+            "2402.10940_3_claims_0_Frequency"
+        ],
+        "9.8504": [
+            "2402.10940_3_claims_0_Entropy_After_Receiving"
+        ],
+        "2": [
+            "2402.10940_3_claims_1_#",
+            "2402.10940_2_claims_1_#",
+            "2402.10940_4_claims_1_#"
+        ],
+        "8952 8938": [
+            "2402.10940_3_claims_1_ICD-9_code"
+        ],
+        "1507": [
+            "2402.10940_3_claims_1_Cases"
+        ],
+        "9.66\u2030": [
+            "2402.10940_3_claims_1_Frequency"
+        ],
+        "9.9137": [
+            "2402.10940_3_claims_1_Entropy_After_Receiving"
+        ],
+        "3": [
+            "2402.10940_3_claims_2_#",
+            "2402.10940_2_claims_2_#",
+            "2402.10940_4_claims_2_#"
+        ],
+        "8952 8744": [
+            "2402.10940_3_claims_2_ICD-9_code"
+        ],
+        "1323": [
+            "2402.10940_3_claims_2_Cases"
+        ],
+        "8.48\u2030": [
+            "2402.10940_3_claims_2_Frequency"
+        ],
+        "9.9196": [
+            "2402.10940_3_claims_2_Entropy_After_Receiving"
+        ],
+        "4": [
+            "2402.10940_3_claims_3_#",
+            "2402.10940_2_claims_3_#",
+            "2402.10940_4_claims_3_#"
+        ],
+        "3722 8856": [
+            "2402.10940_3_claims_3_ICD-9_code"
+        ],
+        "1316": [
+            "2402.10940_3_claims_3_Cases"
+        ],
+        "8.44\u2030": [
+            "2402.10940_3_claims_3_Frequency"
+        ],
+        "10.3795": [
+            "2402.10940_3_claims_3_Entropy_After_Receiving"
+        ],
+        "5": [
+            "2402.10940_3_claims_4_#",
+            "2402.10940_2_claims_4_#",
+            "2402.10940_4_claims_4_#"
+        ],
+        "0066 3606": [
+            "2402.10940_3_claims_4_ICD-9_code"
+        ],
+        "930": [
+            "2402.10940_3_claims_4_Cases"
+        ],
+        "5.96\u2030": [
+            "2402.10940_3_claims_4_Frequency"
+        ],
+        "9.8362": [
+            "2402.10940_3_claims_4_Entropy_After_Receiving"
+        ],
+        "9671 9604": [
+            "2402.10940_3_claims_5_ICD-9_code"
+        ],
+        "925": [
+            "2402.10940_3_claims_5_Cases"
+        ],
+        "5.93\u2030": [
+            "2402.10940_3_claims_5_Frequency"
+        ],
+        "10.2844": [
+            "2402.10940_3_claims_5_Entropy_After_Receiving"
+        ],
+        "7": [
+            "2402.10940_3_claims_6_#",
+            "2402.10940_2_claims_6_#",
+            "2402.10940_4_claims_6_#"
+        ],
+        "8938 8952": [
+            "2402.10940_3_claims_6_ICD-9_code"
+        ],
+        "867": [
+            "2402.10940_3_claims_6_Cases"
+        ],
+        "5.56\u2030": [
+            "2402.10940_3_claims_6_Frequency"
+        ],
+        "7.0969": [
+            "2402.10940_3_claims_6_Entropy_After_Receiving",
+            "2402.10940_2_claims_1_Entropy_After_Receiving"
+        ],
+        "3950 3990": [
+            "2402.10940_3_claims_7_ICD-9_code"
+        ],
+        "696": [
+            "2402.10940_3_claims_7_Cases"
+        ],
+        "4.46\u2030": [
+            "2402.10940_3_claims_7_Frequency"
+        ],
+        "9.8251": [
+            "2402.10940_3_claims_7_Entropy_After_Receiving"
+        ],
+        "9": [
+            "2402.10940_3_claims_8_#",
+            "2402.10940_2_claims_8_#",
+            "2402.10940_4_claims_8_#"
+        ],
+        "7569 734": [
+            "2402.10940_3_claims_8_ICD-9_code"
+        ],
+        "631": [
+            "2402.10940_3_claims_8_Cases"
+        ],
+        "4.05\u2030": [
+            "2402.10940_3_claims_8_Frequency"
+        ],
+        "6.3829": [
+            "2402.10940_3_claims_8_Entropy_After_Receiving"
+        ],
+        "10": [
+            "2402.10940_3_claims_9_#",
+            "2402.10940_2_claims_9_#",
+            "2402.10940_4_claims_9_#"
+        ],
+        "9604 9671": [
+            "2402.10940_3_claims_9_ICD-9_code"
+        ],
+        "598": [
+            "2402.10940_3_claims_9_Cases"
+        ],
+        "3.83\u2030": [
+            "2402.10940_3_claims_9_Frequency"
+        ],
+        "10.4688": [
+            "2402.10940_3_claims_9_Entropy_After_Receiving"
+        ],
+        "L=0.5": [
+            "2312.14488_2_claims_0_the_weight_of_the_delay_loss",
+            "2312.14488_2_claims_5_the_weight_of_the_delay_loss"
+        ],
+        "L=0.2": [
+            "2312.14488_2_claims_1_the_weight_of_the_delay_loss",
+            "2312.14488_2_claims_6_the_weight_of_the_delay_loss"
+        ],
+        "L=0.1": [
+            "2312.14488_2_claims_2_the_weight_of_the_delay_loss",
+            "2312.14488_2_claims_7_the_weight_of_the_delay_loss"
+        ],
+        "L=0.05": [
+            "2312.14488_2_claims_3_the_weight_of_the_delay_loss",
+            "2312.14488_2_claims_8_the_weight_of_the_delay_loss"
+        ],
+        "L=0.02": [
+            "2312.14488_2_claims_4_the_weight_of_the_delay_loss",
+            "2312.14488_2_claims_9_the_weight_of_the_delay_loss"
+        ],
+        "share-encoder": [
+            "2312.14488_2_claims_5_Model",
+            "2312.14488_2_claims_6_Model",
+            "2312.14488_2_claims_7_Model",
+            "2312.14488_2_claims_8_Model",
+            "2312.14488_2_claims_9_Model",
+            "2312.14488_1_claims_5_Model",
+            "2312.14488_1_claims_6_Model",
+            "2312.14488_1_claims_7_Model",
+            "2312.14488_1_claims_8_Model",
+            "2312.14488_1_claims_9_Model"
+        ],
+        "Language Pair": [
+            "2407.06990_2_claims_0_Translation_Quality",
+            "2407.06990_2_claims_6_Translation_Quality",
+            "2407.06990_3_claims_0_Translation_Quality",
+            "2407.06990_3_claims_5_Translation_Quality"
+        ],
+        "TER [\u2193\u2193\\downarrow\u2193]": [
+            "2407.06990_2_claims_1_Translation_Quality",
+            "2407.06990_2_claims_7_Translation_Quality",
+            "2407.06990_3_claims_1_Translation_Quality",
+            "2407.06990_3_claims_6_Translation_Quality"
+        ],
+        "BLEU [\u2191\u2191\\uparrow\u2191]": [
+            "2407.06990_2_claims_2_User_Effort",
+            "2407.06990_2_claims_8_User_Effort",
+            "2407.06990_3_claims_2_User_Effort",
+            "2407.06990_3_claims_7_User_Effort"
+        ],
+        "WSR [\u2193\u2193\\downarrow\u2193]": [
+            "2407.06990_2_claims_3_User_Effort",
+            "2407.06990_2_claims_9_User_Effort"
+        ],
+        "KSR [\u2193\u2193\\downarrow\u2193]": [
+            "2407.06990_2_claims_4_User_Effort",
+            "2407.06990_2_claims_10_User_Effort",
+            "2407.06990_3_claims_3_User_Effort",
+            "2407.06990_3_claims_8_User_Effort"
+        ],
+        "MAR [\u2193\u2193\\downarrow\u2193]": [
+            "2407.06990_2_claims_5_Spec_name",
+            "2407.06990_2_claims_11_Spec_name",
+            "2407.06990_3_claims_4_Spec_name",
+            "2407.06990_3_claims_9_Spec_name"
+        ],
+        "SacreBLEU": [
+            "2312.07250_2_claims_0_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_5_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_10_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_15_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_20_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_25_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_30_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_35_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_40_Task-1:_Translating_Clinical_Cases"
+        ],
+        "METEOR": [
+            "2312.07250_2_claims_1_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_6_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_11_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_16_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_21_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_26_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_31_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_36_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_41_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_3_claims_0_MPLMs",
+            "2312.07250_3_claims_6_MPLMs",
+            "2312.07250_3_claims_12_MPLMs"
+        ],
+        "COMET": [
+            "2312.07250_2_claims_2_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_7_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_12_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_17_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_22_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_27_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_32_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_37_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_42_Task-1:_Translating_Clinical_Cases"
+        ],
+        "BLEU": [
+            "2312.07250_2_claims_3_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_8_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_13_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_18_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_23_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_28_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_33_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_38_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_43_Task-1:_Translating_Clinical_Cases"
+        ],
+        "ROUGE": [
+            "2312.07250_2_claims_4_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_9_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_14_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_19_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_24_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_29_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_34_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_39_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_2_claims_44_Task-1:_Translating_Clinical_Cases",
+            "2312.07250_3_claims_1_Auto._Metrics",
+            "2312.07250_3_claims_7_Auto._Metrics",
+            "2312.07250_3_claims_13_Auto._Metrics"
+        ],
+        "zero-shot": [
+            "2410.07830_3_claims_0_Models,_GPT-3.5-turbo",
+            "2410.07830_3_claims_1_Models,_GPT-3.5-turbo",
+            "2410.07830_3_claims_2_Models,_GPT-3.5-turbo",
+            "2410.07830_3_claims_3_Models,_GPT-3.5-turbo",
+            "2410.07830_3_claims_4_Models,_GPT-3.5-turbo",
+            "2410.07830_3_claims_5_Models,_GPT-3.5-turbo",
+            "2410.07830_3_claims_6_Models,_GPT-3.5-turbo",
+            "2410.07830_3_claims_7_Models,_GPT-3.5-turbo",
+            "2410.07830_3_claims_8_Models,_GPT-4o",
+            "2410.07830_3_claims_9_Models,_GPT-4o",
+            "2410.07830_3_claims_10_Models,_GPT-4o",
+            "2410.07830_3_claims_11_Models,_GPT-4o",
+            "2410.07830_3_claims_12_Models,_GPT-4o",
+            "2410.07830_3_claims_13_Models,_GPT-4o",
+            "2410.07830_3_claims_14_Models,_GPT-4o",
+            "2410.07830_3_claims_15_Models,_GPT-4o",
+            "2410.07830_3_claims_16_Models,_GPT-4",
+            "2410.07830_3_claims_17_Models,_GPT-4",
+            "2410.07830_3_claims_18_Models,_GPT-4",
+            "2410.07830_3_claims_19_Models,_GPT-4",
+            "2410.07830_3_claims_20_Models,_GPT-4",
+            "2410.07830_3_claims_21_Models,_GPT-4",
+            "2410.07830_3_claims_22_Models,_GPT-4",
+            "2410.07830_3_claims_23_Models,_GPT-4"
+        ],
+        "ban \u2192\u2192\\rightarrow\u2192 en": [
+            "2410.07830_3_claims_0_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_8_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_16_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_24_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_32_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_40_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_48_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_2_claims_0_SPEC_NAME",
+            "2410.07830_2_claims_4_SPEC_NAME",
+            "2410.07830_2_claims_8_SPEC_NAME",
+            "2410.07830_2_claims_12_SPEC_NAME",
+            "2410.07830_2_claims_16_SPEC_NAME"
+        ],
+        "en \u2192\u2192\\rightarrow\u2192 ban": [
+            "2410.07830_3_claims_1_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_9_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_17_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_25_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_33_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_41_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_49_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_2_claims_1_SPEC_NAME",
+            "2410.07830_2_claims_5_SPEC_NAME",
+            "2410.07830_2_claims_9_SPEC_NAME",
+            "2410.07830_2_claims_13_SPEC_NAME",
+            "2410.07830_2_claims_17_SPEC_NAME"
+        ],
+        "ban \u2192\u2192\\rightarrow\u2192 id": [
+            "2410.07830_3_claims_2_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_10_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_18_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_26_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_34_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_42_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_50_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_2_claims_2_SPEC_NAME",
+            "2410.07830_2_claims_6_SPEC_NAME",
+            "2410.07830_2_claims_10_SPEC_NAME",
+            "2410.07830_2_claims_14_SPEC_NAME",
+            "2410.07830_2_claims_18_SPEC_NAME"
+        ],
+        "id \u2192\u2192\\rightarrow\u2192 ban": [
+            "2410.07830_3_claims_3_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_11_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_19_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_27_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_35_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_43_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_51_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_2_claims_3_SPEC_NAME",
+            "2410.07830_2_claims_7_SPEC_NAME",
+            "2410.07830_2_claims_11_SPEC_NAME",
+            "2410.07830_2_claims_15_SPEC_NAME",
+            "2410.07830_2_claims_19_SPEC_NAME"
+        ],
+        "min \u2192\u2192\\rightarrow\u2192 en": [
+            "2410.07830_3_claims_4_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_12_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_20_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_28_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_36_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_44_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_52_spbleu_scores_of_nusamt_-_7b"
+        ],
+        "en \u2192\u2192\\rightarrow\u2192 min": [
+            "2410.07830_3_claims_5_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_13_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_21_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_29_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_37_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_45_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_53_spbleu_scores_of_nusamt_-_7b"
+        ],
+        "min \u2192\u2192\\rightarrow\u2192 id": [
+            "2410.07830_3_claims_6_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_14_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_22_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_30_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_38_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_46_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_54_spbleu_scores_of_nusamt_-_7b"
+        ],
+        "id \u2192\u2192\\rightarrow\u2192 min": [
+            "2410.07830_3_claims_7_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_15_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_23_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_31_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_39_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_47_spbleu_scores_of_nusamt_-_7b",
+            "2410.07830_3_claims_55_spbleu_scores_of_nusamt_-_7b"
+        ],
+        "NLLB-600M": [
+            "2410.07830_3_claims_24_Models",
+            "2410.07830_3_claims_25_Models",
+            "2410.07830_3_claims_26_Models",
+            "2410.07830_3_claims_27_Models",
+            "2410.07830_3_claims_28_Models",
+            "2410.07830_3_claims_29_Models",
+            "2410.07830_3_claims_30_Models",
+            "2410.07830_3_claims_31_Models"
+        ],
+        "NLLB-1.3B": [
+            "2410.07830_3_claims_32_Models",
+            "2410.07830_3_claims_33_Models",
+            "2410.07830_3_claims_34_Models",
+            "2410.07830_3_claims_35_Models",
+            "2410.07830_3_claims_36_Models",
+            "2410.07830_3_claims_37_Models",
+            "2410.07830_3_claims_38_Models",
+            "2410.07830_3_claims_39_Models"
+        ],
+        "NLLB-3.3B": [
+            "2410.07830_3_claims_40_Models",
+            "2410.07830_3_claims_41_Models",
+            "2410.07830_3_claims_42_Models",
+            "2410.07830_3_claims_43_Models",
+            "2410.07830_3_claims_44_Models",
+            "2410.07830_3_claims_45_Models",
+            "2410.07830_3_claims_46_Models",
+            "2410.07830_3_claims_47_Models"
+        ],
+        "NusaMT-7B (Ours)": [
+            "2410.07830_3_claims_48_Models",
+            "2410.07830_3_claims_49_Models",
+            "2410.07830_3_claims_50_Models",
+            "2410.07830_3_claims_51_Models",
+            "2410.07830_3_claims_52_Models",
+            "2410.07830_3_claims_53_Models",
+            "2410.07830_3_claims_54_Models",
+            "2410.07830_3_claims_55_Models"
+        ],
+        "Template": [
+            "2410.06338_2_claims_0_Methods",
+            "2410.06338_2_claims_5_Methods",
+            "2410.06338_2_claims_10_Methods",
+            "2410.06338_2_claims_15_Methods",
+            "2410.06338_2_claims_20_Methods",
+            "2410.06338_3_claims_0_Methods",
+            "2410.06338_3_claims_5_Methods",
+            "2410.06338_3_claims_10_Methods",
+            "2410.06338_3_claims_15_Methods",
+            "2410.06338_3_claims_20_Methods",
+            "2410.06338_3_claims_25_Methods",
+            "2410.06338_3_claims_30_Methods",
+            "2410.06338_3_claims_35_Methods"
+        ],
+        "\u03c1\ud835\udf0c\\rhoitalic_\u03c1": [
+            "2410.06338_2_claims_1_Methods",
+            "2410.06338_2_claims_3_Spec_name",
+            "2410.06338_2_claims_6_Methods",
+            "2410.06338_2_claims_8_Spec_name",
+            "2410.06338_2_claims_11_Methods",
+            "2410.06338_2_claims_13_Spec_name",
+            "2410.06338_2_claims_16_Methods",
+            "2410.06338_2_claims_18_Spec_name",
+            "2410.06338_2_claims_21_Methods",
+            "2410.06338_2_claims_23_Spec_name",
+            "2410.06338_4_claims_0_continued_fine_-_tuned",
+            "2410.06338_4_claims_2_continued_fine_-_tuned",
+            "2410.06338_4_claims_4_continued_fine_-_tuned",
+            "2410.06338_4_claims_6_continued_fine_-_tuned",
+            "2410.06338_4_claims_8_continued_fine_-_tuned",
+            "2410.06338_3_claims_1_Methods",
+            "2410.06338_3_claims_3_Zero-shot_Learning",
+            "2410.06338_3_claims_6_Methods",
+            "2410.06338_3_claims_8_Zero-shot_Learning",
+            "2410.06338_3_claims_11_Methods",
+            "2410.06338_3_claims_13_Zero-shot_Learning",
+            "2410.06338_3_claims_16_Methods",
+            "2410.06338_3_claims_18_Zero-shot_Learning",
+            "2410.06338_3_claims_21_Methods",
+            "2410.06338_3_claims_23_Zero-shot_Learning",
+            "2410.06338_3_claims_26_Methods",
+            "2410.06338_3_claims_28_Zero-shot_Learning",
+            "2410.06338_3_claims_31_Methods",
+            "2410.06338_3_claims_33_Zero-shot_Learning",
+            "2410.06338_3_claims_36_Methods",
+            "2410.06338_3_claims_38_Zero-shot_Learning"
+        ],
+        "r": [
+            "2410.06338_2_claims_2_Spec_name",
+            "2410.06338_2_claims_4_Spec_name",
+            "2410.06338_2_claims_7_Spec_name",
+            "2410.06338_2_claims_9_Spec_name",
+            "2410.06338_2_claims_12_Spec_name",
+            "2410.06338_2_claims_14_Spec_name",
+            "2410.06338_2_claims_17_Spec_name",
+            "2410.06338_2_claims_19_Spec_name",
+            "2410.06338_2_claims_22_Spec_name",
+            "2410.06338_2_claims_24_Spec_name",
+            "2410.06338_4_claims_1_SPEC_NAME",
+            "2410.06338_4_claims_3_SPEC_NAME",
+            "2410.06338_4_claims_5_SPEC_NAME",
+            "2410.06338_4_claims_7_SPEC_NAME",
+            "2410.06338_4_claims_9_SPEC_NAME",
+            "2410.06338_3_claims_2_Zero-shot_Learning",
+            "2410.06338_3_claims_4_Few-shot_Learning",
+            "2410.06338_3_claims_7_Zero-shot_Learning",
+            "2410.06338_3_claims_9_Few-shot_Learning",
+            "2410.06338_3_claims_12_Zero-shot_Learning",
+            "2410.06338_3_claims_14_Few-shot_Learning",
+            "2410.06338_3_claims_17_Zero-shot_Learning",
+            "2410.06338_3_claims_19_Few-shot_Learning",
+            "2410.06338_3_claims_22_Zero-shot_Learning",
+            "2410.06338_3_claims_24_Few-shot_Learning",
+            "2410.06338_3_claims_27_Zero-shot_Learning",
+            "2410.06338_3_claims_29_Few-shot_Learning",
+            "2410.06338_3_claims_32_Zero-shot_Learning",
+            "2410.06338_3_claims_34_Few-shot_Learning",
+            "2410.06338_3_claims_37_Zero-shot_Learning",
+            "2410.06338_3_claims_39_Few-shot_Learning"
+        ],
+        "MonoTransQuest (FT)": [
+            "2410.06338_4_claims_0_Methods",
+            "2410.06338_4_claims_1_Methods"
+        ],
+        "SiameseTransQuest (FT)": [
+            "2410.06338_4_claims_2_Methods",
+            "2410.06338_4_claims_3_Methods"
+        ],
+        "COMET (FT)": [
+            "2410.06338_4_claims_4_Methods",
+            "2410.06338_4_claims_5_Methods"
+        ],
+        "MonoTransQuest (CFT)": [
+            "2410.06338_4_claims_6_Methods",
+            "2410.06338_4_claims_7_Methods"
+        ],
+        "SiameseTransQuest (CFT)": [
+            "2410.06338_4_claims_8_Methods",
+            "2410.06338_4_claims_9_Methods"
+        ],
+        "ban \u2194\u2194\\leftrightarrow\u2194 en": [
+            "2410.07830_1_claims_0_Dataset",
+            "2410.07830_1_claims_4_Spec_name",
+            "2410.07830_1_claims_8_Dataset",
+            "2410.07830_1_claims_12_Spec_name",
+            "2410.07830_1_claims_16_Dataset",
+            "2410.07830_1_claims_20_Spec_name",
+            "2410.07830_1_claims_24_Dataset",
+            "2410.07830_1_claims_28_Spec_name",
+            "2410.07830_1_claims_32_Dataset",
+            "2410.07830_1_claims_36_Spec_name",
+            "2410.07830_1_claims_40_Dataset",
+            "2410.07830_1_claims_44_Spec_name"
+        ],
+        "ban \u2194\u2194\\leftrightarrow\u2194 id": [
+            "2410.07830_1_claims_1_Spec_name",
+            "2410.07830_1_claims_5_Spec_name",
+            "2410.07830_1_claims_9_Spec_name",
+            "2410.07830_1_claims_13_Spec_name",
+            "2410.07830_1_claims_17_Spec_name",
+            "2410.07830_1_claims_21_Spec_name",
+            "2410.07830_1_claims_25_Spec_name",
+            "2410.07830_1_claims_29_Spec_name",
+            "2410.07830_1_claims_33_Spec_name",
+            "2410.07830_1_claims_37_Spec_name",
+            "2410.07830_1_claims_41_Spec_name",
+            "2410.07830_1_claims_45_Spec_name"
+        ],
+        "min \u2194\u2194\\leftrightarrow\u2194 en": [
+            "2410.07830_1_claims_2_Spec_name",
+            "2410.07830_1_claims_6_Spec_name",
+            "2410.07830_1_claims_10_Spec_name",
+            "2410.07830_1_claims_14_Spec_name",
+            "2410.07830_1_claims_18_Spec_name",
+            "2410.07830_1_claims_22_Spec_name",
+            "2410.07830_1_claims_26_Spec_name",
+            "2410.07830_1_claims_30_Spec_name",
+            "2410.07830_1_claims_34_Spec_name",
+            "2410.07830_1_claims_38_Spec_name",
+            "2410.07830_1_claims_42_Spec_name",
+            "2410.07830_1_claims_46_Spec_name"
+        ],
+        "min \u2194\u2194\\leftrightarrow\u2194 id": [
+            "2410.07830_1_claims_3_Spec_name",
+            "2410.07830_1_claims_7_Spec_name",
+            "2410.07830_1_claims_11_Spec_name",
+            "2410.07830_1_claims_15_Spec_name",
+            "2410.07830_1_claims_19_Spec_name",
+            "2410.07830_1_claims_23_Spec_name",
+            "2410.07830_1_claims_27_Spec_name",
+            "2410.07830_1_claims_31_Spec_name",
+            "2410.07830_1_claims_35_Spec_name",
+            "2410.07830_1_claims_39_Spec_name",
+            "2410.07830_1_claims_43_Spec_name",
+            "2410.07830_1_claims_47_Spec_name"
+        ],
+        "WMT-16": [
+            "2311.14465_1_claims_0_Dataset",
+            "2311.14465_3_claims_0_Dataset",
+            "2311.14465_3_claims_1_Dataset",
+            "2311.14465_3_claims_2_Dataset",
+            "2311.14465_3_claims_3_Dataset",
+            "2311.14465_3_claims_4_Dataset",
+            "2311.14465_3_claims_5_Dataset",
+            "2311.14465_3_claims_6_Dataset",
+            "2311.14465_2_claims_0_Dataset",
+            "2311.14465_2_claims_1_Dataset",
+            "2311.14465_2_claims_2_Dataset",
+            "2311.14465_2_claims_3_Dataset",
+            "2311.14465_2_claims_4_Dataset",
+            "2311.14465_2_claims_5_Dataset",
+            "2311.14465_2_claims_6_Dataset"
+        ],
+        "DE-EN": [
+            "2311.14465_1_claims_0_Lang._Pair"
+        ],
+        "4,551,054": [
+            "2311.14465_1_claims_0_#_Trn.+Vld."
+        ],
+        "2,999": [
+            "2311.14465_1_claims_0_#_Test"
+        ],
+        "BSD": [
+            "2311.14465_1_claims_1_Dataset",
+            "2311.14465_3_claims_7_Dataset",
+            "2311.14465_3_claims_8_Dataset",
+            "2311.14465_3_claims_9_Dataset",
+            "2311.14465_3_claims_10_Dataset",
+            "2311.14465_3_claims_11_Dataset",
+            "2311.14465_3_claims_12_Dataset",
+            "2311.14465_3_claims_13_Dataset",
+            "2311.14465_2_claims_7_Dataset",
+            "2311.14465_2_claims_8_Dataset",
+            "2311.14465_2_claims_9_Dataset",
+            "2311.14465_2_claims_10_Dataset",
+            "2311.14465_2_claims_11_Dataset",
+            "2311.14465_2_claims_12_Dataset",
+            "2311.14465_2_claims_13_Dataset"
+        ],
+        "JA-EN": [
+            "2311.14465_1_claims_1_Lang._Pair"
+        ],
+        "22,051": [
+            "2311.14465_1_claims_1_#_Trn.+Vld."
+        ],
+        "2,120": [
+            "2311.14465_1_claims_1_#_Test"
+        ],
+        "ClinSPEn-CC": [
+            "2311.14465_1_claims_2_Dataset",
+            "2311.14465_3_claims_14_Dataset",
+            "2311.14465_3_claims_15_Dataset",
+            "2311.14465_3_claims_16_Dataset",
+            "2311.14465_3_claims_17_Dataset",
+            "2311.14465_3_claims_18_Dataset",
+            "2311.14465_3_claims_19_Dataset",
+            "2311.14465_3_claims_20_Dataset",
+            "2311.14465_2_claims_14_Dataset",
+            "2311.14465_2_claims_15_Dataset",
+            "2311.14465_2_claims_16_Dataset",
+            "2311.14465_2_claims_17_Dataset",
+            "2311.14465_2_claims_18_Dataset",
+            "2311.14465_2_claims_19_Dataset",
+            "2311.14465_2_claims_20_Dataset"
+        ],
+        "ES-EN": [
+            "2311.14465_1_claims_2_Lang._Pair"
+        ],
+        "1,065": [
+            "2311.14465_1_claims_2_#_Trn.+Vld."
+        ],
+        "2,870": [
+            "2311.14465_1_claims_2_#_Test"
+        ],
+        "Original": [
+            "2408.11853_1_claims_0_Score",
+            "2408.11853_1_claims_5_Score",
+            "2408.11853_1_claims_10_Score",
+            "2408.11853_1_claims_15_Score",
+            "2408.11853_1_claims_20_Score",
+            "2408.11853_1_claims_25_Score"
+        ],
+        "Marian FP32": [
+            "2408.11853_1_claims_1_Score",
+            "2408.11853_1_claims_3_Error",
+            "2408.11853_1_claims_6_Score",
+            "2408.11853_1_claims_8_Error",
+            "2408.11853_1_claims_11_Score",
+            "2408.11853_1_claims_13_Error",
+            "2408.11853_1_claims_16_Score",
+            "2408.11853_1_claims_18_Error",
+            "2408.11853_1_claims_21_Score",
+            "2408.11853_1_claims_23_Error",
+            "2408.11853_1_claims_26_Score",
+            "2408.11853_1_claims_28_Error"
+        ],
+        "Marian FP16": [
+            "2408.11853_1_claims_2_Score",
+            "2408.11853_1_claims_4_Error",
+            "2408.11853_1_claims_7_Score",
+            "2408.11853_1_claims_9_Error",
+            "2408.11853_1_claims_12_Score",
+            "2408.11853_1_claims_14_Error",
+            "2408.11853_1_claims_17_Score",
+            "2408.11853_1_claims_19_Error",
+            "2408.11853_1_claims_22_Score",
+            "2408.11853_1_claims_24_Error",
+            "2408.11853_1_claims_27_Score",
+            "2408.11853_1_claims_29_Error"
+        ],
+        "Epochs (Encoder-Decoder)": [
+            "2409.00071_4_claims_0_Hyperparameter"
+        ],
+        "400": [
+            "2409.00071_4_claims_0_Value"
+        ],
+        "Batch Size (Encoder-Decoder)": [
+            "2409.00071_4_claims_1_Hyperparameter"
+        ],
+        "30": [
+            "2409.00071_4_claims_1_Value"
+        ],
+        "LSTM Units (Encoder-Decoder)": [
+            "2409.00071_4_claims_2_Hyperparameter"
+        ],
+        "256": [
+            "2409.00071_4_claims_2_Value",
+            "2409.00071_4_claims_14_Value"
+        ],
+        "LSTM Dropout (Encoder)": [
+            "2409.00071_4_claims_3_Hyperparameter"
+        ],
+        "0.5": [
+            "2409.00071_4_claims_3_Value",
+            "2409.00071_4_claims_4_Value",
+            "2409.00071_4_claims_5_Value"
+        ],
+        "LSTM Dropout (Decoder)": [
+            "2409.00071_4_claims_4_Hyperparameter"
+        ],
+        "Logits Dropout (Encoder-Decoder)": [
+            "2409.00071_4_claims_5_Hyperparameter"
+        ],
+        "L2 Regularizer (Encoder)": [
+            "2409.00071_4_claims_6_Hyperparameter"
+        ],
+        "5e-5": [
+            "2409.00071_4_claims_6_Value"
+        ],
+        "L2 Regularizer (Decoder)": [
+            "2409.00071_4_claims_7_Hyperparameter"
+        ],
+        "1e-5": [
+            "2409.00071_4_claims_7_Value"
+        ],
+        "Learning Rate (Encoder-Decoder)": [
+            "2409.00071_4_claims_8_Hyperparameter"
+        ],
+        "2e-3": [
+            "2409.00071_4_claims_8_Value"
+        ],
+        "Beta1 Decay (Encoder-Decoder)": [
+            "2409.00071_4_claims_9_Hyperparameter"
+        ],
+        "0.7": [
+            "2409.00071_4_claims_9_Value"
+        ],
+        "Beta2 Decay (Encoder-Decoder)": [
+            "2409.00071_4_claims_10_Hyperparameter"
+        ],
+        "0.97": [
+            "2409.00071_4_claims_10_Value"
+        ],
+        "Epochs (GAN)": [
+            "2409.00071_4_claims_11_Hyperparameter"
+        ],
+        "8000": [
+            "2409.00071_4_claims_11_Value"
+        ],
+        "Batch Size (GAN)": [
+            "2409.00071_4_claims_12_Hyperparameter"
+        ],
+        "1900": [
+            "2409.00071_4_claims_12_Value"
+        ],
+        "Learning Rate (GAN)": [
+            "2409.00071_4_claims_13_Hyperparameter"
+        ],
+        "1e-4": [
+            "2409.00071_4_claims_13_Value",
+            "2409.00071_4_claims_17_Value"
+        ],
+        "Dense Units (Generator)": [
+            "2409.00071_4_claims_14_Hyperparameter"
+        ],
+        "Learning Rate (Generator)": [
+            "2409.00071_4_claims_15_Hyperparameter"
+        ],
+        "4e-4": [
+            "2409.00071_4_claims_15_Value"
+        ],
+        "Dense Units (Discriminator)": [
+            "2409.00071_4_claims_16_Hyperparameter"
+        ],
+        "Learning Rate (Discriminator)": [
+            "2409.00071_4_claims_17_Hyperparameter"
+        ],
+        "G": [
+            "2409.15051_4_claims_0_D",
+            "2409.15051_4_claims_2_D",
+            "2409.15051_4_claims_4_D",
+            "2409.15051_4_claims_6_D",
+            "2409.15051_4_claims_8_D",
+            "2409.15051_4_claims_10_D",
+            "2409.15051_4_claims_12_D",
+            "2409.15051_4_claims_14_D",
+            "2409.15051_4_claims_16_D",
+            "2409.15051_4_claims_18_D"
+        ],
+        "29.6229.6229.6229.62": [
+            "2409.15051_4_claims_0_BLEU"
+        ],
+        "81.3181.3181.3181.31": [
+            "2409.15051_4_claims_0_COMET"
+        ],
+        "80.7280.7280.7280.72": [
+            "2409.15051_4_claims_0_CometKiwi"
+        ],
+        "F": [
+            "2409.15051_4_claims_1_D",
+            "2409.15051_4_claims_3_D",
+            "2409.15051_4_claims_5_D",
+            "2409.15051_4_claims_7_D",
+            "2409.15051_4_claims_9_D",
+            "2409.15051_4_claims_11_D",
+            "2409.15051_4_claims_13_D",
+            "2409.15051_4_claims_15_D",
+            "2409.15051_4_claims_17_D",
+            "2409.15051_4_claims_19_D"
+        ],
+        "44.6344.6344.6344.63": [
+            "2409.15051_4_claims_1_BLEU"
+        ],
+        "86.9586.9586.9586.95": [
+            "2409.15051_4_claims_1_COMET"
+        ],
+        "80.8880.8880.8880.88": [
+            "2409.15051_4_claims_1_CometKiwi"
+        ],
+        "32.4332.4332.4332.43": [
+            "2409.15051_4_claims_2_BLEU"
+        ],
+        "84.0084.0084.0084.00": [
+            "2409.15051_4_claims_2_COMET"
+        ],
+        "83.4583.4583.4583.45": [
+            "2409.15051_4_claims_2_CometKiwi"
+        ],
+        "49.0249.0249.0249.02": [
+            "2409.15051_4_claims_3_BLEU"
+        ],
+        "88.2788.2788.2788.27": [
+            "2409.15051_4_claims_3_COMET"
+        ],
+        "81.8081.8081.8081.80": [
+            "2409.15051_4_claims_3_CometKiwi"
+        ],
+        "33.6033.6033.6033.60": [
+            "2409.15051_4_claims_4_BLEU"
+        ],
+        "84.8184.8184.8184.81": [
+            "2409.15051_4_claims_4_COMET"
+        ],
+        "84.1484.1484.1484.14": [
+            "2409.15051_4_claims_4_CometKiwi"
+        ],
+        "50.8550.8550.8550.85": [
+            "2409.15051_4_claims_5_BLEU"
+        ],
+        "88.6488.6488.6488.64": [
+            "2409.15051_4_claims_5_COMET"
+        ],
+        "81.7381.7381.7381.73": [
+            "2409.15051_4_claims_5_CometKiwi"
+        ],
+        "34.0834.0834.0834.08": [
+            "2409.15051_4_claims_6_BLEU"
+        ],
+        "85.1085.1085.1085.10": [
+            "2409.15051_4_claims_6_COMET",
+            "2409.15051_4_claims_8_COMET"
+        ],
+        "84.3584.3584.3584.35": [
+            "2409.15051_4_claims_6_CometKiwi"
+        ],
+        "52.0052.0052.0052.00": [
+            "2409.15051_4_claims_7_BLEU"
+        ],
+        "88.8588.8588.8588.85": [
+            "2409.15051_4_claims_7_COMET"
+        ],
+        "81.7181.7181.7181.71": [
+            "2409.15051_4_claims_7_CometKiwi"
+        ],
+        "34.4234.4234.4234.42": [
+            "2409.15051_4_claims_8_BLEU"
+        ],
+        "84.3384.3384.3384.33": [
+            "2409.15051_4_claims_8_CometKiwi"
+        ],
+        "53.2853.2853.2853.28": [
+            "2409.15051_4_claims_9_BLEU"
+        ],
+        "89.9889.9889.9889.98\u2021": [
+            "2409.15051_4_claims_9_COMET"
+        ],
+        "81.6181.6181.6181.61": [
+            "2409.15051_4_claims_9_CometKiwi"
+        ],
+        "36.0736.0736.0736.07\u2020": [
+            "2409.15051_4_claims_10_BLEU"
+        ],
+        "85.8885.8885.8885.88": [
+            "2409.15051_4_claims_10_COMET"
+        ],
+        "84.8284.8284.8284.82": [
+            "2409.15051_4_claims_10_CometKiwi",
+            "2409.15051_4_claims_12_COMET"
+        ],
+        "58.3458.3458.3458.34\u2021": [
+            "2409.15051_4_claims_11_BLEU"
+        ],
+        "89.6289.6289.6289.62": [
+            "2409.15051_4_claims_11_COMET"
+        ],
+        "81.3581.3581.3581.35": [
+            "2409.15051_4_claims_11_CometKiwi"
+        ],
+        "Llama3.1 8B": [
+            "2409.15051_4_claims_12_Model"
+        ],
+        "30.4330.4330.4330.43": [
+            "2409.15051_4_claims_12_BLEU"
+        ],
+        "84.4784.4784.4784.47": [
+            "2409.15051_4_claims_12_CometKiwi"
+        ],
+        "34.9934.9934.9934.99": [
+            "2409.15051_4_claims_13_BLEU"
+        ],
+        "84.4284.4284.4284.42": [
+            "2409.15051_4_claims_13_COMET"
+        ],
+        "81.7581.7581.7581.75": [
+            "2409.15051_4_claims_13_CometKiwi"
+        ],
+        "Tower 7B": [
+            "2409.15051_4_claims_14_Model"
+        ],
+        "33.5033.5033.5033.50": [
+            "2409.15051_4_claims_14_BLEU"
+        ],
+        "85.9185.9185.9185.91\u2020": [
+            "2409.15051_4_claims_14_COMET"
+        ],
+        "85.0285.0285.0285.02\u2020": [
+            "2409.15051_4_claims_14_CometKiwi"
+        ],
+        "38.9338.9338.9338.93": [
+            "2409.15051_4_claims_15_BLEU",
+            "2409.15051_4_claims_17_BLEU"
+        ],
+        "86.4986.4986.4986.49": [
+            "2409.15051_4_claims_15_COMET"
+        ],
+        "82.6682.6682.6682.66\u2021": [
+            "2409.15051_4_claims_15_CometKiwi"
+        ],
+        "Mistral 7B": [
+            "2409.15051_4_claims_16_Model"
+        ],
+        "23.2623.2623.2623.26": [
+            "2409.15051_4_claims_16_BLEU"
+        ],
+        "80.0880.0880.0880.08": [
+            "2409.15051_4_claims_16_COMET"
+        ],
+        "82.2982.2982.2982.29": [
+            "2409.15051_4_claims_16_CometKiwi"
+        ],
+        "76.5276.5276.5276.52": [
+            "2409.15051_4_claims_17_COMET"
+        ],
+        "76.1776.1776.1776.17": [
+            "2409.15051_4_claims_17_CometKiwi"
+        ],
+        "Tower 7B*": [
+            "2409.15051_4_claims_18_Model"
+        ],
+        "34.3834.3834.3834.38": [
+            "2409.15051_4_claims_18_BLEU"
+        ],
+        "86.2286.2286.2286.22": [
+            "2409.15051_4_claims_18_COMET"
+        ],
+        "85.2385.2385.2385.23": [
+            "2409.15051_4_claims_18_CometKiwi"
+        ],
+        "39.0839.0839.0839.08": [
+            "2409.15051_4_claims_19_BLEU"
+        ],
+        "86.5286.5286.5286.52": [
+            "2409.15051_4_claims_19_COMET"
+        ],
+        "82.7482.7482.7482.74": [
+            "2409.15051_4_claims_19_CometKiwi"
+        ],
+        "30.8030.8030.8030.80": [
+            "2409.15051_2_claims_0_without_<eos>"
+        ],
+        "41.1141.1141.1141.11": [
+            "2409.15051_2_claims_0_with_<eos>"
+        ],
+        "39.1239.1239.1239.12": [
+            "2409.15051_2_claims_1_without_<eos>"
+        ],
+        "45.1345.1345.1345.13": [
+            "2409.15051_2_claims_1_with_<eos>"
+        ],
+        "40.8540.8540.8540.85": [
+            "2409.15051_2_claims_2_without_<eos>"
+        ],
+        "46.8246.8246.8246.82": [
+            "2409.15051_2_claims_2_with_<eos>"
+        ],
+        "Averge(M,R)": [
+            "2312.07250_3_claims_2_Auto._Metrics",
+            "2312.07250_3_claims_8_Auto._Metrics",
+            "2312.07250_3_claims_14_Auto._Metrics"
+        ],
+        "HOPE": [
+            "2312.07250_3_claims_3_Average",
+            "2312.07250_3_claims_5_Diff._in_Scores",
+            "2312.07250_3_claims_9_Average",
+            "2312.07250_3_claims_11_Diff._in_Scores",
+            "2312.07250_3_claims_15_Average",
+            "2312.07250_3_claims_17_Diff._in_Scores"
+        ],
+        "Auto.": [
+            "2312.07250_3_claims_4_Average",
+            "2312.07250_3_claims_10_Average",
+            "2312.07250_3_claims_16_Average"
+        ],
+        "MMA": [
+            "2312.14488_4_claims_0_Model",
+            "2312.14488_4_claims_1_Model"
+        ],
+        "BLEU\u2191\u2191\\uparrow\u2191": [
+            "2312.14488_4_claims_0_ablation_experiments_on_the_model_with_a_delay_loss_weight_of_0._1",
+            "2312.14488_4_claims_2_ablation_experiments_on_the_model_with_a_delay_loss_weight_of_0._1",
+            "2312.14488_4_claims_4_ablation_experiments_on_the_model_with_a_delay_loss_weight_of_0._1",
+            "2312.14488_4_claims_6_ablation_experiments_on_the_model_with_a_delay_loss_weight_of_0._1"
+        ],
+        "AL\u2193\u2193\\downarrow\u2193": [
+            "2312.14488_4_claims_1_ablation_experiments_on_the_model_with_a_delay_loss_weight_of_0._1",
+            "2312.14488_4_claims_3_ablation_experiments_on_the_model_with_a_delay_loss_weight_of_0._1",
+            "2312.14488_4_claims_5_ablation_experiments_on_the_model_with_a_delay_loss_weight_of_0._1",
+            "2312.14488_4_claims_7_ablation_experiments_on_the_model_with_a_delay_loss_weight_of_0._1"
+        ],
+        "+Pre-trained LM": [
+            "2312.14488_4_claims_2_Model",
+            "2312.14488_4_claims_3_Model"
+        ],
+        "+LM loss": [
+            "2312.14488_4_claims_4_Model",
+            "2312.14488_4_claims_5_Model",
+            "2312.14488_4_claims_6_Model",
+            "2312.14488_4_claims_7_Model"
+        ],
+        "no\n\nteacher forcing": [
+            "2402.10940_1_claims_0_Attention-based\n\nseq2seq\n\nDiagnosis_Predictor"
+        ],
+        "1-layer": [
+            "2402.10940_1_claims_0_F1-score",
+            "2402.10940_1_claims_3_F1-score"
+        ],
+        "1.08e-02": [
+            "2402.10940_1_claims_0_Jaccard\n\nIndex"
+        ],
+        "5.45e-03": [
+            "2402.10940_1_claims_0_First-N-Accuracy"
+        ],
+        "2-layer": [
+            "2402.10940_1_claims_1_Attention-based\n\nseq2seq\n\nDiagnosis_Predictor",
+            "2402.10940_1_claims_4_Attention-based\n\nseq2seq\n\nDiagnosis_Predictor"
+        ],
+        "9.94e-03": [
+            "2402.10940_1_claims_1_F1-score"
+        ],
+        "5.00e-03": [
+            "2402.10940_1_claims_1_Jaccard\n\nIndex"
+        ],
+        "0.2488": [
+            "2402.10940_1_claims_1_First-N-Accuracy"
+        ],
+        "3-layer": [
+            "2402.10940_1_claims_2_Attention-based\n\nseq2seq\n\nDiagnosis_Predictor",
+            "2402.10940_1_claims_5_Attention-based\n\nseq2seq\n\nDiagnosis_Predictor"
+        ],
+        "6.35e-03": [
+            "2402.10940_1_claims_2_F1-score"
+        ],
+        "3.18e-03": [
+            "2402.10940_1_claims_2_Jaccard\n\nIndex"
+        ],
+        "0.1871": [
+            "2402.10940_1_claims_2_First-N-Accuracy"
+        ],
+        "with\n\nteacher forcing": [
+            "2402.10940_1_claims_3_Attention-based\n\nseq2seq\n\nDiagnosis_Predictor"
+        ],
+        "8.66e-03": [
+            "2402.10940_1_claims_3_Jaccard\n\nIndex"
+        ],
+        "4.35e-03": [
+            "2402.10940_1_claims_3_First-N-Accuracy"
+        ],
+        "8.02e-03": [
+            "2402.10940_1_claims_4_F1-score"
+        ],
+        "4.02e-03": [
+            "2402.10940_1_claims_4_Jaccard\n\nIndex"
+        ],
+        "0.2321": [
+            "2402.10940_1_claims_4_First-N-Accuracy"
+        ],
+        "3.14e-03": [
+            "2402.10940_1_claims_5_F1-score"
+        ],
+        "1.57e-03": [
+            "2402.10940_1_claims_5_Jaccard\n\nIndex"
+        ],
+        "0.1505": [
+            "2402.10940_1_claims_5_First-N-Accuracy"
+        ],
+        "1.06\u00d710141.06E141.06\\text{\\times}{10}^{14}start_ARG 1.06 end_ARG start_ARG times end_ARG start_ARG power start_ARG 10 end_ARG start_ARG 14 end_ARG end_ARG": [
+            "2409.15051_5_claims_0_FLOP_per_s."
+        ],
+        "1170": [
+            "2409.15051_5_claims_0_Samples_per_s."
+        ],
+        "70M+d768": [
+            "2409.15051_5_claims_1_Model"
+        ],
+        "119\u2009599\u2009104119599104119\\,599\\,104119 599 104": [
+            "2409.15051_5_claims_1_Non-embedding"
+        ],
+        "1.74\u00d710141.74E141.74\\text{\\times}{10}^{14}start_ARG 1.74 end_ARG start_ARG times end_ARG start_ARG power start_ARG 10 end_ARG start_ARG 14 end_ARG end_ARG": [
+            "2409.15051_5_claims_1_FLOP_per_s."
+        ],
+        "900": [
+            "2409.15051_5_claims_1_Samples_per_s."
+        ],
+        "70M+12l": [
+            "2409.15051_5_claims_2_Model"
+        ],
+        "178\u2009339\u2009840178339840178\\,339\\,840178 339 840": [
+            "2409.15051_5_claims_2_Non-embedding",
+            "2409.15051_5_claims_3_Non-embedding"
+        ],
+        "1.37\u00d710141.37E141.37\\text{\\times}{10}^{14}start_ARG 1.37 end_ARG start_ARG times end_ARG start_ARG power start_ARG 10 end_ARG start_ARG 14 end_ARG end_ARG": [
+            "2409.15051_5_claims_2_FLOP_per_s."
+        ],
+        "760": [
+            "2409.15051_5_claims_2_Samples_per_s."
+        ],
+        "70M+d1024": [
+            "2409.15051_5_claims_3_Model"
+        ],
+        "2.43\u00d710142.43E142.43\\text{\\times}{10}^{14}start_ARG 2.43 end_ARG start_ARG times end_ARG start_ARG power start_ARG 10 end_ARG start_ARG 14 end_ARG end_ARG": [
+            "2409.15051_5_claims_3_FLOP_per_s."
+        ],
+        "725": [
+            "2409.15051_5_claims_3_Samples_per_s."
+        ],
+        "70M+24l": [
+            "2409.15051_5_claims_4_Model"
+        ],
+        "127\u2009038\u2009464127038464127\\,038\\,464127 038 464": [
+            "2409.15051_5_claims_4_Non-embedding"
+        ],
+        "1.6\u00d710141.6E141.6\\text{\\times}{10}^{14}start_ARG 1.6 end_ARG start_ARG times end_ARG start_ARG power start_ARG 10 end_ARG start_ARG 14 end_ARG end_ARG": [
+            "2409.15051_5_claims_4_FLOP_per_s."
+        ],
+        "445": [
+            "2409.15051_5_claims_4_Samples_per_s."
+        ],
+        "en-fr": [
+            "2409.19523_1_claims_0_translation",
+            "2409.19523_1_claims_4_translation",
+            "2409.19523_1_claims_8_translation",
+            "2409.19523_1_claims_12_translation"
+        ],
+        "fr-en": [
+            "2409.19523_1_claims_1_translation",
+            "2409.19523_1_claims_5_translation",
+            "2409.19523_1_claims_9_translation",
+            "2409.19523_1_claims_13_translation"
+        ],
+        "en-zh": [
+            "2409.19523_1_claims_2_translation",
+            "2409.19523_1_claims_6_translation",
+            "2409.19523_1_claims_10_translation",
+            "2409.19523_1_claims_14_translation"
+        ],
+        "zh-en": [
+            "2409.19523_1_claims_3_translation",
+            "2409.19523_1_claims_7_translation",
+            "2409.19523_1_claims_11_translation",
+            "2409.19523_1_claims_15_translation"
+        ],
+        "\u221e\\infty\u221e": [
+            "2311.14465_3_claims_0_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_7_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_14_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_0_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_7_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_14_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5"
+        ],
+        "Random shuffling": [
+            "2311.14465_3_claims_0_Iteration_Method",
+            "2311.14465_3_claims_1_Iteration_Method",
+            "2311.14465_3_claims_3_Iteration_Method",
+            "2311.14465_3_claims_5_Iteration_Method",
+            "2311.14465_3_claims_7_Iteration_Method",
+            "2311.14465_3_claims_8_Iteration_Method",
+            "2311.14465_3_claims_10_Iteration_Method",
+            "2311.14465_3_claims_12_Iteration_Method",
+            "2311.14465_3_claims_14_Iteration_Method",
+            "2311.14465_3_claims_15_Iteration_Method",
+            "2311.14465_3_claims_17_Iteration_Method",
+            "2311.14465_3_claims_19_Iteration_Method",
+            "2311.14465_2_claims_0_Iteration_Method",
+            "2311.14465_2_claims_1_Iteration_Method",
+            "2311.14465_2_claims_3_Iteration_Method",
+            "2311.14465_2_claims_5_Iteration_Method",
+            "2311.14465_2_claims_7_Iteration_Method",
+            "2311.14465_2_claims_8_Iteration_Method",
+            "2311.14465_2_claims_10_Iteration_Method",
+            "2311.14465_2_claims_12_Iteration_Method",
+            "2311.14465_2_claims_14_Iteration_Method",
+            "2311.14465_2_claims_15_Iteration_Method",
+            "2311.14465_2_claims_17_Iteration_Method",
+            "2311.14465_2_claims_19_Iteration_Method"
+        ],
+        "36.19 (0.13)": [
+            "2311.14465_3_claims_0_Test_BLEU"
+        ],
+        "0.95 (0.00)": [
+            "2311.14465_3_claims_0_Test_BERTScore"
+        ],
+        "1000100010001000": [
+            "2311.14465_3_claims_1_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_2_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_8_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_9_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_15_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_16_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_1_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_2_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_8_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_9_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_15_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_16_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5"
+        ],
+        "20.86 (0.56)": [
+            "2311.14465_3_claims_1_Test_BLEU"
+        ],
+        "0.92 (0.00)": [
+            "2311.14465_3_claims_1_Test_BERTScore",
+            "2311.14465_3_claims_3_Test_BERTScore",
+            "2311.14465_3_claims_5_Test_BERTScore"
+        ],
+        "Poisson sampling": [
+            "2311.14465_3_claims_2_Iteration_Method",
+            "2311.14465_3_claims_4_Iteration_Method",
+            "2311.14465_3_claims_6_Iteration_Method",
+            "2311.14465_3_claims_9_Iteration_Method",
+            "2311.14465_3_claims_11_Iteration_Method",
+            "2311.14465_3_claims_13_Iteration_Method",
+            "2311.14465_3_claims_16_Iteration_Method",
+            "2311.14465_3_claims_18_Iteration_Method",
+            "2311.14465_3_claims_20_Iteration_Method",
+            "2311.14465_2_claims_2_Iteration_Method",
+            "2311.14465_2_claims_4_Iteration_Method",
+            "2311.14465_2_claims_6_Iteration_Method",
+            "2311.14465_2_claims_9_Iteration_Method",
+            "2311.14465_2_claims_11_Iteration_Method",
+            "2311.14465_2_claims_13_Iteration_Method",
+            "2311.14465_2_claims_16_Iteration_Method",
+            "2311.14465_2_claims_18_Iteration_Method",
+            "2311.14465_2_claims_20_Iteration_Method"
+        ],
+        "15.12 (0.08)": [
+            "2311.14465_3_claims_2_Test_BLEU"
+        ],
+        "0.91 (0.00)": [
+            "2311.14465_3_claims_2_Test_BERTScore"
+        ],
+        "5555": [
+            "2311.14465_3_claims_3_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_4_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_10_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_11_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_17_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_18_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_3_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_4_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_10_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_11_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_17_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_18_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5"
+        ],
+        "19.24 (0.52)": [
+            "2311.14465_3_claims_3_Test_BLEU"
+        ],
+        "7.23 (0.21)": [
+            "2311.14465_3_claims_4_Test_BLEU"
+        ],
+        "0.89 (0.00)": [
+            "2311.14465_3_claims_4_Test_BERTScore"
+        ],
+        "1111": [
+            "2311.14465_3_claims_5_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_6_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_12_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_13_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_19_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_3_claims_20_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_5_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_6_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_12_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_13_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_19_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5",
+            "2311.14465_2_claims_20_\u03b5\ud835\udf00\\varepsilonitalic_\u03b5"
+        ],
+        "19.83 (0.64)": [
+            "2311.14465_3_claims_5_Test_BLEU"
+        ],
+        "2.35 (0.07)": [
+            "2311.14465_3_claims_6_Test_BLEU"
+        ],
+        "0.84 (0.00)": [
+            "2311.14465_3_claims_6_Test_BERTScore"
+        ],
+        "10.09 (2.75)": [
+            "2311.14465_3_claims_7_Test_BLEU"
+        ],
+        "0.90 (0.01)": [
+            "2311.14465_3_claims_7_Test_BERTScore"
+        ],
+        "1.36 (0.67)": [
+            "2311.14465_3_claims_8_Test_BLEU"
+        ],
+        "0.87 (0.01)": [
+            "2311.14465_3_claims_8_Test_BERTScore"
+        ],
+        "1.01 (0.07)": [
+            "2311.14465_3_claims_9_Test_BLEU"
+        ],
+        "0.87 (0.00)": [
+            "2311.14465_3_claims_9_Test_BERTScore"
+        ],
+        "0.06 (0.05)": [
+            "2311.14465_3_claims_10_Test_BLEU"
+        ],
+        "0.85 (0.01)": [
+            "2311.14465_3_claims_10_Test_BERTScore"
+        ],
+        "0.06 (0.06)": [
+            "2311.14465_3_claims_11_Test_BLEU"
+        ],
+        "0.84 (0.02)": [
+            "2311.14465_3_claims_11_Test_BERTScore"
+        ],
+        "0.00 (0.01)": [
+            "2311.14465_3_claims_12_Test_BLEU"
+        ],
+        "0.45 (0.22)": [
+            "2311.14465_3_claims_12_Test_BERTScore"
+        ],
+        "0.00 (0.00)": [
+            "2311.14465_3_claims_13_Test_BLEU"
+        ],
+        "0.65 (0.15)": [
+            "2311.14465_3_claims_13_Test_BERTScore"
+        ],
+        "5.42 (2.41)": [
+            "2311.14465_3_claims_14_Test_BLEU"
+        ],
+        "0.86 (0.02)": [
+            "2311.14465_3_claims_14_Test_BERTScore"
+        ],
+        "0.03 (0.02)": [
+            "2311.14465_3_claims_15_Test_BLEU"
+        ],
+        "0.75 (0.01)": [
+            "2311.14465_3_claims_15_Test_BERTScore"
+        ],
+        "0.70 (0.19)": [
+            "2311.14465_3_claims_16_Test_BLEU"
+        ],
+        "0.78 (0.00)": [
+            "2311.14465_3_claims_16_Test_BERTScore",
+            "2311.14465_3_claims_19_Test_BERTScore",
+            "2311.14465_3_claims_20_Test_BERTScore"
+        ],
+        "0.80 (0.56)": [
+            "2311.14465_3_claims_17_Test_BLEU"
+        ],
+        "0.79 (0.00)": [
+            "2311.14465_3_claims_17_Test_BERTScore",
+            "2311.14465_3_claims_18_Test_BERTScore"
+        ],
+        "0.83 (0.27)": [
+            "2311.14465_3_claims_18_Test_BLEU"
+        ],
+        "0.50 (0.20)": [
+            "2311.14465_3_claims_19_Test_BLEU"
+        ],
+        "0.54 (0.22)": [
+            "2311.14465_3_claims_20_Test_BLEU"
+        ],
+        "my grandfather work harder than your grandfather before": [
+            "2409.00071_1_claims_0_Sample_Generated_Sentences"
+        ],
+        "good": [
+            "2409.00071_1_claims_0_Qualitative_Evaluation",
+            "2409.00071_1_claims_1_Qualitative_Evaluation",
+            "2409.00071_1_claims_2_Qualitative_Evaluation"
+        ],
+        "to consider quit job is this dream man": [
+            "2409.00071_1_claims_1_Sample_Generated_Sentences"
+        ],
+        "ask me that healthy lunch im cooking up": [
+            "2409.00071_1_claims_2_Sample_Generated_Sentences"
+        ],
+        "maryam discovered hes hes am am are are": [
+            "2409.00071_1_claims_3_Sample_Generated_Sentences"
+        ],
+        "repetition": [
+            "2409.00071_1_claims_3_Qualitative_Evaluation",
+            "2409.00071_1_claims_4_Qualitative_Evaluation"
+        ],
+        "home actually was everything everything listen actually everything": [
+            "2409.00071_1_claims_4_Sample_Generated_Sentences"
+        ],
+        "cheerful weird yourself punished music alone everybody everybody": [
+            "2409.00071_1_claims_5_Sample_Generated_Sentences"
+        ],
+        "nonsensical": [
+            "2409.00071_1_claims_5_Qualitative_Evaluation",
+            "2409.00071_1_claims_6_Qualitative_Evaluation"
+        ],
+        "those in so friends so complicated english comes": [
+            "2409.00071_1_claims_6_Sample_Generated_Sentences"
+        ],
+        "stressed gloves eating eating worried online online online": [
+            "2409.00071_1_claims_7_Sample_Generated_Sentences"
+        ],
+        "unrelated": [
+            "2409.00071_1_claims_7_Qualitative_Evaluation"
+        ],
+        "8.97": [
+            "2409.17939_3_claims_0_60\u201369%"
+        ],
+        "9.61": [
+            "2409.17939_3_claims_0_70\u201379%"
+        ],
+        "7.98": [
+            "2409.17939_3_claims_0_80\u201389%"
+        ],
+        "7.87": [
+            "2409.17939_3_claims_0_90\u2013100%"
+        ],
+        "4.82": [
+            "2409.17939_3_claims_1_60\u201369%"
+        ],
+        "5.58": [
+            "2409.17939_3_claims_1_70\u201379%"
+        ],
+        "3.85": [
+            "2409.17939_3_claims_1_80\u201389%"
+        ],
+        "2.74": [
+            "2409.17939_3_claims_1_90\u2013100%"
+        ],
+        "3.39": [
+            "2409.17939_3_claims_2_60\u201369%"
+        ],
+        "3.46": [
+            "2409.17939_3_claims_2_70\u201379%"
+        ],
+        "2.89": [
+            "2409.17939_3_claims_2_80\u201389%"
+        ],
+        "3.02": [
+            "2409.17939_3_claims_2_90\u2013100%"
+        ],
+        "0.15": [
+            "2409.17939_3_claims_3_60\u201369%"
+        ],
+        "0.14": [
+            "2409.17939_3_claims_3_70\u201379%"
+        ],
+        "0.28": [
+            "2409.17939_3_claims_3_80\u201389%"
+        ],
+        "0.19": [
+            "2409.17939_3_claims_3_90\u2013100%"
+        ],
+        "3.75": [
+            "2409.17939_3_claims_4_60\u201369%"
+        ],
+        "4.16": [
+            "2409.17939_3_claims_4_80\u201389%"
+        ],
+        "6.35": [
+            "2409.17939_3_claims_4_90\u2013100%"
+        ],
+        "ende": [
+            "2409.15051_1_claims_0_Pair"
+        ],
+        "general": [
+            "2409.15051_1_claims_0_Domain",
+            "2409.15051_1_claims_2_Domain",
+            "2409.15051_1_claims_4_Domain",
+            "2409.15051_1_claims_6_Domain",
+            "2409.15051_1_claims_8_Domain",
+            "2409.15051_1_claims_10_Domain",
+            "2409.15051_1_claims_12_Domain",
+            "2409.15051_1_claims_14_Domain",
+            "2409.15051_1_claims_16_Domain",
+            "2409.15051_1_claims_18_Domain",
+            "2409.15051_1_claims_20_Domain",
+            "2409.15051_1_claims_22_Domain"
+        ],
+        "finance": [
+            "2409.15051_1_claims_1_Domain",
+            "2409.15051_1_claims_3_Domain",
+            "2409.15051_1_claims_5_Domain",
+            "2409.15051_1_claims_7_Domain",
+            "2409.15051_1_claims_9_Domain",
+            "2409.15051_1_claims_11_Domain",
+            "2409.15051_1_claims_13_Domain",
+            "2409.15051_1_claims_15_Domain",
+            "2409.15051_1_claims_17_Domain",
+            "2409.15051_1_claims_19_Domain",
+            "2409.15051_1_claims_21_Domain",
+            "2409.15051_1_claims_23_Domain"
+        ],
+        "enes": [
+            "2409.15051_1_claims_2_Pair"
+        ],
+        "enfr": [
+            "2409.15051_1_claims_4_Pair"
+        ],
+        "enit": [
+            "2409.15051_1_claims_6_Pair"
+        ],
+        "ennl": [
+            "2409.15051_1_claims_8_Pair"
+        ],
+        "enpt": [
+            "2409.15051_1_claims_10_Pair"
+        ],
+        "ensv": [
+            "2409.15051_1_claims_12_Pair"
+        ],
+        "frde": [
+            "2409.15051_1_claims_14_Pair"
+        ],
+        "fres": [
+            "2409.15051_1_claims_16_Pair"
+        ],
+        "frit": [
+            "2409.15051_1_claims_18_Pair"
+        ],
+        "frnl": [
+            "2409.15051_1_claims_20_Pair"
+        ],
+        "Total:": [
+            "2409.15051_1_claims_22_Pair"
+        ],
+        "all": [
+            "2409.15051_1_claims_24_Domain"
+        ],
+        "66": [
+            "2402.10940_2_claims_0_ICD-9_code"
+        ],
+        "4528": [
+            "2402.10940_2_claims_0_Cases"
+        ],
+        "2.90%": [
+            "2402.10940_2_claims_0_Frequency"
+        ],
+        "9.8625": [
+            "2402.10940_2_claims_0_Entropy_After_Receiving"
+        ],
+        "8938": [
+            "2402.10940_2_claims_1_ICD-9_code"
+        ],
+        "4036": [
+            "2402.10940_2_claims_1_Cases"
+        ],
+        "2.59%": [
+            "2402.10940_2_claims_1_Frequency"
+        ],
+        "741": [
+            "2402.10940_2_claims_2_ICD-9_code"
+        ],
+        "3443": [
+            "2402.10940_2_claims_2_Cases"
+        ],
+        "2.21%": [
+            "2402.10940_2_claims_2_Frequency"
+        ],
+        "7.6941": [
+            "2402.10940_2_claims_2_Entropy_After_Receiving"
+        ],
+        "8952": [
+            "2402.10940_2_claims_3_ICD-9_code"
+        ],
+        "3426": [
+            "2402.10940_2_claims_3_Cases"
+        ],
+        "2.20%": [
+            "2402.10940_2_claims_3_Frequency"
+        ],
+        "9.9164": [
+            "2402.10940_2_claims_3_Entropy_After_Receiving"
+        ],
+        "7569": [
+            "2402.10940_2_claims_4_ICD-9_code"
+        ],
+        "3399": [
+            "2402.10940_2_claims_4_Cases"
+        ],
+        "2.18%": [
+            "2402.10940_2_claims_4_Frequency"
+        ],
+        "6.3773": [
+            "2402.10940_2_claims_4_Entropy_After_Receiving"
+        ],
+        "3893": [
+            "2402.10940_2_claims_5_ICD-9_code"
+        ],
+        "3242": [
+            "2402.10940_2_claims_5_Cases"
+        ],
+        "2.08%": [
+            "2402.10940_2_claims_5_Frequency"
+        ],
+        "9.1968": [
+            "2402.10940_2_claims_5_Entropy_After_Receiving"
+        ],
+        "9925": [
+            "2402.10940_2_claims_6_ICD-9_code"
+        ],
+        "3111": [
+            "2402.10940_2_claims_6_Cases"
+        ],
+        "1.99%": [
+            "2402.10940_2_claims_6_Frequency"
+        ],
+        "7.2922": [
+            "2402.10940_2_claims_6_Entropy_After_Receiving"
+        ],
+        "3995": [
+            "2402.10940_2_claims_7_ICD-9_code"
+        ],
+        "3019": [
+            "2402.10940_2_claims_7_Cases"
+        ],
+        "1.94%": [
+            "2402.10940_2_claims_7_Frequency"
+        ],
+        "8.4310": [
+            "2402.10940_2_claims_7_Entropy_After_Receiving"
+        ],
+        "9671": [
+            "2402.10940_2_claims_8_ICD-9_code"
+        ],
+        "2790": [
+            "2402.10940_2_claims_8_Cases"
+        ],
+        "1.79%": [
+            "2402.10940_2_claims_8_Frequency"
+        ],
+        "10.2779": [
+            "2402.10940_2_claims_8_Entropy_After_Receiving"
+        ],
+        "5491": [
+            "2402.10940_2_claims_9_ICD-9_code"
+        ],
+        "2703": [
+            "2402.10940_2_claims_9_Cases"
+        ],
+        "1.73%": [
+            "2402.10940_2_claims_9_Frequency"
+        ],
+        "8.4703": [
+            "2402.10940_2_claims_9_Entropy_After_Receiving"
+        ],
+        "2 h 45 m 08 s": [
+            "2311.14465_2_claims_0_Epoch_Time"
+        ],
+        "2 h 59 m 15 s": [
+            "2311.14465_2_claims_1_Epoch_Time"
+        ],
+        "4 h 08 m 01 s": [
+            "2311.14465_2_claims_2_Epoch_Time"
+        ],
+        "1 h 30 m 03 s": [
+            "2311.14465_2_claims_3_Epoch_Time"
+        ],
+        "4 h 02 m 35 s": [
+            "2311.14465_2_claims_4_Epoch_Time"
+        ],
+        "1 h 29 m 49 s": [
+            "2311.14465_2_claims_5_Epoch_Time"
+        ],
+        "4 h 09 m 02 s": [
+            "2311.14465_2_claims_6_Epoch_Time"
+        ],
+        "0 h 01 m 17 s": [
+            "2311.14465_2_claims_7_Epoch_Time"
+        ],
+        "0 h 01 m 59 s": [
+            "2311.14465_2_claims_8_Epoch_Time"
+        ],
+        "0 h 01 m 49 s": [
+            "2311.14465_2_claims_9_Epoch_Time",
+            "2311.14465_2_claims_11_Epoch_Time"
+        ],
+        "0 h 00 m 52 s": [
+            "2311.14465_2_claims_10_Epoch_Time"
+        ],
+        "0 h 01 m 09 s": [
+            "2311.14465_2_claims_12_Epoch_Time"
+        ],
+        "0 h 02 m 15 s": [
+            "2311.14465_2_claims_13_Epoch_Time"
+        ],
+        "0 h 00 m 09 s": [
+            "2311.14465_2_claims_14_Epoch_Time"
+        ],
+        "0 h 00 m 05 s": [
+            "2311.14465_2_claims_15_Epoch_Time"
+        ],
+        "0 h 00 m 28 s": [
+            "2311.14465_2_claims_16_Epoch_Time"
+        ],
+        "0 h 00 m 10 s": [
+            "2311.14465_2_claims_17_Epoch_Time"
+        ],
+        "0 h 00 m 27 s": [
+            "2311.14465_2_claims_18_Epoch_Time",
+            "2311.14465_2_claims_20_Epoch_Time"
+        ],
+        "0 h 00 m 15 s": [
+            "2311.14465_2_claims_19_Epoch_Time"
+        ],
+        "Llama2-7B SFT": [
+            "2410.07830_2_claims_0_Models",
+            "2410.07830_2_claims_1_Models",
+            "2410.07830_2_claims_2_Models",
+            "2410.07830_2_claims_3_Models"
+        ],
+        "+ Mono": [
+            "2410.07830_2_claims_4_Models",
+            "2410.07830_2_claims_5_Models",
+            "2410.07830_2_claims_6_Models",
+            "2410.07830_2_claims_7_Models"
+        ],
+        "+ Mono + BT": [
+            "2410.07830_2_claims_8_Models",
+            "2410.07830_2_claims_9_Models",
+            "2410.07830_2_claims_10_Models",
+            "2410.07830_2_claims_11_Models"
+        ],
+        "+ Mono + Cleaner": [
+            "2410.07830_2_claims_12_Models",
+            "2410.07830_2_claims_13_Models",
+            "2410.07830_2_claims_14_Models",
+            "2410.07830_2_claims_15_Models"
+        ],
+        "+ Mono + Cleaner + BT": [
+            "2410.07830_2_claims_16_Models",
+            "2410.07830_2_claims_17_Models",
+            "2410.07830_2_claims_18_Models",
+            "2410.07830_2_claims_19_Models"
+        ],
+        "8952 8744 8938": [
+            "2402.10940_4_claims_0_ICD-9_code"
+        ],
+        "989": [
+            "2402.10940_4_claims_0_Cases"
+        ],
+        "6.3\u2030": [
+            "2402.10940_4_claims_0_Frequency"
+        ],
+        "9.9174": [
+            "2402.10940_4_claims_0_Entropy_After_Receiving"
+        ],
+        "0066 3607 3722": [
+            "2402.10940_4_claims_1_ICD-9_code"
+        ],
+        "887": [
+            "2402.10940_4_claims_1_Cases"
+        ],
+        "5.7\u2030": [
+            "2402.10940_4_claims_1_Frequency"
+        ],
+        "9.7971": [
+            "2402.10940_4_claims_1_Entropy_After_Receiving"
+        ],
+        "8952 8938 8744": [
+            "2402.10940_4_claims_2_ICD-9_code"
+        ],
+        "769": [
+            "2402.10940_4_claims_2_Cases"
+        ],
+        "4.9\u2030": [
+            "2402.10940_4_claims_2_Frequency"
+        ],
+        "9.9189": [
+            "2402.10940_4_claims_2_Entropy_After_Receiving"
+        ],
+        "0066 3607 0045": [
+            "2402.10940_4_claims_3_ICD-9_code"
+        ],
+        "705": [
+            "2402.10940_4_claims_3_Cases"
+        ],
+        "4.5\u2030": [
+            "2402.10940_4_claims_3_Frequency"
+        ],
+        "9.8413": [
+            "2402.10940_4_claims_3_Entropy_After_Receiving"
+        ],
+        "8938 8952 8744": [
+            "2402.10940_4_claims_4_ICD-9_code"
+        ],
+        "489": [
+            "2402.10940_4_claims_4_Cases"
+        ],
+        "3.1\u2030": [
+            "2402.10940_4_claims_4_Frequency"
+        ],
+        "7.1029": [
+            "2402.10940_4_claims_4_Entropy_After_Receiving"
+        ],
+        "3612 3615 3961": [
+            "2402.10940_4_claims_5_ICD-9_code"
+        ],
+        "372": [
+            "2402.10940_4_claims_5_Cases"
+        ],
+        "2.4\u2030": [
+            "2402.10940_4_claims_5_Frequency"
+        ],
+        "9.0666": [
+            "2402.10940_4_claims_5_Entropy_After_Receiving"
+        ],
+        "3613 3615 3961": [
+            "2402.10940_4_claims_6_ICD-9_code"
+        ],
+        "359": [
+            "2402.10940_4_claims_6_Cases"
+        ],
+        "2.3\u2030": [
+            "2402.10940_4_claims_6_Frequency"
+        ],
+        "9.9924": [
+            "2402.10940_4_claims_6_Entropy_After_Receiving"
+        ],
+        "0066 3607 0040": [
+            "2402.10940_4_claims_7_ICD-9_code"
+        ],
+        "332": [
+            "2402.10940_4_claims_7_Cases"
+        ],
+        "2.1\u2030": [
+            "2402.10940_4_claims_7_Frequency"
+        ],
+        "9.8252": [
+            "2402.10940_4_claims_7_Entropy_After_Receiving"
+        ],
+        "0066 3606 3722": [
+            "2402.10940_4_claims_8_ICD-9_code"
+        ],
+        "306": [
+            "2402.10940_4_claims_8_Cases"
+        ],
+        "2.0\u2030": [
+            "2402.10940_4_claims_8_Frequency"
+        ],
+        "9.8325": [
+            "2402.10940_4_claims_8_Entropy_After_Receiving"
+        ],
+        "0066 3607 0046": [
+            "2402.10940_4_claims_9_ICD-9_code"
+        ],
+        "286": [
+            "2402.10940_4_claims_9_Cases"
+        ],
+        "1.8\u2030": [
+            "2402.10940_4_claims_9_Frequency"
+        ],
+        "9.8265": [
+            "2402.10940_4_claims_9_Entropy_After_Receiving"
+        ],
+        "Critical: 10101010": [
+            "2410.06338_1_claims_0_Sets_of_Weights,_Minor:_1111,_Major:_5555"
+        ],
+        "Ranking Similarities": [
+            "2410.06338_1_claims_0_ranking_stability_of_severity_weights",
+            "2410.06338_1_claims_1_ranking_stability_of_severity_weights",
+            "2410.06338_1_claims_2_ranking_stability_of_severity_weights",
+            "2410.06338_1_claims_3_ranking_stability_of_severity_weights"
+        ],
+        "Critical: 9999": [
+            "2410.06338_1_claims_1_Sets_of_Weights,_Minor:_1111,_Major:_3333"
+        ],
+        "Critical: 15151515": [
+            "2410.06338_1_claims_2_Sets_of_Weights,_Minor:_1111,_Major:_5555"
+        ],
+        "Critical: 25252525": [
+            "2410.06338_1_claims_3_Sets_of_Weights,_Minor:_1111,_Major:_5555"
+        ]
+    }
+}

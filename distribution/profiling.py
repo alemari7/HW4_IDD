@@ -30,6 +30,14 @@ def spec_distribution(input_filename, output_filename):
     save_distribution_to_csv(distribution, output_filename, ['Specification', 'Frequency'])
     print(f"La distribuzione delle specifiche è stata salvata in {output_filename}")
 
+# Funzione per calcolare e salvare la distribuzione sui valori
+def values_distribution(input_filename, output_filename):
+    data = load_json(input_filename)
+    values = [list(item.values())[0] for item in data.values()]
+    distribution = Counter(values)
+    save_distribution_to_csv(distribution, output_filename, ['Value', 'Frequency'])
+    print(f"La distribuzione dei valori è stata salvata in {output_filename}")
+
 # Funzione per calcolare e salvare la distribuzione delle metriche
 def metric_distribution(input_filename, output_filename):
     data = load_json(input_filename)
@@ -66,4 +74,5 @@ if os.path.exists(OUTPUT):
 # Esegui le distribuzioni
 spec_distribution(INPUT_SPEC, OUTPUT)
 metric_distribution(INPUT_METRIC, OUTPUT)
+values_distribution(INPUT_SPEC, OUTPUT)
 metric_averages(INPUT_METRIC, OUTPUT)

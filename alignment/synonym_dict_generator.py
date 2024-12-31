@@ -2,6 +2,10 @@ from sentence_transformers import SentenceTransformer, util
 import json
 import re
 
+input_filename = 'alignment/aligned_output'
+output_filename = 'alignment/synonym_dict.json'
+
+
 def group_synonyms(input_array):
     # Normalizzazione dei termini per evitare che "data set" e "dataset" vengano trattati come separati
     input_array = [re.sub(r'\s+', ' ', term.strip().lower()) for term in input_array]
@@ -65,7 +69,7 @@ def group_synonyms(input_array):
     return final_dict
 
 # Supponiamo che il JSON sia in un file chiamato 'aligned_output.json'
-with open('aligned_output.json', 'r') as file:
+with open(f'{input_filename}.json', 'r') as file:
     data = json.load(file)
 
 # Estrai le chiavi di "aligned_names" ed escludi quelle numeriche
@@ -76,7 +80,6 @@ print("Chiavi di aligned_names (non numeriche):", aligned_names_keys)
 synonym_dict = group_synonyms(aligned_names_keys)
 
 # Salva il dizionario in un file JSON
-output_filename = 'synonym_dict_output.json'
 with open(output_filename, 'w') as outfile:
     json.dump(synonym_dict, outfile, indent=4)
 

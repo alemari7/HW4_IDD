@@ -5,7 +5,7 @@ from collections import defaultdict
 
 # Cartella contenente i file JSON
 input_folder = 'JSON_CLAIMS'
-output_file = 'aligned_output.json'
+output_file = 'alignment/aligned_output.json'
 
 def normalize_name(name):
     """Normalizza i nomi per l'allineamento, gestendo variazioni come underscore e maiuscole."""

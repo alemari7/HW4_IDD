@@ -355,7 +355,7 @@ def process_json_files(output_mapping):
 
 if __name__ == "__main__":
     # Carica il mapping da un file JSON
-    output_mapping = load_mapping("output_mapping.json")
+    output_mapping = load_mapping("classification_mapping.json")
     
     # Resetta la cartella di output
     reset_folder(OUTPUT_FOLDER)

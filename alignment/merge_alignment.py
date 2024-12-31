@@ -3,14 +3,14 @@ import re
 from collections import defaultdict
 
 # Input e output file
-input_file = 'aligned_output.json'
+input_file = 'alignment/aligned_output.json'
 output_file = 'merged_fields_output.json'
 
 def normalize_name(name):
     """Normalizza i nomi per identificare campi simili, unificando varianti come plurali, underscore, spazi e maiuscole."""
     # Rimuovi gli underscore e gli spazi e converte tutto a minuscolo
     normalized = re.sub(r'[\s_]+', '', name.strip().lower())  # Rimuove gli underscore e gli spazi
-    normalized = re.sub(r's$', '', normalized)  # Rimuove plurali semplici
+    normalized = re.sub(r's$', '', normalized)                # Rimuove plurali semplici
     return normalized
 
 def merge_similar_fields(input_data):

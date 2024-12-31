@@ -4,7 +4,7 @@ import re
 
 # Directory contenente i file JSON
 INPUT_DIR = "JSON_CLAIMS"
-OUTPUT_DIR = "Distribution"
+OUTPUT_DIR = "distribution"
 
 # Inizializzo i dizionari
 specifiche_dict = {}

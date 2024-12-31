@@ -3,8 +3,8 @@ import csv
 import os
 from collections import Counter
 
-INPUT_SPEC = 'Distribution/specifiche.json'  # Percorso del tuo file JSON
-INPUT_METRIC = 'Distribution/metriche.json'  # Percorso del tuo file JSON
+INPUT_SPEC = 'distribution/specifiche.json'  # Percorso del tuo file JSON
+INPUT_METRIC = 'distribution/metriche.json'  # Percorso del tuo file JSON
 OUTPUT = 'NAME_PROFILING.csv'                # Nome del file CSV di output
 
 # Funzione per caricare il JSON da un file esterno

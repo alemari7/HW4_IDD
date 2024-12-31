@@ -9,3 +9,6 @@ metriche.json
 specifiche.json
 
 NAME_PROFILING.csv
+
+aligned_output.json
+merged_output.json

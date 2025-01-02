@@ -28,12 +28,15 @@ def process_claims(data, paper_id, name_aliases):
         for key, value in claim_data.items():
             # Estrazione delle specifiche
             matches = re.findall(r'\|([^|]+), ([^|]+)\|', value)
+            spec_id=1
             for match in matches:
                 raw_name, raw_value = match
                 normalized_name = normalize_name(raw_name)
                 generic_name = find_generic_name(normalized_name, name_aliases)  # Trova o unifica il nome generico
 
-                spec_id = f"{paper_id}_{claim_id}_{raw_name.strip().replace(' ', '_')}"
+                paper_id = paper_id.replace("_claims", "")
+                spec_id = f"{paper_id}_{claim_id}_{spec_id}"
+                spec_id += 1
 
                 # Allineamento nomi
                 if generic_name not in aligned_names:

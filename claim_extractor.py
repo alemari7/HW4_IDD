@@ -163,7 +163,9 @@ def process_table_type2(input_file, key, value, table_index):
             for col_index, cell in enumerate(cells[1:], start=1):
                 value = cell.text.strip()
                 if value:
-                    SPEC_NAME = extract_specification_from_text(caption, headers[col_index]) or "SPEC_NAME"
+                    # Estrai il nome della specifica se non è stato già estratto
+                    if(SPEC_NAME == "SPEC_NAME"):
+                        SPEC_NAME = extract_specification_from_text(caption, headers[col_index]) or "SPEC_NAME"
 
                     # Crea la claim
                     data.append({

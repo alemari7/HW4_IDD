@@ -11,7 +11,7 @@ output_folder = "testing/output_test"  # Cartella per salvare i file di output
 os.makedirs(output_folder, exist_ok=True)
 
 # Carica il file di mapping
-with open("output_mapping.json", "r") as f:
+with open("classification_mapping.json", "r") as f:
     output_mapping = json.load(f)
 
 # Svuota e ricrea la cartella di output
@@ -63,8 +63,10 @@ def func1(input_file, key, value, table_index):
             for col_index, cell in enumerate(cells[1:], start=1):  # Salta la prima colonna (nome del modello)
                 value = cell.text.strip()
                 if value:  # Solo celle non vuote
-
-                    SPEC_NAME = extract_specification_from_text(caption, header_keys[col_index]) or "SPEC_NAME"
+                    
+                    if (SPEC_NAME == "SPEC_NAME"):
+                        SPEC_NAME = extract_specification_from_text(caption, header_keys[col_index]) or "SPEC_NAME"
+                        
                     print("caption: ", caption)
                     print("testo: ", header_keys[col_index])
                     print("Spec Name: ", SPEC_NAME)

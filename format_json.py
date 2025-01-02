@@ -19,31 +19,18 @@ def convert_claims_format(input_data):
             measure = ""
             outcome = "N/A"
             
-            for spec_index, detail in enumerate(details):
+            # Analizziamo tutte le specifiche, tranne gli ultimi dettagli
+            for spec_index, detail in enumerate(details[:-1]):  # Escludiamo l'ultimo dettaglio per ora
                 parts = detail.split(",", 1)
                 if len(parts) == 2:
                     name, value = map(str.strip, parts)
                     specifications[str(spec_index)] = {"name": name, "value": value}
-                else:
-                    continue
             
-            # Determina la metrica e l'outcome
-            if details:
-                # Prova con l'ultima colonna come metrica
-                last_detail = details[-1]
-                if is_potential_metric(last_detail):
-                    last_detail_parts = last_detail.split(",", 1)
-                    measure = last_detail_parts[0].strip()
-                    outcome = last_detail_parts[1].strip()
-                else:
-                    # Cerca una colonna plausibile come metrica
-                    for detail in details:
-                        if is_potential_metric(detail):
-                            metric_parts = detail.split(",", 1)
-                            measure = metric_parts[0].strip()
-                            outcome = metric_parts[1].strip()
-                            break
-
+            # Estraiamo la metrica e l'outcome dall'ultimo dettaglio
+            last_detail = details[-1]
+            if ',' in last_detail:
+                measure, outcome = map(str.strip, last_detail.split(",", 1))
+            
             # Aggiungi il risultato al formato specifico
             converted.append({
                 str(index): {

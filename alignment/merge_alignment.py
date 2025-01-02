@@ -4,7 +4,7 @@ from collections import defaultdict
 
 # Input e output file
 input_file = 'alignment/aligned_output.json'
-output_file = 'merged_fields_output.json'
+output_file = 'alignment/merged_fields_output.json'
 synonym_file = 'alignment/synonym_dict.json'  # Il dizionario dei sinonimi
 
 # Funzione per normalizzare il nome

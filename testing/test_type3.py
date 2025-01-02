@@ -10,7 +10,7 @@ output_folder = "testing/output_test"  # Cartella per salvare i file di output
 os.makedirs(output_folder, exist_ok=True)
 
 # Carica il file di mapping
-with open("output_mapping.json", "r") as f:
+with open("classification_mapping.json", "r") as f:
     output_mapping = json.load(f)
 
 # Svuota e ricrea la cartella di output

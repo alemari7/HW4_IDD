@@ -2,19 +2,37 @@ import os
 import json
 from bs4 import BeautifulSoup
 import shutil
+import re
 
 # Percorsi delle cartelle
 input_folder = "sources/json"  # Cartella contenente i file JSON con le tabelle
 output_folder = "testing/output_test"  # Cartella per salvare i file di output
 
 # Carica il file di mapping
-with open("output_mapping.json", "r") as f:
+with open("classification_mapping.json", "r") as f:
     output_mapping = json.load(f)
 
 # Svuota e ricrea la cartella di output
 if os.path.exists(output_folder):
     shutil.rmtree(output_folder)  # Elimina la cartella e il suo contenuto
 os.makedirs(output_folder, exist_ok=True)  # Ricrea la cartella vuota
+
+def extract_keys_with_numeric_values(input_list):
+    # Espressione regolare per identificare valori numerici (inclusi numeri decimali, numeri tra parentesi e in notazione scientifica)
+    pattern = r"^[\d,\.]+(?:\s?\([\d,\.]+\))?|^[\d,\.]+e[-+]?\d+"
+
+    # Lista per memorizzare le chiavi associate a valori numerici
+    keys = []
+
+    # Itera sulla lista di dizionari
+    for item in input_list:
+        for key, value in item.items():
+            # Verifica se il valore è numerico o segue il pattern
+            if isinstance(value, str) and re.match(pattern, value):
+                keys.append(key)
+
+    return keys
+
 
 # Funzione per estrarre claims da una tabella HTML
 def func1(html_content, table_id, paper_id):
@@ -29,25 +47,45 @@ def func1(html_content, table_id, paper_id):
     rows = table.find_all("tr")[1:]  # Ignora la riga delle intestazioni
 
     claims = []
+    keys = []
 
     for row_index, row in enumerate(rows):
         cells = row.find_all("th") + row.find_all("td")
         if not cells:
             continue
 
-        specifications = "{"
+        specificationsRaw = []
 
         # Ciclo attraverso gli indici delle intestazioni (headers)
         for i in range(len(headers)):
             # Controlla che l'indice sia valido anche per le celle (cells)
             if i < len(cells):
-                specifications += f"|{headers[i]}, {cells[i].text.strip()}|,"
+                specificationsRaw.append({headers[i]: cells[i].text.strip()})
+
+        # Estrai le chiavi associate ai valori numerici
+
+        if (keys == []):
+            keys = extract_keys_with_numeric_values(specificationsRaw)
+
+
+        # Costruisci la stringa di specifiche senza le chiavi estratte, ma con i valori delle specifiche
+        specifications = "{"
+        for spec in specificationsRaw:
+            for key, value in spec.items():
+                if key not in keys:
+                    specifications += f"|{key}, {value}|,"
         specifications = specifications[:-1] + "}"
 
+        if specifications == "}":
+            specifications = "{"
+            for spec in specificationsRaw:
+                for key, value in spec.items():
+                    specifications += f"|{key}, {value}|,"
+            specifications = specifications[:-1] + "}"
+            keys = []
 
-        # Identifica la misura ("Measure") e l'outcome per ogni riga
         for col_index, cell in enumerate(cells):
-            if col_index == len(headers) - 1:  # Assume che l'ultima colonna sia la misura
+            if col_index == len(headers) - 1 or (headers[col_index] in keys):  # Assume che l'ultima colonna sia la misura
                 measure = headers[col_index]
                 outcome = cell.text.strip()
 
@@ -88,7 +126,7 @@ for input_file in os.listdir(input_folder):
                         with open(output_path, "w") as out_f:
                             json.dump(claims, out_f, indent=4)
 
-                        print(f"[INFO] Salvato: {output_filename}")
+                        print(f"[INFO] Salvato: {output_filename}----------------------------------")
 
                 except Exception as e:
                     print(f"[ERRORE] Errore nel processamento della tabella in {input_file}, chiave {key}: {e}")
@@ -96,5 +134,6 @@ for input_file in os.listdir(input_folder):
             else:
                 # Saltare la chiave se il valore di mapping non è gestit0
                 print(f"[INFO] Saltata la chiave {key} poiché il valore di mapping è non gestito.")
+                None
 
             table_index += 1  

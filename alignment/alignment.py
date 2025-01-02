@@ -25,33 +25,34 @@ def process_claims(data, paper_id, name_aliases):
     aligned_values = {}
 
     for claim_id, claim_data in enumerate(data):
+        spec_id = 1  # Inizia spec_id come intero
         for key, value in claim_data.items():
             # Estrazione delle specifiche
             matches = re.findall(r'\|([^|]+), ([^|]+)\|', value)
-            spec_id=1
             for match in matches:
                 raw_name, raw_value = match
                 normalized_name = normalize_name(raw_name)
                 generic_name = find_generic_name(normalized_name, name_aliases)  # Trova o unifica il nome generico
 
-                paper_id = paper_id.replace("_claims", "")
-                spec_id = f"{paper_id}_{claim_id}_{spec_id}"
-                spec_id += 1
+                # Crea un identificatore spec_id come stringa
+                full_spec_id = f"{paper_id}_{claim_id}_{spec_id}"
+                spec_id += 1  # Incrementa spec_id come intero
 
                 # Allineamento nomi
                 if generic_name not in aligned_names:
                     aligned_names[generic_name] = []
-                aligned_names[generic_name].append(spec_id)
+                aligned_names[generic_name].append(full_spec_id)
 
                 # Allineamento valori
                 if raw_value not in aligned_values:
                     aligned_values[raw_value] = []
-                aligned_values[raw_value].append(spec_id)
+                aligned_values[raw_value].append(full_spec_id)
 
     return {
         "aligned_names": aligned_names,
         "aligned_values": aligned_values
     }
+
 
 # Mappatura delle alias per i nomi
 name_aliases = defaultdict(set)

@@ -3,7 +3,9 @@ import json
 from bs4 import BeautifulSoup
 import shutil
 import re
-from testing.LLM_testing import extract_metric_from_text, extract_specification_from_text
+import time
+
+from testing.LLM_testing import extract_metric_from_text, extract_specification_from_text, gemini_key_extractor
 
 
 # Percorsi delle cartelle
@@ -106,51 +108,51 @@ def process_table_type1(html_content, paper_id, table_index):
 
         count = 0
 
-        for row in rows:
-            # Estrai celle
+        for row_index, row in enumerate(rows):
             cells = row.find_all("th") + row.find_all("td")
             if not cells:
                 continue
 
             specificationsRaw = []
 
-        # Ciclo attraverso gli indici delle intestazioni (headers)
-        for i in range(len(headers)):
-            # Controlla che l'indice sia valido anche per le celle (cells)
-            if i < len(cells):
-                specificationsRaw.append({headers[i]: cells[i].text.strip()})
+            # Ciclo attraverso gli indici delle intestazioni (headers)
+            for i in range(len(headers)):
+                # Controlla che l'indice sia valido anche per le celle (cells)
+                if i < len(cells):
+                    specificationsRaw.append({headers[i]: cells[i].text.strip()})
 
-        # Estrai le chiavi associate ai valori numerici
+            # Estrai le chiavi associate ai valori numerici
+            # estrazione tramite gemini API
+            if (keys == []):
+                keys = gemini_key_extractor(specificationsRaw)
+                time.sleep(5)   # Aggiungere un ritardo per evitare di superare il limite di richieste API
 
-        if (keys == []):
-            keys = extract_keys_with_numeric_values(specificationsRaw)
 
-
-        # Costruisci la stringa di specifiche senza le chiavi estratte, ma con i valori delle specifiche
-        specifications = "{"
-        for spec in specificationsRaw:
-            for key, value in spec.items():
-                if key not in keys:
-                    specifications += f"|{key}, {value}|,"
-        specifications = specifications[:-1] + "}"
-
-        if specifications == "}":
+            # Costruisci la stringa di specifiche senza le chiavi estratte, ma con i valori delle specifiche
             specifications = "{"
             for spec in specificationsRaw:
                 for key, value in spec.items():
-                    specifications += f"|{key}, {value}|,"
+                    if key not in keys:
+                        specifications += f"|{key}, {value}|,"
             specifications = specifications[:-1] + "}"
-            keys = []
 
-        for col_index, cell in enumerate(cells):
-            if col_index == len(headers) - 1 or (headers[col_index] in keys):  # Assume che l'ultima colonna sia la misura
-                measure = headers[col_index]
-                outcome = cell.text.strip()
+            if specifications == "}":
+                specifications = "{"
+                for spec in specificationsRaw:
+                    for key, value in spec.items():
+                        specifications += f"|{key}, {value}|,"
+                specifications = specifications[:-1] + "}"
+                keys = []
 
-                if outcome:
-                    claim = {f'Claim {count}': f'|{specifications}, {measure}, {outcome}|'}
-                    count += 1
-                    claims.append(claim)
+            for col_index, cell in enumerate(cells):
+                if col_index == len(headers) - 1 or (headers[col_index] in keys):  # Assume che l'ultima colonna sia la misura
+                    measure = headers[col_index]
+                    outcome = cell.text.strip()
+
+                    if outcome:
+                        claim = {f'Claim {count}': f'|{specifications}, {measure}, {outcome}|'}
+                        count += 1
+                        claims.append(claim)
 
         if claims:
             # Salva le claims in un file JSON

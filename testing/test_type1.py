@@ -5,7 +5,7 @@ import shutil
 import re
 import time 
 
-from Gemini_testing import gemini_key_extractor
+from LLM_testing import gemini_key_extractor
 
 # Percorsi delle cartelle
 input_folder = "sources/json"  # Cartella contenente i file JSON con le tabelle

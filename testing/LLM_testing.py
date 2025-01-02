@@ -1,6 +1,9 @@
 from transformers import AutoTokenizer, AutoModelForQuestionAnswering
 import torch
 
+import google.generativeai as genai
+from config import API_KEY
+
 def extract_metric_from_text(text_to_analyze, model_name="distilbert-base-uncased-distilled-squad"):
     """
     Utilizza un modello per il question answering per estrarre informazioni da un testo.
@@ -82,3 +85,16 @@ def extract_specification_from_text(text_to_analyze, spec, model_name="distilber
 
     # Ritorna la risposta estratta
     return answer.strip()
+
+
+def gemini_key_extractor(claims):
+    genai.configure(api_key=API_KEY)
+    model = genai.GenerativeModel("gemini-1.5-flash")
+
+    prompt = "from the following sequence of key-value pairs, tell me which ones you think are metrics. Print me just the names of the metrics and don't add any other string "
+
+    response = model.generate_content(f"{prompt} {claims}")
+
+    keys= response.text.split("\n")
+    keys = [element for element in keys if element]
+    return keys

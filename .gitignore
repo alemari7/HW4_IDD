@@ -1,5 +1,6 @@
 output_test
 JSON_CLAIMS
+JSON_CLAIMS_CONVERTED
 
 __pycache__/
 *.pyc

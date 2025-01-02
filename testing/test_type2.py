@@ -46,11 +46,7 @@ def func1(input_file, key, value, table_index):
         header_keys = [header.text.strip() for header in headers]
 
         METRIC_NAME = extract_metric_from_text(caption) or "METRIC_NAME"
-        
-        print("Caption: ", caption)
-        print("Metric Name: ", METRIC_NAME)
-        print("\n\n")
-        
+                
         
         # Estrai le righe della tabella
         rows = table.find_all("tr")[1:]  # Ignora la riga delle intestazioni
@@ -67,11 +63,6 @@ def func1(input_file, key, value, table_index):
                     if (SPEC_NAME == "SPEC_NAME"):
                         SPEC_NAME = extract_specification_from_text(caption, header_keys[col_index]) or "SPEC_NAME"
                         
-                    print("caption: ", caption)
-                    print("testo: ", header_keys[col_index])
-                    print("Spec Name: ", SPEC_NAME)
-                    print("\n\n")
-
                     claim = {
                         f'Claim {count}': f"|{{|{header_keys[0]}, {model_name}|, |{SPEC_NAME}, {header_keys[col_index]}|}}, {METRIC_NAME} , {value}|"
                     }

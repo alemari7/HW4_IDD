@@ -2,6 +2,7 @@ import os
 import json
 from bs4 import BeautifulSoup
 import shutil
+import re
 from testing.LLM_testing import extract_metric_from_text, extract_specification_from_text
 
 
@@ -60,6 +61,24 @@ def printC(message, number):
     # Stampa il messaggio con il colore selezionato
     print(f"{color}{message}{reset}")
 
+
+def extract_keys_with_numeric_values(input_list):
+    # Espressione regolare per identificare valori numerici (inclusi numeri decimali, numeri tra parentesi e in notazione scientifica)
+    pattern = r"^[\d,\.]+(?:\s?\([\d,\.]+\))?|^[\d,\.]+e[-+]?\d+"
+
+    # Lista per memorizzare le chiavi associate a valori numerici
+    keys = []
+
+    # Itera sulla lista di dizionari
+    for item in input_list:
+        for key, value in item.items():
+            # Verifica se il valore è numerico o segue il pattern
+            if isinstance(value, str) and re.match(pattern, value):
+                keys.append(key)
+
+    return keys
+
+
 # Funzione per gestire le tabelle di tipo 1
 def process_table_type1(html_content, paper_id, table_index):
     """
@@ -83,6 +102,8 @@ def process_table_type1(html_content, paper_id, table_index):
         rows = table.find_all("tr")[1:]  # Ignora la riga delle intestazioni
 
         claims = []
+        keys = []
+
         count = 0
 
         for row in rows:
@@ -91,21 +112,45 @@ def process_table_type1(html_content, paper_id, table_index):
             if not cells:
                 continue
 
-            # Specifiche della claim
-            specifications = "{" + ",".join(
-                f"|{headers[i]}, {cells[i].text.strip()}|"
-                for i in range(len(headers)) if i < len(cells)
-            ) + "}"
+            specificationsRaw = []
 
-            # Estrai misura e risultato
-            for col_index, cell in enumerate(cells):
-                if col_index == len(headers) - 1:  # Assume che l'ultima colonna sia la misura
-                    measure = headers[col_index]
-                    outcome = cell.text.strip()
+        # Ciclo attraverso gli indici delle intestazioni (headers)
+        for i in range(len(headers)):
+            # Controlla che l'indice sia valido anche per le celle (cells)
+            if i < len(cells):
+                specificationsRaw.append({headers[i]: cells[i].text.strip()})
 
-                    if outcome:
-                        claims.append({f'Claim {count}': f'|{specifications}, {measure}, {outcome}|'})
-                        count += 1
+        # Estrai le chiavi associate ai valori numerici
+
+        if (keys == []):
+            keys = extract_keys_with_numeric_values(specificationsRaw)
+
+
+        # Costruisci la stringa di specifiche senza le chiavi estratte, ma con i valori delle specifiche
+        specifications = "{"
+        for spec in specificationsRaw:
+            for key, value in spec.items():
+                if key not in keys:
+                    specifications += f"|{key}, {value}|,"
+        specifications = specifications[:-1] + "}"
+
+        if specifications == "}":
+            specifications = "{"
+            for spec in specificationsRaw:
+                for key, value in spec.items():
+                    specifications += f"|{key}, {value}|,"
+            specifications = specifications[:-1] + "}"
+            keys = []
+
+        for col_index, cell in enumerate(cells):
+            if col_index == len(headers) - 1 or (headers[col_index] in keys):  # Assume che l'ultima colonna sia la misura
+                measure = headers[col_index]
+                outcome = cell.text.strip()
+
+                if outcome:
+                    claim = {f'Claim {count}': f'|{specifications}, {measure}, {outcome}|'}
+                    count += 1
+                    claims.append(claim)
 
         if claims:
             # Salva le claims in un file JSON

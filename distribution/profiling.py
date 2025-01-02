@@ -7,10 +7,19 @@ INPUT_SPEC = 'distribution/specifiche.json'  # Percorso del tuo file JSON
 INPUT_METRIC = 'distribution/metriche.json'  # Percorso del tuo file JSON
 OUTPUT = 'NAME_PROFILING.csv'                # Nome del file CSV di output
 
+# versione allineata
+INPUT_SPEC_ALIGNED = 'alignment/aligned_specifiche.json'  # Percorso del tuo file JSON
+INPUT_METRIC_ALIGNED = 'alignment/aligned_metriche.json'  # Percorso del tuo file JSON
+OUTPUT_ALIGNED = 'alignment/NAME_PROFILING_ALIGNED.csv'   # Nome del file CSV di output
+
 # Funzione per caricare il JSON da un file esterno
 def load_json(filename):
-    with open(filename, 'r') as file:
-        return json.load(file)
+    try:
+        with open(filename, 'r') as file:
+            return json.load(file)
+    except FileNotFoundError:
+        print(f"File {filename} non trovato")
+        exit(1)
 
 # Funzione per salvare la distribuzione in un file CSV (in modalità append)
 def save_distribution_to_csv(distribution, output_filename, headers):
@@ -76,3 +85,9 @@ spec_distribution(INPUT_SPEC, OUTPUT)
 metric_distribution(INPUT_METRIC, OUTPUT)
 values_distribution(INPUT_SPEC, OUTPUT)
 metric_averages(INPUT_METRIC, OUTPUT)
+
+# Esegui le distribuzioni allineate
+spec_distribution(INPUT_SPEC_ALIGNED, OUTPUT_ALIGNED)
+metric_distribution(INPUT_METRIC_ALIGNED, OUTPUT_ALIGNED)
+values_distribution(INPUT_SPEC_ALIGNED, OUTPUT_ALIGNED)
+metric_averages(INPUT_METRIC_ALIGNED, OUTPUT_ALIGNED)

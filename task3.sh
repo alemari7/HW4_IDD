@@ -1,6 +1,7 @@
 #!/bin/bash
 
 # Esegui il primo script Python
+# CODICE PER L'ALLINEAMENTO DEI DATI
 python3 alignment/alignment.py
 # Verifica se il primo script è stato eseguito correttamente
 if [ $? -eq 0 ]; then
@@ -11,8 +12,7 @@ else
 fi
 
 # Esegui il secondo script Python
-# CODICE PER GENERARE IL DIZIONARIO DEI SINONIMI
-# NON ANCORA UTILIZZATO NEL MERGE
+# GENERA IL DIZIONARIO DEI SINONIMI
 python3 alignment/synonym_dict_generator.py
 if [ $? -eq 0 ]; then
     echo "synonym_dict_generator completato con successo"
@@ -22,6 +22,7 @@ else
 fi
 
 # Esegui il terzo script Python
+# ESEGUE IL MERGE DEI DATI DI ALLINEAMENTO
 python3 alignment/merge_alignment.py
 if [ $? -eq 0 ]; then
     echo "merge_profiling.py completato con successo"
@@ -30,4 +31,22 @@ else
     exit 1
 fi
 
-# Aggiungi altri script secondo necessità
+# Esegui il quarto script Python
+# GENERA LA DISTRIBUZIONE DEI DATI SU DATI ALLINEATI
+python3 alignment/dict_distribution.py
+if [ $? -eq 0 ]; then
+    echo "dict_distribution completato con successo"
+else
+    echo "Errore nell'esecuzione di dict_distribution"
+    exit 1
+fi
+
+# Esegui il quinto script Python
+# ESEGUE IL PROFILING DEI DATI ALLINEATI e non
+python3 distribution/profiling.py
+if [ $? -eq 0 ]; then
+    echo "profiling completato con successo"
+else
+    echo "Errore nell'esecuzione di profiling"
+    exit 1
+fi

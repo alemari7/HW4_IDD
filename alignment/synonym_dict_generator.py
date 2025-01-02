@@ -45,7 +45,6 @@ def group_synonyms(input_array):
     # Gestione dei duplicati: ogni termine deve essere presente in un solo gruppo
     final_dict = {}
     used_terms = set()  # Per tenere traccia dei termini già assegnati
-    added_terms = set()  # Per evitare di aggiungere un gruppo più di una volta
 
     for key, values in synonym_dict.items():
         # Rimuoviamo i duplicati all'interno del cluster
@@ -74,7 +73,7 @@ with open(f'{input_filename}.json', 'r') as file:
 
 # Estrai le chiavi di "aligned_names" ed escludi quelle numeriche
 aligned_names_keys = [key for key in data.get("aligned_names", {}).keys() if not key.isdigit()]
-print("Chiavi di aligned_names (non numeriche):", aligned_names_keys)
+#print("Chiavi di aligned_names (non numeriche):", aligned_names_keys)
 
 # Raggruppa le chiavi in sinonimi
 synonym_dict = group_synonyms(aligned_names_keys)
@@ -83,5 +82,5 @@ synonym_dict = group_synonyms(aligned_names_keys)
 with open(output_filename, 'w') as outfile:
     json.dump(synonym_dict, outfile, indent=4)
 
-print("Dizionario di sinonimi:")
-print(json.dumps(synonym_dict, indent=4))
+#print("Dizionario di sinonimi:")
+#print(json.dumps(synonym_dict, indent=4))

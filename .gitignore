@@ -14,3 +14,7 @@ NAME_PROFILING.csv
 aligned_output.json
 merged_fields_output.json
 synonym_dict.json
+
+aligned_metriche.json
+aligned_specifiche.json
+NAME_PROFILING_ALIGNED.csv

@@ -3,6 +3,9 @@ import json
 from bs4 import BeautifulSoup
 import shutil
 import re
+import time 
+
+from Gemini_testing import gemini_key_extractor
 
 # Percorsi delle cartelle
 input_folder = "sources/json"  # Cartella contenente i file JSON con le tabelle
@@ -17,6 +20,8 @@ if os.path.exists(output_folder):
     shutil.rmtree(output_folder)  # Elimina la cartella e il suo contenuto
 os.makedirs(output_folder, exist_ok=True)  # Ricrea la cartella vuota
 
+# Funzione per estrarre il nome delle metriche presenti in un clail 
+# SOSTITUITA DA GEMINI_KEY_EXTRACTOR
 def extract_keys_with_numeric_values(input_list):
     # Espressione regolare per identificare valori numerici (inclusi numeri decimali, numeri tra parentesi e in notazione scientifica)
     pattern = r"^[\d,\.]+(?:\s?\([\d,\.]+\))?|^[\d,\.]+e[-+]?\d+"
@@ -63,9 +68,10 @@ def func1(html_content, table_id, paper_id):
                 specificationsRaw.append({headers[i]: cells[i].text.strip()})
 
         # Estrai le chiavi associate ai valori numerici
-
+        # estrazione tramite gemini API
         if (keys == []):
-            keys = extract_keys_with_numeric_values(specificationsRaw)
+            keys = gemini_key_extractor(specificationsRaw)
+            time.sleep(5)   # Aggiungere un ritardo per evitare di superare il limite di richieste API
 
 
         # Costruisci la stringa di specifiche senza le chiavi estratte, ma con i valori delle specifiche
@@ -127,6 +133,8 @@ for input_file in os.listdir(input_folder):
                             json.dump(claims, out_f, indent=4)
 
                         print(f"[INFO] Salvato: {output_filename}")
+                        table_index += 1  
+
 
                 except Exception as e:
                     print(f"[ERRORE] Errore nel processamento della tabella in {input_file}, chiave {key}: {e}")
@@ -136,4 +144,3 @@ for input_file in os.listdir(input_folder):
                 #print(f"[INFO] Saltata la chiave {key} poiché il valore di mapping è non gestito.")
                 None
 
-            table_index += 1  

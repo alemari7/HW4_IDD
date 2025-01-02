@@ -18,3 +18,5 @@ synonym_dict.json
 aligned_metriche.json
 aligned_specifiche.json
 NAME_PROFILING_ALIGNED.csv
+
+config.py

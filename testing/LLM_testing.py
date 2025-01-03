@@ -98,3 +98,27 @@ def gemini_key_extractor(claims):
     keys= response.text.split("\n")
     keys = [element for element in keys if element]
     return keys
+
+
+def gemini_metric_extractor(caption):
+    genai.configure(api_key=API_KEY)
+    model = genai.GenerativeModel("gemini-1.5-flash")
+
+    prompt = "What metrics are mentioned in the following caption?. Print me just the names of the metrics and don't add any other string. If you find no metrics, just print 'Metric'. If you find more than one metric, just print the most important one."
+
+    response = model.generate_content(f"Question: {prompt} \n Caption:{caption}")
+
+    metric= response.text
+    return metric
+
+
+def gemini_spec_extractor(caption, spec):
+    genai.configure(api_key=API_KEY)
+    model = genai.GenerativeModel("gemini-1.5-flash")
+
+    prompt = f"What does the specification value '{spec}' represent? in the given Caption?. Print me just the names of the specification and don't add any other string. If you find no correlation, print what you think the specification value reppresents, for example 'en-it' print 'translation'. If you find no correlation or value, print 'SPEC_NAME'. If you find more than one correlation, just print the most important one."
+
+    response = model.generate_content(f"Question: {prompt} \n Caption:{caption}")
+
+    spec_name= response.text
+    return spec_name

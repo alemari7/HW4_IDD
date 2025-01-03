@@ -2,8 +2,9 @@ import os
 import json
 from bs4 import BeautifulSoup
 import shutil
+import time
 
-from LLM_testing import extract_metric_from_text, extract_specification_from_text  
+from LLM_testing import gemini_metric_extractor, gemini_spec_extractor
 
 # Percorsi delle cartelle
 input_folder = "sources/json"  # Cartella contenente i file JSON con le tabelle
@@ -45,7 +46,8 @@ def func1(input_file, key, value, table_index):
         headers = header_row.find_all(["th", "td"])  # Cerca sia <th> che <td> nella riga delle intestazioni
         header_keys = [header.text.strip() for header in headers]
 
-        METRIC_NAME = extract_metric_from_text(caption) or "METRIC_NAME"
+        METRIC_NAME = gemini_metric_extractor(caption) or "METRIC_NAME"
+        time.sleep(3)
                 
         
         # Estrai le righe della tabella
@@ -60,8 +62,10 @@ def func1(input_file, key, value, table_index):
                 value = cell.text.strip()
                 if value:  # Solo celle non vuote
                     
-                    if (SPEC_NAME == "SPEC_NAME"):
-                        SPEC_NAME = extract_specification_from_text(caption, header_keys[col_index]) or "SPEC_NAME"
+                    if (str(SPEC_NAME) == "SPEC_NAME"):
+                        print(f"SPEC_NAME: {SPEC_NAME}, caption: {caption}, header_keys[col_index]: {header_keys[col_index]}")
+                        SPEC_NAME = gemini_spec_extractor(caption, header_keys[col_index]) or "SPEC_NAME"
+                        time.sleep(3)
                         
                     claim = {
                         f'Claim {count}': f"|{{|{header_keys[0]}, {model_name}|, |{SPEC_NAME}, {header_keys[col_index]}|}}, {METRIC_NAME} , {value}|"

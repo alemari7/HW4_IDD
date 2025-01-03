@@ -5,7 +5,7 @@ import shutil
 import re
 import time
 
-from testing.LLM_testing import extract_metric_from_text, extract_specification_from_text, gemini_key_extractor
+from testing.LLM_testing import gemini_metric_extractor, gemini_spec_extractor, gemini_key_extractor
 
 
 # Percorsi delle cartelle
@@ -196,7 +196,7 @@ def process_table_type2(input_file, key, value, table_index):
         header_row = table.find("tr")
         headers = [header.text.strip() for header in header_row.find_all(["th", "td"])]
 
-        METRIC_NAME = extract_metric_from_text(caption) or "METRIC_NAME"
+        METRIC_NAME = gemini_metric_extractor(caption) or "METRIC_NAME"
 
         rows = table.find_all("tr")[1:]
         data = []
@@ -212,7 +212,7 @@ def process_table_type2(input_file, key, value, table_index):
                 if value:
                     # Estrai il nome della specifica se non è stato già estratto
                     if(SPEC_NAME == "SPEC_NAME"):
-                        SPEC_NAME = extract_specification_from_text(caption, headers[col_index]) or "SPEC_NAME"
+                        SPEC_NAME = gemini_spec_extractor(caption, headers[col_index]) or "SPEC_NAME"
 
                     # Crea la claim
                     data.append({

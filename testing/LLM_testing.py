@@ -100,25 +100,25 @@ def gemini_key_extractor(claims):
     return keys
 
 
-def gemini_metric_extractor(caption):
+def gemini_metric_extractor(caption, paragraph):
     genai.configure(api_key=API_KEY)
     model = genai.GenerativeModel("gemini-1.5-flash")
 
-    prompt = "What metrics are mentioned in the following caption?. Print me just the names of the metrics and don't add any other string. If you find no metrics, just print 'Metric'. If you find more than one metric, just print the most important one."
+    prompt = "What metrics are mentioned in the following caption?. Print me just the names of the metrics and don't add any other string. If you find no metrics, search it in Paragraph. If you still no find it, just print 'Metric', but ALWAYS try to print a value. If you find more than one metric, just print the most important one."
 
-    response = model.generate_content(f"Question: {prompt} \n Caption:{caption}")
+    response = model.generate_content(f"Question: {prompt} \n Caption:{caption} \n Paragraph:{paragraph}")
 
     metric= response.text
     return metric
 
 
-def gemini_spec_extractor(caption, spec):
+def gemini_spec_extractor(caption, paragraph, spec):
     genai.configure(api_key=API_KEY)
     model = genai.GenerativeModel("gemini-1.5-flash")
 
-    prompt = f"What does the specification value '{spec}' represent? in the given Caption?. Print me just the names of the specification and don't add any other string. If you find no correlation, print what you think the specification value reppresents, for example 'en-it' print 'translation'. If you find no correlation or value, print 'SPEC_NAME'. If you find more than one correlation, just print the most important one."
+    prompt = f"What does the specification value '{spec}' represent? in the given Caption?. Print me just the names of the specification and don't add any other string. If you find no correlation, print what you think the specification value represents, for example 'en-it' print 'translation'. If you find no correlation or value search for correlation in Paragraph, if you still no find anything, print 'SPEC_NAME', but try ALWAYS to print a value. If you find more than one correlation, just print the most important one."
 
-    response = model.generate_content(f"Question: {prompt} \n Caption:{caption}")
+    response = model.generate_content(f"Question: {prompt} \n Caption:{caption} \n Paragraph:{paragraph}")
 
     spec_name= response.text
     return spec_name

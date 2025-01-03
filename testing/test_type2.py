@@ -30,6 +30,7 @@ def func1(input_file, key, value, table_index):
     try:
         html_content = value["table"]
         caption = value["caption"]
+        paragraph = value["references"]
 
         # Analizza l'HTML
         data = []
@@ -46,7 +47,7 @@ def func1(input_file, key, value, table_index):
         headers = header_row.find_all(["th", "td"])  # Cerca sia <th> che <td> nella riga delle intestazioni
         header_keys = [header.text.strip() for header in headers]
 
-        METRIC_NAME = gemini_metric_extractor(caption) or "METRIC_NAME"
+        METRIC_NAME = gemini_metric_extractor(caption, paragraph) or "METRIC_NAME"
         time.sleep(3)
                 
         
@@ -63,8 +64,7 @@ def func1(input_file, key, value, table_index):
                 if value:  # Solo celle non vuote
                     
                     if (str(SPEC_NAME) == "SPEC_NAME"):
-                        print(f"SPEC_NAME: {SPEC_NAME}, caption: {caption}, header_keys[col_index]: {header_keys[col_index]}")
-                        SPEC_NAME = gemini_spec_extractor(caption, header_keys[col_index]) or "SPEC_NAME"
+                        SPEC_NAME = gemini_spec_extractor(caption,paragraph, header_keys[col_index]) or "SPEC_NAME"
                         time.sleep(3)
                         
                     claim = {

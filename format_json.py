@@ -1,11 +1,6 @@
 import os
 import json
 
-# Funzione per determinare se un dettaglio può essere una metrica
-def is_potential_metric(detail):
-    # Considera una colonna come metrica se contiene un nome plausibile seguito da un valore
-    parts = detail.split(",", 1)
-    return len(parts) == 2 and parts[0].strip() and parts[1].strip()
 
 # Funzione per convertire un claim nel nuovo formato
 def convert_claims_format(input_data):
@@ -14,22 +9,25 @@ def convert_claims_format(input_data):
         key = f"Claim {index}"
         if key in claim:
             # Analizza il campo stringa nel formato specificato
-            details = claim[key].strip("|{}").split("|,|")
+            raw_data = claim[key].strip("|")
             specifications = {}
             measure = ""
             outcome = "N/A"
             
-            # Analizziamo tutte le specifiche, tranne gli ultimi dettagli
-            for spec_index, detail in enumerate(details[:-1]):  # Escludiamo l'ultimo dettaglio per ora
-                parts = detail.split(",", 1)
-                if len(parts) == 2:
-                    name, value = map(str.strip, parts)
-                    specifications[str(spec_index)] = {"name": name, "value": value}
-            
-            # Estraiamo la metrica e l'outcome dall'ultimo dettaglio
-            last_detail = details[-1]
-            if ',' in last_detail:
-                measure, outcome = map(str.strip, last_detail.split(",", 1))
+            # Trova la parte tra { e }, e quella successiva
+            if "{|" in raw_data and "|}" in raw_data:
+                spec_part, metric_part = raw_data.split("|},", 1)
+                spec_part = spec_part.strip("{|").split("|,|")
+                
+                # Analizza le specifiche
+                for spec_index, detail in enumerate(spec_part):
+                    if "," in detail:
+                        name, value = map(str.strip, detail.split(",", 1))
+                        specifications[str(spec_index)] = {"name": name, "value": value}
+                
+                # Analizza la metrica e l'outcome
+                if "," in metric_part:
+                    measure, outcome = map(str.strip, metric_part.split(",", 1))
             
             # Aggiungi il risultato al formato specifico
             converted.append({
@@ -49,7 +47,7 @@ def process_json_files(input_dir, output_dir):
     for file_name in os.listdir(input_dir):
         if file_name.endswith('.json'):
             input_path = os.path.join(input_dir, file_name)
-            output_path = os.path.join(output_dir, f"converted_{file_name}")
+            output_path = os.path.join(output_dir, f"{file_name}")
             
             # Leggi il file JSON originale
             with open(input_path, 'r') as file:

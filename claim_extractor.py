@@ -199,6 +199,7 @@ def process_table_type2(input_file, key, value, table_index):
         headers = [header.text.strip() for header in header_row.find_all(["th", "td"])]
 
         METRIC_NAME = gemini_metric_extractor(caption, paragraph) or "METRIC_NAME"
+        time.sleep(3)
 
         rows = table.find_all("tr")[1:]
         data = []
@@ -215,10 +216,11 @@ def process_table_type2(input_file, key, value, table_index):
                     # Estrai il nome della specifica se non è stato già estratto
                     if(SPEC_NAME == "SPEC_NAME"):
                         SPEC_NAME = gemini_spec_extractor(caption, paragraph, headers[col_index]) or "SPEC_NAME"
+                        time.sleep(3)
 
                     # Crea la claim
                     data.append({
-                        f'Claim {count}': f"|{{|{headers[0]}, {model_name}|, |{SPEC_NAME}, {headers[col_index]}|}}, {METRIC_NAME} , {value}|"
+                        f'Claim {count}': f"|{{|{headers[0]}, {model_name}|,|{SPEC_NAME}, {headers[col_index]}|}}, {METRIC_NAME}, {value}|"
                     })
                     count += 1
 

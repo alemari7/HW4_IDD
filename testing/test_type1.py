@@ -48,9 +48,21 @@ def func1(html_content, table_id, paper_id):
     if not table:
         return []
 
-    headers = [header.text.strip() for header in table.find("tr").find_all("th")]
-    rows = table.find_all("tr")[1:]  # Ignora la riga delle intestazioni
+    headers = []
+    colspan_flag = 0;
+    for header in table.find("tr").find_all("th"):
+        headers.append(header.text.strip())
+        if header.has_attr('colspan'):
+            colspan_flag = 1
 
+    rows = table.find_all("tr")[1:]  # Ignora la riga delle intestazioni
+    if colspan_flag:
+        headers = []
+        for header in table.find_all("tr")[1].find_all("th"):
+            headers.append(header.text.strip())
+        rows = table.find_all("tr")[2:]
+
+    print(headers)
     claims = []
     keys = []
 
@@ -119,7 +131,7 @@ for input_file in os.listdir(input_folder):
             #print(f"Chiave: {file_name + '_' + key}, Valore di mapping: {mapping_value}")
             
                         # Esegui il codice solo se il valore di mapping è "1"
-            if mapping_value == 1 and "table" in value:
+            if mapping_value == 4 and "table" in value:
                 # Chiamata alla funzione func1 che gestisce l'elaborazione
                 try:
                     html_content = value["table"]

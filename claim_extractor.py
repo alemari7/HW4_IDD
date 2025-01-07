@@ -265,10 +265,6 @@ def extract_colspan_info(html_row):
         colspan = int(cell.get("colspan", 1))  # Ottieni il colspan (default 1, convertito a int)
         result[cell_text] = colspan
 
-    # Rimuovi "N/A" solo se esiste
-    if "N/A" in result:
-        del result["N/A"]
-
     # Ricalcola il colspan progressivo solo dopo aver rimosso "N/A"
     colspan_sum = 0  # Variabile per sommare i colspan
     for cell_text in result:
@@ -325,7 +321,7 @@ def process_table_type3(input_file, key, value, table_index):
         for row_index, row in enumerate(rows[2:], start=3):  # Dalla terza riga in poi
             cells = row.find_all(["th", "td"])
             if len(cells) != len(header_keys):
-                print(f"[AVVISO] Numero di celle diverso dalle intestazioni in {input_file}, riga {row_index}.")
+                #print(f"[AVVISO] Numero di celle diverso dalle intestazioni in {input_file}, riga {row_index}.")
                 continue
 
             metric_name = cells[0].text.strip()  # La prima cella è il nome della metrica

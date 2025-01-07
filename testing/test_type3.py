@@ -39,9 +39,6 @@ def extract_colspan_info(html_row):
         colspan = int(cell.get("colspan", 1))  # Ottieni il colspan (default 1, convertito a int)
         result[cell_text] = colspan
 
-    # Rimuovi "N/A" solo se esiste
-    if "N/A" in result:
-        del result["N/A"]
 
     # Ricalcola il colspan progressivo solo dopo aver rimosso "N/A"
     colspan_sum = 0  # Variabile per sommare i colspan
@@ -95,7 +92,7 @@ def extract_claims_from_table(input_file, key, value, table_index):
                 continue
 
             metric_name = cells[0].text.strip()  # La prima cella è il nome della metrica
-            for col_index, cell in enumerate(cells[1:], start=1):  # Salta la prima cella
+            for col_index, cell in enumerate(cells[0:], start=0):  # Salta la prima cella
                 for key, value in colspan_info.items():
                     if col_index <= value:
                         spec_name = key
